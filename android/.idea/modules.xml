@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.sonikro.flutter_okta_sdk-flutter_okta_sdk.iml" filepath="$PROJECT_DIR$/.idea/modules/com.sonikro.flutter_okta_sdk-flutter_okta_sdk.iml" group="flutter_okta_sdk" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/flutter_okta_sdk.iml" filepath="$PROJECT_DIR$/.idea/modules/flutter_okta_sdk.iml" group="flutter_okta_sdk" />
     </modules>
   </component>
