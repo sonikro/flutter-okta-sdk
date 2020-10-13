@@ -8,9 +8,10 @@ class OktaSDK {
 
   bool isInitialized = false;
 
-  Future<void> setup(BaseRequest request) async {
+  Future<void> createConfig(BaseRequest request) async {
     this.isInitialized = false;
-    await _channel.invokeMethod("setup", convertBaseRequestToMap(request));
+    await _channel.invokeMethod(
+        "createConfig", convertBaseRequestToMap(request));
     this.isInitialized = true;
   }
 
@@ -26,5 +27,21 @@ class OktaSDK {
       throw Exception("Cannot sign out before initializing Okta SDK");
     }
     await _channel.invokeMethod('signOut');
+  }
+
+  Future<String> getUser() async {
+    if (this.isInitialized == false) {
+      throw Exception("Cannot get user before initializing Okta SDK");
+    }
+    return await _channel.invokeMethod('getUser');
+  }
+
+  Future<bool> isAuthenticated() async {
+    if (this.isInitialized == false) {
+      throw Exception(
+          "Cannot check authentication before initializing Okta SDK");
+    }
+    var a = await _channel.invokeMethod('isAuthenticated');
+    return a;
   }
 }

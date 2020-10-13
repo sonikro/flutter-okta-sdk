@@ -4,14 +4,7 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import androidx.annotation.NonNull
-import com.okta.oidc.OIDCConfig
-import com.okta.oidc.clients.AuthClient
-import com.okta.oidc.clients.web.WebAuthClient
-import com.okta.oidc.net.response.IntrospectInfo
-import com.sonikro.flutter_okta_sdk.okta.entities.AvailableMethods
-import com.sonikro.flutter_okta_sdk.okta.entities.Errors
-import com.sonikro.flutter_okta_sdk.okta.entities.PendingOperation
-import com.sonikro.flutter_okta_sdk.okta.entities.enumContains
+import com.sonikro.flutter_okta_sdk.okta.entities.*
 import com.sonikro.flutter_okta_sdk.okta.operations.*
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.embedding.engine.plugins.activity.ActivityAware
@@ -30,11 +23,8 @@ class FlutterOktaSdkPlugin : FlutterPlugin, MethodCallHandler,
         PluginRegistry.ActivityResultListener, ActivityAware{
     private lateinit var channel: MethodChannel
 
-    private var config: OIDCConfig? = null
-    private var webClient: WebAuthClient? = null
-    private var authClient: AuthClient? = null
+    private var oktaConfig: OktaConfig? = null
     private var applicationContext: Context? = null
-    private var pendingOperation: PendingOperation? = null
     private var mainActivity: Activity? = null
 
     companion object {
@@ -55,8 +45,8 @@ class FlutterOktaSdkPlugin : FlutterPlugin, MethodCallHandler,
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?): Boolean {
-        webClient!!.handleActivityResult(requestCode, resultCode, data)
-        return pendingOperation != null
+        oktaConfig!!.webClient.handleActivityResult(requestCode, resultCode, data)
+        return  PendingOperation.hasPendingOperation != null
     }
 
     override fun onDetachedFromActivity() {
@@ -79,87 +69,90 @@ class FlutterOktaSdkPlugin : FlutterPlugin, MethodCallHandler,
 
     override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
         val arguments = call.arguments<Map<String, Any>>()
-        checkAndSetPendingOperation(call.method, result)
+        PendingOperation.init(call.method, result)
 
-        if(!enumContains<Errors>(call.method) ){
-            finishWithError(Errors.METHOD_NOT_IMPLEMENTED)
-        }
+//        if(!enumContains<Errors>(call.method) ){
+//            finishWithError(Errors.METHOD_NOT_IMPLEMENTED, "Method called: $call.method")
+//        }
 
-        if (call.method == AvailableMethods.CREATE_CONFIG){
+        if (call.method == AvailableMethods.CREATE_CONFIG.methodName){
             try{
                 if (applicationContext == null )
-                    finishWithError(Errors.NO_CONTEXT)
+                    PendingOperation.error(Errors.NO_CONTEXT)
 
-                createConfig(arguments, applicationContext!!)
-                finishWithSuccess(true)
+                oktaConfig = createConfig(arguments, applicationContext!!)
+                PendingOperation.success(true)
             }catch (ex:  java.lang.Exception){
-                finishWithError(Errors.OKTA_OIDC_ERROR)
+                PendingOperation.error(Errors.OKTA_OIDC_ERROR)
             }
         }else{
-            checkDependencies()
             try{
+                if (this.mainActivity == null) {
+                    PendingOperation.error(Errors.NO_VIEW)
+                }
+
+                if (oktaConfig!!.webClient == null) {
+                    PendingOperation.error(Errors.NOT_CONFIGURED)
+                }
+
                 when (call.method){
                     AvailableMethods.SIGN_IN.methodName ->{
-                        signIn(this.webClient!!, this.mainActivity!!)
-                        finishWithSuccess()
+                        signIn(oktaConfig!!.webClient, this.mainActivity!!)
                     }
                     AvailableMethods.SIGN_OUT.methodName ->{
-                        signOut(this.webClient!!, this.mainActivity!!)
-                        finishWithSuccess()
+                        signOut(oktaConfig!!.webClient, this.mainActivity!!)
                     }
                     AvailableMethods.GET_USER.methodName ->{
-                        val user = getUser(this.webClient!!)
-                        finishWithSuccess(user)
+                        getUser(oktaConfig!!.webClient)
                     }
                     AvailableMethods.IS_AUTHENTICATED.methodName ->{
-                        val isAuthenticated = isAuthenticated(this.webClient!!)
-                        finishWithSuccess(isAuthenticated)
+                        isAuthenticated(oktaConfig!!.webClient)
                     }
-                    AvailableMethods.GET_ACCESS_TOKEN.methodName ->{
-                        val accessToken = getAccessToken(this.webClient!!)
-                        if(accessToken ==null)finishWithError(Errors.NO_ACCESS_TOKEN)
-                        finishWithSuccess(accessToken)
-                    }
-                    AvailableMethods.GET_ID_TOKEN.methodName ->{
-                        val idToken = getIdToken(this.webClient!!)
-                        if(idToken ==null)finishWithError(Errors.NO_ID_TOKEN)
-                        finishWithSuccess(idToken)
-                    }
-                    AvailableMethods.REVOKE_ACCESS_TOKEN.methodName ->{
-                        revokeAccessToken(this.webClient!!)
-                        finishWithSuccess()
-                    }
-                    AvailableMethods.REVOKE_ID_TOKEN.methodName ->{
-                        revokeIdToken(this.webClient!!)
-                        finishWithSuccess()
-                    }
-                    AvailableMethods.REVOKE_REFRESH_TOKEN.methodName ->{
-                        revokeRefreshToken(this.webClient!!)
-                        finishWithSuccess()
-                    }
-                    AvailableMethods.CLEAR_TOKENS.methodName ->{
-                        clearTokens(this.webClient!!,this.authClient!!)
-                        finishWithSuccess()
-                    }
-                    AvailableMethods.INTROSPECT_ACCESS_TOKEN.methodName ->{
-                        val result: IntrospectInfo = introspectAccessToken(this.webClient!!)
-                        finishWithSuccess(result)
-                    }
-                    AvailableMethods.INTROSPECT_ID_TOKEN.methodName ->{
-                        val result: IntrospectInfo = introspectIdToken(this.webClient!!)
-                        finishWithSuccess(result)
-                    }
-                    AvailableMethods.INTROSPECT_REFRESH_TOKEN.methodName ->{
-                        val result: IntrospectInfo = introspectRefreshToken(this.webClient!!)
-                        finishWithSuccess(result)
-                    }
-                    AvailableMethods.REFRESH_TOKENS.methodName ->{
-                        refreshTokens(this.webClient!!)
-                        finishWithSuccess()
-                    }
+//                    AvailableMethods.GET_ACCESS_TOKEN.methodName ->{
+//                        val accessToken = getAccessToken(oktaConfig!!.webClient)
+//                        if(accessToken ==null)finishWithError(Errors.NO_ACCESS_TOKEN)
+//                        finishWithSuccess(accessToken)
+//                    }
+//                    AvailableMethods.GET_ID_TOKEN.methodName ->{
+//                        val idToken = getIdToken(oktaConfig!!.webClient)
+//                        if(idToken ==null)finishWithError(Errors.NO_ID_TOKEN)
+//                        finishWithSuccess(idToken)
+//                    }
+//                    AvailableMethods.REVOKE_ACCESS_TOKEN.methodName ->{
+//                        revokeAccessToken(oktaConfig!!.webClient)
+//                        finishWithSuccess()
+//                    }
+//                    AvailableMethods.REVOKE_ID_TOKEN.methodName ->{
+//                        revokeIdToken(oktaConfig!!.webClient)
+//                        finishWithSuccess()
+//                    }
+//                    AvailableMethods.REVOKE_REFRESH_TOKEN.methodName ->{
+//                        revokeRefreshToken(oktaConfig!!.webClient)
+//                        finishWithSuccess()
+//                    }
+//                    AvailableMethods.CLEAR_TOKENS.methodName ->{
+//                        clearTokens(oktaConfig!!.webClient,oktaConfig!!.authClient)
+//                        finishWithSuccess()
+//                    }
+//                    AvailableMethods.INTROSPECT_ACCESS_TOKEN.methodName ->{
+//                        val result: IntrospectInfo = introspectAccessToken(oktaConfig!!.webClient)
+//                        finishWithSuccess(result)
+//                    }
+//                    AvailableMethods.INTROSPECT_ID_TOKEN.methodName ->{
+//                        val result: IntrospectInfo = introspectIdToken(oktaConfig!!.webClient)
+//                        finishWithSuccess(result)
+//                    }
+//                    AvailableMethods.INTROSPECT_REFRESH_TOKEN.methodName ->{
+//                        val result: IntrospectInfo = introspectRefreshToken(oktaConfig!!.webClient)
+//                        finishWithSuccess(result)
+//                    }
+//                    AvailableMethods.REFRESH_TOKENS.methodName ->{
+//                        refreshTokens(oktaConfig!!.webClient)
+//                        finishWithSuccess()
+//                    }
                 }
             }catch (ex: java.lang.Exception) {
-                finishWithGenericError(ex.localizedMessage)
+                PendingOperation.error(Errors.GENERIC_ERROR,ex.localizedMessage)
             }
         }
     }
@@ -174,41 +167,4 @@ class FlutterOktaSdkPlugin : FlutterPlugin, MethodCallHandler,
         channel.setMethodCallHandler(this)
     }
 
-    fun checkDependencies(){
-        if (this.mainActivity == null) {
-            finishWithError(Errors.NO_VIEW)
-        }
-        if (this.webClient == null) {
-            finishWithError(Errors.NOT_CONFIGURED)
-        }
-    }
-
-    private fun checkAndSetPendingOperation(method: String, result: Result) {
-        if (pendingOperation != null) {
-            throw IllegalStateException(
-                    "Concurrent operations detected: " + pendingOperation!!.method + ", " + method)
-        }
-        pendingOperation = PendingOperation(method, result)
-    }
-
-    private fun finishWithSuccess(data: Any? = null) {
-        if (pendingOperation != null) {
-            pendingOperation!!.result.success(data)
-            pendingOperation = null
-        }
-    }
-
-    private fun finishWithError(error: Errors) {
-        if (pendingOperation != null) {
-            pendingOperation!!.result.error(error.errorCode, error.errorMessage, null)
-            pendingOperation = null
-        }
-    }
-
-    private fun finishWithGenericError( message:String) {
-        if (pendingOperation != null) {
-            pendingOperation!!.result.error(Errors.GENERIC_ERROR, message, null)
-            pendingOperation = null
-        }
-    }
 }

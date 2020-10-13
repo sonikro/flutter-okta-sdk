@@ -1,10 +1,11 @@
 package com.sonikro.flutter_okta_sdk.okta.operations
 
 import com.okta.oidc.clients.web.WebAuthClient
+import com.sonikro.flutter_okta_sdk.okta.entities.PendingOperation
 
-fun isAuthenticated(webClient: WebAuthClient): Boolean {
+fun isAuthenticated(webClient: WebAuthClient) {
     val sessionClient = webClient.sessionClient
-    return sessionClient.isAuthenticated
+    PendingOperation.success(sessionClient.isAuthenticated)
 }
 
 

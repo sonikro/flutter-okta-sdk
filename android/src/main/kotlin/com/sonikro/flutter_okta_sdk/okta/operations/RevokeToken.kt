@@ -29,16 +29,19 @@ private fun revokeToken( tokenName:String, webClient: WebAuthClient): Boolean {
         }
     }
 
-    sessionClient.revokeToken(token,
-            object : RequestCallback<Boolean, AuthorizationException> {
-                override fun onSuccess(result: Boolean) {
-                    promise.resolve(result)
-                }
+    return true
 
-                override fun onError(msg: String, error: AuthorizationException) {
-                    promise.reject(OktaSdkError.OKTA_OIDC_ERROR.getErrorCode(), error.localizedMessage, error)
-                }
-            })
+//    sessionClient.revokeToken(token,
+//            object : RequestCallback<Boolean, AuthorizationException> {
+//                override fun onSuccess(result: Boolean) {
+//                    promise.resolve(result)
+//                }
+//
+//                override fun onError(msg: String, error: AuthorizationException) {
+//                    promise.reject(OktaSdkError.OKTA_OIDC_ERROR.getErrorCode(), error.localizedMessage, error)
+//                }
+//            })
+
 }
 
 
