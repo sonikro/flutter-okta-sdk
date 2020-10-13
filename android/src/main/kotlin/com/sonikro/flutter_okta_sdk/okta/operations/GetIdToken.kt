@@ -10,9 +10,9 @@ fun getIdToken() {
     var sessionClient = OktaClient.getWebClient().sessionClient
     var tokens = sessionClient.tokens
 
-    if(tokens.idToken ==null){
+    if (tokens.idToken == null) {
         PendingOperation.error(Errors.NO_ID_TOKEN)
-    }else {
+    } else {
         PendingOperation.success(tokens.idToken)
     }
 }

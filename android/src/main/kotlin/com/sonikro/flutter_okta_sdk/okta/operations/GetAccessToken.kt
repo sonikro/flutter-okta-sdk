@@ -10,9 +10,9 @@ fun getAccessToken() {
     var sessionClient = OktaClient.getWebClient().sessionClient
     var tokens = sessionClient.tokens
 
-    if(tokens.accessToken ==null){
+    if (tokens.accessToken == null) {
         PendingOperation.error(Errors.NO_ACCESS_TOKEN)
-    }else {
+    } else {
         PendingOperation.success(tokens.accessToken)
     }
 }

@@ -15,8 +15,9 @@ fun getUser() {
         override fun onSuccess(result: UserInfo) {
             PendingOperation.success(result.toString())
         }
+
         override fun onError(error: String, exception: AuthorizationException) {
-            PendingOperation.error(Errors.OKTA_OIDC_ERROR,exception.errorDescription)
+            PendingOperation.error(Errors.OKTA_OIDC_ERROR, exception.errorDescription)
         }
     })
 }

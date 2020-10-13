@@ -20,7 +20,7 @@ import io.flutter.plugin.common.PluginRegistry.Registrar
 
 /** FlutterOktaSdkPlugin */
 class FlutterOktaSdkPlugin : FlutterPlugin, MethodCallHandler,
-        PluginRegistry.ActivityResultListener, ActivityAware{
+        PluginRegistry.ActivityResultListener, ActivityAware {
     private lateinit var channel: MethodChannel
 
     private var applicationContext: Context? = null
@@ -46,7 +46,7 @@ class FlutterOktaSdkPlugin : FlutterPlugin, MethodCallHandler,
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?): Boolean {
         OktaClient.getWebClient().handleActivityResult(requestCode, resultCode, data)
         //oktaConfig!!.webClient.handleActivityResult(requestCode, resultCode, data)
-        return  PendingOperation.hasPendingOperation != null
+        return PendingOperation.hasPendingOperation != null
     }
 
     override fun onDetachedFromActivity() {
@@ -75,63 +75,63 @@ class FlutterOktaSdkPlugin : FlutterPlugin, MethodCallHandler,
 //            finishWithError(Errors.METHOD_NOT_IMPLEMENTED, "Method called: $call.method")
 //        }
 
-        if (call.method == AvailableMethods.CREATE_CONFIG.methodName){
-            try{
-                if (applicationContext == null )
+        if (call.method == AvailableMethods.CREATE_CONFIG.methodName) {
+            try {
+                if (applicationContext == null)
                     PendingOperation.error(Errors.NO_CONTEXT)
 
                 createConfig(arguments, applicationContext!!)
-            }catch (ex:  java.lang.Exception){
+            } catch (ex: java.lang.Exception) {
                 PendingOperation.error(Errors.OKTA_OIDC_ERROR)
             }
-        }else{
-            try{
-                when (call.method){
-                    AvailableMethods.SIGN_IN.methodName ->{
+        } else {
+            try {
+                when (call.method) {
+                    AvailableMethods.SIGN_IN.methodName -> {
                         signIn(this.mainActivity!!)
                     }
-                    AvailableMethods.SIGN_OUT.methodName ->{
+                    AvailableMethods.SIGN_OUT.methodName -> {
                         signOut(this.mainActivity!!)
                     }
-                    AvailableMethods.GET_USER.methodName ->{
+                    AvailableMethods.GET_USER.methodName -> {
                         getUser()
                     }
-                    AvailableMethods.IS_AUTHENTICATED.methodName ->{
+                    AvailableMethods.IS_AUTHENTICATED.methodName -> {
                         isAuthenticated()
                     }
-                    AvailableMethods.GET_ACCESS_TOKEN.methodName ->{
+                    AvailableMethods.GET_ACCESS_TOKEN.methodName -> {
                         getAccessToken()
                     }
-                    AvailableMethods.GET_ID_TOKEN.methodName ->{
+                    AvailableMethods.GET_ID_TOKEN.methodName -> {
                         getIdToken()
                     }
-                    AvailableMethods.REVOKE_ACCESS_TOKEN.methodName ->{
+                    AvailableMethods.REVOKE_ACCESS_TOKEN.methodName -> {
                         revokeAccessToken()
                     }
-                    AvailableMethods.REVOKE_ID_TOKEN.methodName ->{
+                    AvailableMethods.REVOKE_ID_TOKEN.methodName -> {
                         revokeIdToken()
                     }
-                    AvailableMethods.REVOKE_REFRESH_TOKEN.methodName ->{
+                    AvailableMethods.REVOKE_REFRESH_TOKEN.methodName -> {
                         revokeRefreshToken()
                     }
-                    AvailableMethods.CLEAR_TOKENS.methodName ->{
+                    AvailableMethods.CLEAR_TOKENS.methodName -> {
                         clearTokens()
                     }
-                    AvailableMethods.INTROSPECT_ACCESS_TOKEN.methodName ->{
+                    AvailableMethods.INTROSPECT_ACCESS_TOKEN.methodName -> {
                         introspectAccessToken()
                     }
-                    AvailableMethods.INTROSPECT_ID_TOKEN.methodName ->{
+                    AvailableMethods.INTROSPECT_ID_TOKEN.methodName -> {
                         introspectIdToken()
                     }
-                    AvailableMethods.INTROSPECT_REFRESH_TOKEN.methodName ->{
+                    AvailableMethods.INTROSPECT_REFRESH_TOKEN.methodName -> {
                         introspectRefreshToken()
                     }
-                    AvailableMethods.REFRESH_TOKENS.methodName ->{
+                    AvailableMethods.REFRESH_TOKENS.methodName -> {
                         refreshTokens()
                     }
                 }
-            }catch (ex: java.lang.Exception) {
-                PendingOperation.error(Errors.GENERIC_ERROR,ex.localizedMessage)
+            } catch (ex: java.lang.Exception) {
+                PendingOperation.error(Errors.GENERIC_ERROR, ex.localizedMessage)
             }
         }
     }

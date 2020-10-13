@@ -20,5 +20,5 @@ enum class AvailableMethods(val methodName: String) {
 }
 
 inline fun <reified T : Enum<T>> enumContains(name: String): Boolean {
-    return enumValues<T>().any { it.name == name}
+    return enumValues<T>().any { it.name == name }
 }

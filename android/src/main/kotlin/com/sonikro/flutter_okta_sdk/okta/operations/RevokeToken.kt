@@ -8,18 +8,19 @@ import com.sonikro.flutter_okta_sdk.okta.entities.Errors
 import com.sonikro.flutter_okta_sdk.okta.entities.OktaClient
 import com.sonikro.flutter_okta_sdk.okta.entities.PendingOperation
 
-fun revokeAccessToken(){
+fun revokeAccessToken() {
     revokeToken(TokenTypeHint.ACCESS_TOKEN)
 }
-fun revokeIdToken(){
+
+fun revokeIdToken() {
     revokeToken(TokenTypeHint.ID_TOKEN)
 }
 
-fun revokeRefreshToken(){
+fun revokeRefreshToken() {
     revokeToken(TokenTypeHint.REFRESH_TOKEN)
 }
 
-private fun revokeToken( tokenName:String) {
+private fun revokeToken(tokenName: String) {
     var sessionClient = OktaClient.getWebClient().sessionClient
     val tokens = sessionClient.tokens
     val token = when (tokenName) {
@@ -38,7 +39,7 @@ private fun revokeToken( tokenName:String) {
                 }
 
                 override fun onError(msg: String, error: AuthorizationException) {
-                    PendingOperation.error(Errors.OKTA_OIDC_ERROR,error.errorDescription)
+                    PendingOperation.error(Errors.OKTA_OIDC_ERROR, error.errorDescription)
                 }
             })
 }
