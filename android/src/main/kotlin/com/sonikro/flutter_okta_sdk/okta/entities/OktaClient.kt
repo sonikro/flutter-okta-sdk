@@ -19,21 +19,21 @@ object OktaClient{
 
     fun getConfig():OIDCConfig {
         if (!isInitilized) {
-            throw IllegalStateException("Okta not initialized")
+            throw IllegalStateException(Errors.NOT_CONFIGURED.errorMessage)
         }
         return this.config!!
     }
 
     fun getWebClient():WebAuthClient {
         if (!isInitilized) {
-            throw IllegalStateException("Okta not initialized")
+            throw IllegalStateException(Errors.NOT_CONFIGURED.errorMessage)
         }
         return this.webClient!!
     }
 
     fun getAuthClient():AuthClient {
         if (!isInitilized) {
-            throw IllegalStateException("Okta not initialized")
+            throw IllegalStateException(Errors.NOT_CONFIGURED.errorMessage)
         }
         return this.authClient!!
     }
