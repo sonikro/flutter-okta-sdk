@@ -23,7 +23,6 @@ class FlutterOktaSdkPlugin : FlutterPlugin, MethodCallHandler,
         PluginRegistry.ActivityResultListener, ActivityAware{
     private lateinit var channel: MethodChannel
 
-    private var oktaConfig: OktaConfig? = null
     private var applicationContext: Context? = null
     private var mainActivity: Activity? = null
 
@@ -45,7 +44,8 @@ class FlutterOktaSdkPlugin : FlutterPlugin, MethodCallHandler,
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?): Boolean {
-        oktaConfig!!.webClient.handleActivityResult(requestCode, resultCode, data)
+        OktaClient.getWebClient().handleActivityResult(requestCode, resultCode, data)
+        //oktaConfig!!.webClient.handleActivityResult(requestCode, resultCode, data)
         return  PendingOperation.hasPendingOperation != null
     }
 
@@ -80,76 +80,55 @@ class FlutterOktaSdkPlugin : FlutterPlugin, MethodCallHandler,
                 if (applicationContext == null )
                     PendingOperation.error(Errors.NO_CONTEXT)
 
-                oktaConfig = createConfig(arguments, applicationContext!!)
-                PendingOperation.success(true)
+                createConfig(arguments, applicationContext!!)
             }catch (ex:  java.lang.Exception){
                 PendingOperation.error(Errors.OKTA_OIDC_ERROR)
             }
         }else{
             try{
-                if (this.mainActivity == null) {
-                    PendingOperation.error(Errors.NO_VIEW)
-                }
-
-                if (oktaConfig!!.webClient == null) {
-                    PendingOperation.error(Errors.NOT_CONFIGURED)
-                }
-
                 when (call.method){
                     AvailableMethods.SIGN_IN.methodName ->{
-                        signIn(oktaConfig!!.webClient, this.mainActivity!!)
+                        signIn(this.mainActivity!!)
                     }
                     AvailableMethods.SIGN_OUT.methodName ->{
-                        signOut(oktaConfig!!.webClient, this.mainActivity!!)
+                        signOut(this.mainActivity!!)
                     }
                     AvailableMethods.GET_USER.methodName ->{
-                        getUser(oktaConfig!!.webClient)
+                        getUser()
                     }
                     AvailableMethods.IS_AUTHENTICATED.methodName ->{
-                        isAuthenticated(oktaConfig!!.webClient)
+                        isAuthenticated()
                     }
-//                    AvailableMethods.GET_ACCESS_TOKEN.methodName ->{
-//                        val accessToken = getAccessToken(oktaConfig!!.webClient)
-//                        if(accessToken ==null)finishWithError(Errors.NO_ACCESS_TOKEN)
-//                        finishWithSuccess(accessToken)
-//                    }
-//                    AvailableMethods.GET_ID_TOKEN.methodName ->{
-//                        val idToken = getIdToken(oktaConfig!!.webClient)
-//                        if(idToken ==null)finishWithError(Errors.NO_ID_TOKEN)
-//                        finishWithSuccess(idToken)
-//                    }
-//                    AvailableMethods.REVOKE_ACCESS_TOKEN.methodName ->{
-//                        revokeAccessToken(oktaConfig!!.webClient)
-//                        finishWithSuccess()
-//                    }
-//                    AvailableMethods.REVOKE_ID_TOKEN.methodName ->{
-//                        revokeIdToken(oktaConfig!!.webClient)
-//                        finishWithSuccess()
-//                    }
-//                    AvailableMethods.REVOKE_REFRESH_TOKEN.methodName ->{
-//                        revokeRefreshToken(oktaConfig!!.webClient)
-//                        finishWithSuccess()
-//                    }
-//                    AvailableMethods.CLEAR_TOKENS.methodName ->{
-//                        clearTokens(oktaConfig!!.webClient,oktaConfig!!.authClient)
-//                        finishWithSuccess()
-//                    }
-//                    AvailableMethods.INTROSPECT_ACCESS_TOKEN.methodName ->{
-//                        val result: IntrospectInfo = introspectAccessToken(oktaConfig!!.webClient)
-//                        finishWithSuccess(result)
-//                    }
-//                    AvailableMethods.INTROSPECT_ID_TOKEN.methodName ->{
-//                        val result: IntrospectInfo = introspectIdToken(oktaConfig!!.webClient)
-//                        finishWithSuccess(result)
-//                    }
-//                    AvailableMethods.INTROSPECT_REFRESH_TOKEN.methodName ->{
-//                        val result: IntrospectInfo = introspectRefreshToken(oktaConfig!!.webClient)
-//                        finishWithSuccess(result)
-//                    }
-//                    AvailableMethods.REFRESH_TOKENS.methodName ->{
-//                        refreshTokens(oktaConfig!!.webClient)
-//                        finishWithSuccess()
-//                    }
+                    AvailableMethods.GET_ACCESS_TOKEN.methodName ->{
+                        getAccessToken()
+                    }
+                    AvailableMethods.GET_ID_TOKEN.methodName ->{
+                        getIdToken()
+                    }
+                    AvailableMethods.REVOKE_ACCESS_TOKEN.methodName ->{
+                        revokeAccessToken()
+                    }
+                    AvailableMethods.REVOKE_ID_TOKEN.methodName ->{
+                        revokeIdToken()
+                    }
+                    AvailableMethods.REVOKE_REFRESH_TOKEN.methodName ->{
+                        revokeRefreshToken()
+                    }
+                    AvailableMethods.CLEAR_TOKENS.methodName ->{
+                        clearTokens()
+                    }
+                    AvailableMethods.INTROSPECT_ACCESS_TOKEN.methodName ->{
+                        introspectAccessToken()
+                    }
+                    AvailableMethods.INTROSPECT_ID_TOKEN.methodName ->{
+                        introspectIdToken()
+                    }
+                    AvailableMethods.INTROSPECT_REFRESH_TOKEN.methodName ->{
+                        introspectRefreshToken()
+                    }
+                    AvailableMethods.REFRESH_TOKENS.methodName ->{
+                        refreshTokens()
+                    }
                 }
             }catch (ex: java.lang.Exception) {
                 PendingOperation.error(Errors.GENERIC_ERROR,ex.localizedMessage)

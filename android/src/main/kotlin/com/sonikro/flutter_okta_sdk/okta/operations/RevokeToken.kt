@@ -5,20 +5,22 @@ import com.okta.oidc.clients.web.WebAuthClient
 import com.okta.oidc.net.params.TokenTypeHint
 import com.okta.oidc.util.AuthorizationException
 import com.sonikro.flutter_okta_sdk.okta.entities.Errors
+import com.sonikro.flutter_okta_sdk.okta.entities.OktaClient
+import com.sonikro.flutter_okta_sdk.okta.entities.PendingOperation
 
-fun revokeAccessToken(webClient: WebAuthClient){
-    revokeToken(TokenTypeHint.ACCESS_TOKEN,webClient)
+fun revokeAccessToken(){
+    revokeToken(TokenTypeHint.ACCESS_TOKEN)
 }
-fun revokeIdToken(webClient: WebAuthClient){
-    revokeToken(TokenTypeHint.ID_TOKEN,webClient)
-}
-
-fun revokeRefreshToken(webClient: WebAuthClient){
-    revokeToken(TokenTypeHint.REFRESH_TOKEN, webClient)
+fun revokeIdToken(){
+    revokeToken(TokenTypeHint.ID_TOKEN)
 }
 
-private fun revokeToken( tokenName:String, webClient: WebAuthClient): Boolean {
-    var sessionClient = webClient.sessionClient
+fun revokeRefreshToken(){
+    revokeToken(TokenTypeHint.REFRESH_TOKEN)
+}
+
+private fun revokeToken( tokenName:String) {
+    var sessionClient = OktaClient.getWebClient().sessionClient
     val tokens = sessionClient.tokens
     val token = when (tokenName) {
         TokenTypeHint.ACCESS_TOKEN -> tokens.accessToken
@@ -29,19 +31,16 @@ private fun revokeToken( tokenName:String, webClient: WebAuthClient): Boolean {
         }
     }
 
-    return true
+    sessionClient.revokeToken(token,
+            object : RequestCallback<Boolean, AuthorizationException> {
+                override fun onSuccess(result: Boolean) {
+                    PendingOperation.success(result)
+                }
 
-//    sessionClient.revokeToken(token,
-//            object : RequestCallback<Boolean, AuthorizationException> {
-//                override fun onSuccess(result: Boolean) {
-//                    promise.resolve(result)
-//                }
-//
-//                override fun onError(msg: String, error: AuthorizationException) {
-//                    promise.reject(OktaSdkError.OKTA_OIDC_ERROR.getErrorCode(), error.localizedMessage, error)
-//                }
-//            })
-
+                override fun onError(msg: String, error: AuthorizationException) {
+                    PendingOperation.error(Errors.OKTA_OIDC_ERROR,error.errorDescription)
+                }
+            })
 }
 
 

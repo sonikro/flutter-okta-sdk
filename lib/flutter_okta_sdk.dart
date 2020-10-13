@@ -41,7 +41,78 @@ class OktaSDK {
       throw Exception(
           "Cannot check authentication before initializing Okta SDK");
     }
-    var a = await _channel.invokeMethod('isAuthenticated');
-    return a;
+    return await _channel.invokeMethod('isAuthenticated');
+  }
+
+  Future<String> getAccessToken() async {
+    if (this.isInitialized == false) {
+      throw Exception("Cannot get access token before initializing Okta SDK");
+    }
+    return await _channel.invokeMethod('getAccessToken');
+  }
+
+  Future<String> getIdToken() async {
+    if (this.isInitialized == false) {
+      throw Exception("Cannot get id token before initializing Okta SDK");
+    }
+    return await _channel.invokeMethod('getIdToken');
+  }
+
+  Future<bool> revokeAccessToken() async {
+    if (this.isInitialized == false) {
+      throw Exception(
+          "Cannot revoke access token before initializing Okta SDK");
+    }
+    return await _channel.invokeMethod('revokeAccessToken');
+  }
+
+  Future<bool> revokeIdToken() async {
+    if (this.isInitialized == false) {
+      throw Exception("Cannot revoke id token before initializing Okta SDK");
+    }
+    return await _channel.invokeMethod('revokeIdToken');
+  }
+
+  Future<bool> revokeRefreshToken() async {
+    if (this.isInitialized == false) {
+      throw Exception(
+          "Cannot revoke refresh token before initializing Okta SDK");
+    }
+    return await _channel.invokeMethod('revokeRefreshToken');
+  }
+
+  Future<bool> clearTokens() async {
+    if (this.isInitialized == false) {
+      throw Exception("Cannot clear tokens before initializing Okta SDK");
+    }
+    return await _channel.invokeMethod('clearTokens');
+  }
+
+  Future<String> introspectAccessToken() async {
+    if (this.isInitialized == false) {
+      throw Exception("Cannot introspect before initializing Okta SDK");
+    }
+    return await _channel.invokeMethod('introspectAccessToken');
+  }
+
+  Future<String> introspectIdToken() async {
+    if (this.isInitialized == false) {
+      throw Exception("Cannot introspect before initializing Okta SDK");
+    }
+    return await _channel.invokeMethod('introspectIdToken');
+  }
+
+  Future<String> introspectRefreshToken() async {
+    if (this.isInitialized == false) {
+      throw Exception("Cannot introspect before initializing Okta SDK");
+    }
+    return await _channel.invokeMethod('introspectRefreshToken');
+  }
+
+  Future<String> refreshTokens() async {
+    if (this.isInitialized == false) {
+      throw Exception("Cannot refresh tokens before initializing Okta SDK");
+    }
+    return await _channel.invokeMethod('refreshTokens');
   }
 }

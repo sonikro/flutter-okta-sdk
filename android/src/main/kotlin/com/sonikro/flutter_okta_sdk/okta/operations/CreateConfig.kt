@@ -5,10 +5,11 @@ import com.okta.oidc.OIDCConfig
 import com.okta.oidc.Okta
 import com.okta.oidc.storage.SharedPreferenceStorage
 import com.sonikro.flutter_okta_sdk.HttpClientImpl
+import com.sonikro.flutter_okta_sdk.okta.entities.OktaClient
 import com.sonikro.flutter_okta_sdk.okta.entities.OktaRequestParameters
-import com.sonikro.flutter_okta_sdk.okta.entities.OktaConfig
+import com.sonikro.flutter_okta_sdk.okta.entities.PendingOperation
 
-fun createConfig(arguments: Map<String, Any>, context: Context): OktaConfig {
+fun createConfig(arguments: Map<String, Any>, context: Context) {
         val params = processOktaRequestArguments(arguments)
         val config = OIDCConfig.Builder()
                 .clientId(params.clientId)
@@ -34,7 +35,8 @@ fun createConfig(arguments: Map<String, Any>, context: Context): OktaConfig {
                 .setRequireHardwareBackedKeyStore(params.requireHardwareBackedKeyStore)
                 .create()
 
-        return OktaConfig(config, webClient,authClient)
+        OktaClient.init(config,webClient,authClient)
+        PendingOperation.success(true)
 }
 
 private fun processOktaRequestArguments(arguments: Map<String, Any>): OktaRequestParameters {
