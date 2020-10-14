@@ -24,6 +24,11 @@ internal class Constants private constructor() {
         const val ISS_KEY = "iss"
         const val JTI_KEY = "jti"
         const val UID_KEY = "uid"
+
+        /** ======== Values ========  */
+        const val AUTHORIZED = "authorized"
+        const val SIGNED_OUT = "signed_out"
+        const val CANCELLED = "cancelled"
     }
 
     init {

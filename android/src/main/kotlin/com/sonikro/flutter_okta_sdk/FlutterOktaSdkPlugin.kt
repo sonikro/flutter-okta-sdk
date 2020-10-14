@@ -17,7 +17,6 @@ import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry
 import io.flutter.plugin.common.PluginRegistry.Registrar
 
-
 /** FlutterOktaSdkPlugin */
 class FlutterOktaSdkPlugin : FlutterPlugin, MethodCallHandler,
         PluginRegistry.ActivityResultListener, ActivityAware {
@@ -45,7 +44,6 @@ class FlutterOktaSdkPlugin : FlutterPlugin, MethodCallHandler,
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?): Boolean {
         OktaClient.getWebClient().handleActivityResult(requestCode, resultCode, data)
-        //oktaConfig!!.webClient.handleActivityResult(requestCode, resultCode, data)
         return PendingOperation.hasPendingOperation != null
     }
 
@@ -71,68 +69,62 @@ class FlutterOktaSdkPlugin : FlutterPlugin, MethodCallHandler,
         val arguments = call.arguments<Map<String, Any>>()
         PendingOperation.init(call.method, result)
 
-//        if(!enumContains<Errors>(call.method) ){
-//            finishWithError(Errors.METHOD_NOT_IMPLEMENTED, "Method called: $call.method")
-//        }
+        if (applicationContext == null)
+            PendingOperation.error(Errors.NO_CONTEXT)
 
-        if (call.method == AvailableMethods.CREATE_CONFIG.methodName) {
-            try {
-                if (applicationContext == null)
-                    PendingOperation.error(Errors.NO_CONTEXT)
-
-                createConfig(arguments, applicationContext!!)
-            } catch (ex: java.lang.Exception) {
-                PendingOperation.error(Errors.OKTA_OIDC_ERROR)
-            }
-        } else {
-            try {
-                when (call.method) {
-                    AvailableMethods.SIGN_IN.methodName -> {
-                        signIn(this.mainActivity!!)
-                    }
-                    AvailableMethods.SIGN_OUT.methodName -> {
-                        signOut(this.mainActivity!!)
-                    }
-                    AvailableMethods.GET_USER.methodName -> {
-                        getUser()
-                    }
-                    AvailableMethods.IS_AUTHENTICATED.methodName -> {
-                        isAuthenticated()
-                    }
-                    AvailableMethods.GET_ACCESS_TOKEN.methodName -> {
-                        getAccessToken()
-                    }
-                    AvailableMethods.GET_ID_TOKEN.methodName -> {
-                        getIdToken()
-                    }
-                    AvailableMethods.REVOKE_ACCESS_TOKEN.methodName -> {
-                        revokeAccessToken()
-                    }
-                    AvailableMethods.REVOKE_ID_TOKEN.methodName -> {
-                        revokeIdToken()
-                    }
-                    AvailableMethods.REVOKE_REFRESH_TOKEN.methodName -> {
-                        revokeRefreshToken()
-                    }
-                    AvailableMethods.CLEAR_TOKENS.methodName -> {
-                        clearTokens()
-                    }
-                    AvailableMethods.INTROSPECT_ACCESS_TOKEN.methodName -> {
-                        introspectAccessToken()
-                    }
-                    AvailableMethods.INTROSPECT_ID_TOKEN.methodName -> {
-                        introspectIdToken()
-                    }
-                    AvailableMethods.INTROSPECT_REFRESH_TOKEN.methodName -> {
-                        introspectRefreshToken()
-                    }
-                    AvailableMethods.REFRESH_TOKENS.methodName -> {
-                        refreshTokens()
-                    }
+        try {
+            when (call.method) {
+                AvailableMethods.CREATE_CONFIG.methodName -> {
+                    createConfig(arguments, applicationContext!!)
                 }
-            } catch (ex: java.lang.Exception) {
-                PendingOperation.error(Errors.GENERIC_ERROR, ex.localizedMessage)
+                AvailableMethods.SIGN_IN.methodName -> {
+                    signIn(this.mainActivity!!)
+                }
+                AvailableMethods.SIGN_OUT.methodName -> {
+                    signOut(this.mainActivity!!)
+                }
+                AvailableMethods.GET_USER.methodName -> {
+                    getUser()
+                }
+                AvailableMethods.IS_AUTHENTICATED.methodName -> {
+                    isAuthenticated()
+                }
+                AvailableMethods.GET_ACCESS_TOKEN.methodName -> {
+                    getAccessToken()
+                }
+                AvailableMethods.GET_ID_TOKEN.methodName -> {
+                    getIdToken()
+                }
+                AvailableMethods.REVOKE_ACCESS_TOKEN.methodName -> {
+                    revokeAccessToken()
+                }
+                AvailableMethods.REVOKE_ID_TOKEN.methodName -> {
+                    revokeIdToken()
+                }
+                AvailableMethods.REVOKE_REFRESH_TOKEN.methodName -> {
+                    revokeRefreshToken()
+                }
+                AvailableMethods.CLEAR_TOKENS.methodName -> {
+                    clearTokens()
+                }
+                AvailableMethods.INTROSPECT_ACCESS_TOKEN.methodName -> {
+                    introspectAccessToken()
+                }
+                AvailableMethods.INTROSPECT_ID_TOKEN.methodName -> {
+                    introspectIdToken()
+                }
+                AvailableMethods.INTROSPECT_REFRESH_TOKEN.methodName -> {
+                    introspectRefreshToken()
+                }
+                AvailableMethods.REFRESH_TOKENS.methodName -> {
+                    refreshTokens()
+                }
+                else -> {
+                    PendingOperation.error(Errors.METHOD_NOT_IMPLEMENTED, "Method called: $call.method")
+                }
             }
+        } catch (ex: java.lang.Exception) {
+            PendingOperation.error(Errors.GENERIC_ERROR, ex.localizedMessage)
         }
     }
 
@@ -145,5 +137,4 @@ class FlutterOktaSdkPlugin : FlutterPlugin, MethodCallHandler,
         channel = MethodChannel(binaryMessenger, "com.sonikro.flutter_okta_sdk")
         channel.setMethodCallHandler(this)
     }
-
 }
