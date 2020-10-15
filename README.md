@@ -243,7 +243,7 @@ Introspect the access token.
 
 #### Sample Response
 
-Sample responses can be found [here](https://developer.okta.com/docs/reference/api/oidc/#response-properties-3
+Sample responses can be found [here](https://developer.okta.com/docs/reference/api/oidc/#response-properties-3)
 
 ### `introspectIdToken`
 
