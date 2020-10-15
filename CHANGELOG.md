@@ -1,3 +1,3 @@
-## 0.0.1
+## 1.0.0-dev.1
 
-* TODO: Describe initial release.
+First prerelease. Most Okta operations already implemented on Android
