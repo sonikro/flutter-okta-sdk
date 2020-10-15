@@ -3,13 +3,16 @@
 The Flutter Okta SDK library makes it easy to add authentication to your Flutter app.
 This library is a wrapper around [Okta OIDC Android](https://github.com/okta/okta-oidc-android) and [Okta OIDC iOS](https://github.com/okta/okta-oidc-ios).
 
-
 This library follows the current best practice for native apps using:
 
 * [OAuth 2.0 Authorization Code Flow](https://tools.ietf.org/html/rfc6749#section-1.3.1)
 * [Proof Key for Code Exchange (PKCE)](https://tools.ietf.org/html/rfc763
 
 This library also exposes APIs to interact with [Authentication API](https://developer.okta.com/docs/api/resources/authn) directly to implement native UI for authentication.
+
+## Sample
+
+You can check how to use this plugin in this sample [Futter Okta Sample](https://github.com/Perdiga/flutter_okta_sample/issues)
 
 ## Todos
 
@@ -110,25 +113,7 @@ These values will be used in your Flutter application to setup the OpenID Connec
 
 ## Getting started
 
-**TODO: (Need to publish this lib in pub .dev)**
-
-Add this to your package's pubspec.yaml file:
-
-´´´
-dependencies:
-  flutter_okta_sdk: 1.0.0-dev.1
-´´´
-
-You can install packages from the command line:
-
-with Flutter:
-```
-flutter pub get
-```
-
-Now in your Dart code, you can use:
-
-import 'package:flutter_okta_sdk/flutter_okta_sdk.dart';
+You can check the pub.dev to know how to install this plugin. [Flutter Okta SDK](https://pub.dev/packages/flutter_okta_sdk/install).
 
 ### Setup Android
 
@@ -241,21 +226,17 @@ Removes all tokens from local storage. Resolves `true` if tokens were successful
 
 Introspect the access token.
 
-#### Sample Response
-
-Sample responses can be found [here](https://developer.okta.com/docs/reference/api/oidc/#response-properties-3
+Sample responses can be found [here](https://developer.okta.com/docs/reference/api/oidc/#response-properties-3)
 
 ### `introspectIdToken`
 
-#### Sample Response
+Introspect the id token.
 
 Sample responses can be found [here](https://developer.okta.com/docs/reference/api/oidc/#response-properties-3)
 
 ### `introspectRefreshToken`
 
-Introspect the id token.
-
-#### Sample Response
+Introspect the refresh token.
 
 Sample responses can be found [here](https://developer.okta.com/docs/reference/api/oidc/#response-properties-3)
 
