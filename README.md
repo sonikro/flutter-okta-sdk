@@ -113,25 +113,7 @@ These values will be used in your Flutter application to setup the OpenID Connec
 
 ## Getting started
 
-**TODO: (Need to publish this lib in pub .dev)**
-
-Add this to your package's pubspec.yaml file:
-
-```
-dependencies:
-  flutter_okta_sdk: 1.0.0-dev.1
-```
-
-You can install packages from the command line:
-
-with Flutter:
-```
-flutter pub get
-```
-
-Now in your Dart code, you can use:
-
-import 'package:flutter_okta_sdk/flutter_okta_sdk.dart';
+You can check the pub.dev to know how to install this plugin. [Flutter Okta SDK](https://pub.dev/packages/flutter_okta_sdk/install).
 
 ### Setup Android
 
