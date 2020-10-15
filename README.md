@@ -241,21 +241,17 @@ Removes all tokens from local storage. Resolves `true` if tokens were successful
 
 Introspect the access token.
 
-#### Sample Response
-
 Sample responses can be found [here](https://developer.okta.com/docs/reference/api/oidc/#response-properties-3)
 
 ### `introspectIdToken`
 
-#### Sample Response
+Introspect the id token.
 
 Sample responses can be found [here](https://developer.okta.com/docs/reference/api/oidc/#response-properties-3)
 
 ### `introspectRefreshToken`
 
-Introspect the id token.
-
-#### Sample Response
+Introspect the refresh token.
 
 Sample responses can be found [here](https://developer.okta.com/docs/reference/api/oidc/#response-properties-3)
 
