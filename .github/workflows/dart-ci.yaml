@@ -13,7 +13,10 @@ jobs:
       image:  google/dart:latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install dependencies
-        run: flutter pub get
-      - name: Run tests
-        run: flutter pub run test
+      - name: Dart and Flutter Package Publisher
+        uses: k-paxian/dart-package-publisher@v1.2
+        with:
+          # (Required) Token from ~/.pub-cache/credentials.json. Use secrets.OAUTH_ACCESS_TOKEN
+          accessToken: secrets.OAUTH_ACCESS_TOKEN
+          # (Required) Token from ~/.pub-cache/credentials.json. Use c
+          refreshToken: secrets.OAUTH_ACCESS_TOKEN
