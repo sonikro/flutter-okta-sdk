@@ -1,4 +1,4 @@
-package com.sonikro.flutter_okta_sdk
+package com.sonikro.flutter_okta_sdk.okta.entities
 
 data class OktaRequestParameters(
         var clientId: String,

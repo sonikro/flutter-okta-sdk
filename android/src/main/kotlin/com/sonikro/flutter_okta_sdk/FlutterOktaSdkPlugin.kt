@@ -4,12 +4,8 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import androidx.annotation.NonNull
-import com.okta.oidc.OIDCConfig
-import com.okta.oidc.Okta.AuthBuilder
-import com.okta.oidc.Okta.WebAuthBuilder
-import com.okta.oidc.clients.AuthClient
-import com.okta.oidc.clients.web.WebAuthClient
-import com.okta.oidc.storage.SharedPreferenceStorage
+import com.sonikro.flutter_okta_sdk.okta.entities.*
+import com.sonikro.flutter_okta_sdk.okta.operations.*
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.embedding.engine.plugins.activity.ActivityAware
 import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding
@@ -21,19 +17,13 @@ import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry
 import io.flutter.plugin.common.PluginRegistry.Registrar
 
-
 /** FlutterOktaSdkPlugin */
 class FlutterOktaSdkPlugin : FlutterPlugin, MethodCallHandler,
-        PluginRegistry.ActivityResultListener, ActivityAware{
+        PluginRegistry.ActivityResultListener, ActivityAware {
     private lateinit var channel: MethodChannel
 
-    private var config: OIDCConfig? = null
-    private var webClient: WebAuthClient? = null
-    private var authClient: AuthClient? = null
     private var applicationContext: Context? = null
-    private var pendingOperation: PendingOperation? = null
     private var mainActivity: Activity? = null
-
 
     companion object {
         fun registerWith(registrar: Registrar) {
@@ -44,128 +34,8 @@ class FlutterOktaSdkPlugin : FlutterPlugin, MethodCallHandler,
         }
     }
 
-    fun setActivity(activity: Activity) {
-        this.mainActivity = activity
-    }
-
-    private fun onAttachedToEngine(context: Context, binaryMessenger: BinaryMessenger) {
-        applicationContext = context
-        channel = MethodChannel(binaryMessenger, "com.sonikro.flutter_okta_sdk")
-        channel.setMethodCallHandler(this)
-    }
-
     override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
         this.onAttachedToEngine(flutterPluginBinding.applicationContext, flutterPluginBinding.binaryMessenger)
-    }
-
-    override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
-        val arguments = call.arguments<Map<String, Any>>()
-        checkAndSetPendingOperation(call.method, result)
-
-        when (call.method) {
-            AvailableMethods.SETUP.methodName -> {
-                val oktaParams = processOktaRequestArguments(arguments)
-                createConfig(oktaParams)
-                finishWithSuccess(true)
-            }
-            AvailableMethods.SIGN_IN.methodName -> try {
-                handleSignInMethodCall(this.webClient!!, this.mainActivity!!)
-            } catch (ex: java.lang.Exception) {
-                finishWithError(Errors.SIGNIN_ERROR_CODE, ex.localizedMessage)
-            }
-            AvailableMethods.SIGN_OUT.methodName -> try {
-                handleSignOutMethodCall(this.webClient!!, this.mainActivity!!)
-            } catch (ex: java.lang.Exception) {
-                finishWithError(Errors.SIGNOUT_ERROR_CODE, ex.localizedMessage)
-            }
-            else -> finishWithError(Errors.NOT_IMPLEMENTED_ERROR_CODE, "Method not implemented")
-        }
-    }
-
-    fun checkDependencies(){
-        if (this.mainActivity == null) {
-            finishWithError(Errors.ACTIVITY_NOT_DEFINED, "Activity not defined")
-        }
-        if (this.webClient == null) {
-            finishWithError(Errors.WEB_CLIENT_NOT_DEFINED, "Web Client not defined")
-        }
-    }
-
-    private fun finishWithError(error: Errors, errorMessage: String) {
-        if (pendingOperation != null) {
-            pendingOperation!!.result.error(error.errorCode, errorMessage, null)
-            pendingOperation = null
-        }
-    }
-
-    private fun handleSignInMethodCall(webAuthClient: WebAuthClient, activity: Activity) {
-        checkDependencies()
-        webAuthClient.signIn(activity, null)
-        finishWithSuccess()
-    }
-
-    fun handleSignOutMethodCall(webAuthClient: WebAuthClient, activity: Activity) {
-        checkDependencies()
-        webAuthClient.signOutOfOkta(activity)
-        finishWithSuccess()
-    }
-
-
-    private fun processOktaRequestArguments(arguments: Map<String, Any>): OktaRequestParameters {
-        return OktaRequestParameters(
-                clientId = (arguments["clientId"] as String?)!!,
-                discoveryUri = (arguments["discoveryUrl"] as String?)!!,
-                endSessionRedirectUri = (arguments["endSessionRedirectUri"] as String?)!!,
-                redirectUri = (arguments["redirectUrl"] as String?)!!,
-                requireHardwareBackedKeyStore = (arguments["requireHardwareBackedKeyStore"] as Boolean?)
-                        ?: false,
-                scopes = arguments["scopes"] as ArrayList<String>,
-                userAgentTemplate = (arguments["userAgentTemplate"] as String?) ?: ""
-        )
-    }
-
-    private fun checkAndSetPendingOperation(method: String, result: Result) {
-        if (pendingOperation != null) {
-            throw IllegalStateException(
-                    "Concurrent operations detected: " + pendingOperation!!.method + ", " + method)
-        }
-        pendingOperation = PendingOperation(method, result)
-    }
-
-    private fun createConfig(params: OktaRequestParameters) {
-        try {
-            this.config = OIDCConfig.Builder()
-                    .clientId(params.clientId)
-                    .redirectUri(params.redirectUri)
-                    .endSessionRedirectUri(params.endSessionRedirectUri)
-                    .scopes(*params.scopes.toTypedArray())
-                    .discoveryUri(params.discoveryUri)
-                    .create()
-            this.webClient = WebAuthBuilder()
-                    .withConfig(this.config as OIDCConfig)
-                    .withContext(this.applicationContext)
-                    .withStorage(SharedPreferenceStorage(this.applicationContext))
-                    .withOktaHttpClient(HttpClientImpl(params.userAgentTemplate))
-                    .setRequireHardwareBackedKeyStore(params.requireHardwareBackedKeyStore)
-                    .create()
-
-            this.authClient = AuthBuilder()
-                    .withConfig(this.config as OIDCConfig)
-                    .withContext(this.applicationContext)
-                    .withStorage(SharedPreferenceStorage(this.applicationContext))
-                    .withOktaHttpClient(HttpClientImpl(params.userAgentTemplate))
-                    .setRequireHardwareBackedKeyStore(params.requireHardwareBackedKeyStore)
-                    .create()
-        } catch (ex: Exception) {
-            finishWithError(Errors.CREATECONFIG_ERROR_CODE, ex.localizedMessage)
-        }
-    }
-
-    private fun finishWithSuccess(data: Any? = null) {
-        if (pendingOperation != null) {
-            pendingOperation!!.result.success(data)
-            pendingOperation = null
-        }
     }
 
     override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
@@ -173,8 +43,8 @@ class FlutterOktaSdkPlugin : FlutterPlugin, MethodCallHandler,
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?): Boolean {
-        webClient!!.handleActivityResult(requestCode, resultCode, data)
-        return pendingOperation != null
+        OktaClient.getWebClient().handleActivityResult(requestCode, resultCode, data)
+        return PendingOperation.hasPendingOperation != null
     }
 
     override fun onDetachedFromActivity() {
@@ -193,5 +63,78 @@ class FlutterOktaSdkPlugin : FlutterPlugin, MethodCallHandler,
 
     override fun onDetachedFromActivityForConfigChanges() {
         this.mainActivity = null
+    }
+
+    override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
+        val arguments = call.arguments<Map<String, Any>>()
+        PendingOperation.init(call.method, result)
+
+        if (applicationContext == null)
+            PendingOperation.error(Errors.NO_CONTEXT)
+
+        try {
+            when (call.method) {
+                AvailableMethods.CREATE_CONFIG.methodName -> {
+                    createConfig(arguments, applicationContext!!)
+                }
+                AvailableMethods.SIGN_IN.methodName -> {
+                    signIn(this.mainActivity!!)
+                }
+                AvailableMethods.SIGN_OUT.methodName -> {
+                    signOut(this.mainActivity!!)
+                }
+                AvailableMethods.GET_USER.methodName -> {
+                    getUser()
+                }
+                AvailableMethods.IS_AUTHENTICATED.methodName -> {
+                    isAuthenticated()
+                }
+                AvailableMethods.GET_ACCESS_TOKEN.methodName -> {
+                    getAccessToken()
+                }
+                AvailableMethods.GET_ID_TOKEN.methodName -> {
+                    getIdToken()
+                }
+                AvailableMethods.REVOKE_ACCESS_TOKEN.methodName -> {
+                    revokeAccessToken()
+                }
+                AvailableMethods.REVOKE_ID_TOKEN.methodName -> {
+                    revokeIdToken()
+                }
+                AvailableMethods.REVOKE_REFRESH_TOKEN.methodName -> {
+                    revokeRefreshToken()
+                }
+                AvailableMethods.CLEAR_TOKENS.methodName -> {
+                    clearTokens()
+                }
+                AvailableMethods.INTROSPECT_ACCESS_TOKEN.methodName -> {
+                    introspectAccessToken()
+                }
+                AvailableMethods.INTROSPECT_ID_TOKEN.methodName -> {
+                    introspectIdToken()
+                }
+                AvailableMethods.INTROSPECT_REFRESH_TOKEN.methodName -> {
+                    introspectRefreshToken()
+                }
+                AvailableMethods.REFRESH_TOKENS.methodName -> {
+                    refreshTokens()
+                }
+                else -> {
+                    PendingOperation.error(Errors.METHOD_NOT_IMPLEMENTED, "Method called: $call.method")
+                }
+            }
+        } catch (ex: java.lang.Exception) {
+            PendingOperation.error(Errors.GENERIC_ERROR, ex.localizedMessage)
+        }
+    }
+
+    fun setActivity(activity: Activity) {
+        this.mainActivity = activity
+    }
+
+    private fun onAttachedToEngine(context: Context, binaryMessenger: BinaryMessenger) {
+        applicationContext = context
+        channel = MethodChannel(binaryMessenger, "com.sonikro.flutter_okta_sdk")
+        channel.setMethodCallHandler(this)
     }
 }
