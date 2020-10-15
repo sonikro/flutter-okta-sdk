@@ -114,10 +114,10 @@ These values will be used in your Flutter application to setup the OpenID Connec
 
 Add this to your package's pubspec.yaml file:
 
-´´´
+```
 dependencies:
   flutter_okta_sdk: 1.0.0-dev.1
-´´´
+```
 
 You can install packages from the command line:
 
