@@ -18,8 +18,11 @@ class BaseRequest {
 
   bool requireHardwareBackedKeyStore;
 
+  String issuer;
+
   BaseRequest(
       {this.clientId,
+      this.issuer,
       this.discoveryUrl,
       this.endSessionRedirectUri,
       this.redirectUrl,
@@ -31,6 +34,7 @@ class BaseRequest {
 Map<String, Object> convertBaseRequestToMap(BaseRequest baseRequest) {
   return <String, Object>{
     'clientId': baseRequest.clientId,
+    'issuer': baseRequest.issuer,
     'discoveryUrl': baseRequest.discoveryUrl,
     'endSessionRedirectUri': baseRequest.endSessionRedirectUri,
     'redirectUrl': baseRequest.redirectUrl,
