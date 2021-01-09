@@ -23,7 +23,7 @@ This library is under construction. These are the next steps:
   ~~createConfig~~
   ~~signIn~~
   customSignIn
-  ~~singOut~~
+  ~~signOut~~
   authenticate
   ~~isAuthenticated~~
   ~~getAccessToken~~
@@ -40,25 +40,25 @@ This library is under construction. These are the next steps:
 
 ### iOS
 
-  setup
-  signIn
+  ~~setup~~
+  ~~signIn~~
   customSignIn
-  singOut
+  ~~signOut~~
   getAuthClient
   authenticate
-  isAuthenticated
-  getAccessToken
-  getIdToken
-  getUser
+  ~~isAuthenticated~~
+  ~~getAccessToken~~
+  ~~getIdToken~~
+  ~~getUser~~
   getUserFromIdToken
-  revokeAccessToken
-  revokeIdToken
-  revokeRefreshToken
-  clearTokens
-  introspectAccessToken
-  introspectIdToken
-  introspectRefreshToken
-  refreshTokens
+  ~~revokeAccessToken~~
+  ~~revokeIdToken~~
+  ~~revokeRefreshToken~~
+  ~~clearTokens~~
+  ~~introspectAccessToken~~
+  ~~introspectIdToken~~
+  ~~introspectRefreshToken~~
+  ~~refreshTokens~~
 
 ### web
 
@@ -150,6 +150,7 @@ import 'package:flutter_okta_sdk/BaseRequest.dart';
 
 var oktaSdk = OktaSDK();
 var oktaBaseRequest = BaseRequest(
+      issuer: OKTA_ISSUER_URL,
       clientId: OKTA_CLIENT_ID,
       discoveryUrl: OKTA_DISCOVERY_URL,
       endSessionRedirectUri: OKTA_LOGOUT_REDIRECT_URI,
