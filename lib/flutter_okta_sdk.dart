@@ -36,7 +36,7 @@ class OktaSDK {
     return await _channel.invokeMethod('getUser');
   }
 
-  Future<bool?> isAuthenticated() async {
+  Future<bool> isAuthenticated() async {
     if (this.isInitialized == false) {
       throw Exception(
           "Cannot check authentication before initializing Okta SDK");
@@ -58,7 +58,7 @@ class OktaSDK {
     return await _channel.invokeMethod('getIdToken');
   }
 
-  Future<bool?> revokeAccessToken() async {
+  Future<bool> revokeAccessToken() async {
     if (this.isInitialized == false) {
       throw Exception(
           "Cannot revoke access token before initializing Okta SDK");
@@ -66,14 +66,14 @@ class OktaSDK {
     return await _channel.invokeMethod('revokeAccessToken');
   }
 
-  Future<bool?> revokeIdToken() async {
+  Future<bool> revokeIdToken() async {
     if (this.isInitialized == false) {
       throw Exception("Cannot revoke id token before initializing Okta SDK");
     }
     return await _channel.invokeMethod('revokeIdToken');
   }
 
-  Future<bool?> revokeRefreshToken() async {
+  Future<bool> revokeRefreshToken() async {
     if (this.isInitialized == false) {
       throw Exception(
           "Cannot revoke refresh token before initializing Okta SDK");
@@ -81,7 +81,7 @@ class OktaSDK {
     return await _channel.invokeMethod('revokeRefreshToken');
   }
 
-  Future<bool?> clearTokens() async {
+  Future<bool> clearTokens() async {
     if (this.isInitialized == false) {
       throw Exception("Cannot clear tokens before initializing Okta SDK");
     }
