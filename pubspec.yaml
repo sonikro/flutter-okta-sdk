@@ -1,11 +1,11 @@
 name: flutter_okta_sdk
 description: This library makes it easy to add authentication to flutter apps. This library is a wrapper around Okta OIDC Android and Okta OIDC iOS.
-version: 1.0.0-dev.2
+version: 1.0.0-dev.3
 homepage: https://github.com/sonikro/flutter-okta-sdk
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
-  flutter: ">=1.20.0 <2.0.0"
+  flutter: ">=1.20.0"
 
 dependencies:
   flutter:
