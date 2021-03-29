@@ -1,12 +1,11 @@
 name: flutter_okta_sdk
 description: This library makes it easy to add authentication to flutter apps. This library is a wrapper around Okta OIDC Android and Okta OIDC iOS.
-version: 0.0.1
-author:
-homepage:
+version: 1.0.0-dev.4
+homepage: https://github.com/sonikro/flutter-okta-sdk
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
-  flutter: ">=1.20.0 <2.0.0"
+  flutter: ">=1.20.0"
 
 dependencies:
   flutter:
@@ -32,7 +31,6 @@ flutter:
         pluginClass: FlutterOktaSdkPlugin
       ios:
         pluginClass: FlutterOktaSdkPlugin
-
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
@@ -43,7 +41,6 @@ flutter:
   #
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
-
   # To add custom fonts to your plugin package, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
