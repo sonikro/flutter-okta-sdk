@@ -18,7 +18,7 @@ A new flutter plugin project.
   s.dependency 'OktaOidc'
   s.dependency 'OktaJWT'
 
-  s.platform = :ios, '11.0'
+  s.platform = :ios, '12.0'
 
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
