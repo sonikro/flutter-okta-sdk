@@ -132,6 +132,24 @@ For Android, there is one steps that you must take:
 ```
 
 2. Make sure your `minSdkVersion` is `19`.
+3. Create a proguard-rules.pro file inside the android/app folder and add the following rule
+
+```
+-ignorewarnings
+-keep class com.okta.oidc.** { *; }
+
+```
+4. Add a couple of rules to the buildTypes/release block inside the app/build.gradle file
+
+    buildTypes {
+        release {
+              useProguard true
+              proguardFiles getDefaultProguardFile('proguard-android.txt'),
+              'proguard-rules.pro'
+              signingConfig signingConfigs.release
+        }
+    }
+
 
 ### Setup iOS
 
