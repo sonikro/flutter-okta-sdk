@@ -205,7 +205,7 @@ public class SwiftFlutterOktaSdkPlugin: NSObject, FlutterPlugin {
       callback(error);
     }
     if let oktaOidc = oktaOidc,
-         let _ = OktaOidcStateManager.readFromSecureStorage(for: oktaOidc.configuration)?.accessToken {
+         let _ = OktaOidcStateManager.readFromSecureStorage(for: oktaOidc.configuration)?.refreshToken {
         self.stateManager = OktaOidcStateManager.readFromSecureStorage(for: oktaOidc.configuration)
       }
       callback(nil)
