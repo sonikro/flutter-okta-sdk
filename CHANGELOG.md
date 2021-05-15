@@ -18,3 +18,7 @@ fix(OktaSDK): added return statement to signIn method
 ## 1.0.0-dev.6
 
 Fix: error: compiling for iOS 11.0, but module 'OktaJWT' has a minimum deployment target of iOS 12.0
+
+## 1.0.0-dev.7
+
+Fixed iOS createConfig to read from secure storage if the refresh token has not expired rather than the access token
