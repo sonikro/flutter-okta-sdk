@@ -1,24 +1,24 @@
 class BaseRequest {
   /// The client id.
-  String clientId;
+  String? clientId;
 
   /// The URL of where the discovery document can be found.
-  String discoveryUrl;
+  String? discoveryUrl;
 
   /// The redirect URL when session ended.
-  String endSessionRedirectUri;
+  String? endSessionRedirectUri;
 
   /// The redirect URL.
-  String redirectUrl;
+  String? redirectUrl;
 
   /// The request scopes.
-  List<String> scopes;
+  List<String>? scopes;
 
-  String userAgentTemplate;
+  String? userAgentTemplate;
 
-  bool requireHardwareBackedKeyStore;
+  bool? requireHardwareBackedKeyStore;
 
-  String issuer;
+  String? issuer;
 
   BaseRequest(
       {this.clientId,
@@ -31,8 +31,8 @@ class BaseRequest {
       this.requireHardwareBackedKeyStore});
 }
 
-Map<String, Object> convertBaseRequestToMap(BaseRequest baseRequest) {
-  return <String, Object>{
+Map<String, Object?> convertBaseRequestToMap(BaseRequest baseRequest) {
+  return <String, Object?>{
     'clientId': baseRequest.clientId,
     'issuer': baseRequest.issuer,
     'discoveryUrl': baseRequest.discoveryUrl,
