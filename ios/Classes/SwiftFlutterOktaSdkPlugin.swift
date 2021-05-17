@@ -185,9 +185,6 @@ public class SwiftFlutterOktaSdkPlugin: NSObject, FlutterPlugin {
             result(message)
           }
         })
-//        let flutterError: FlutterError = FlutterError(code: "RefreshToken_Error", message: "Cant refresh", details: "User not logged in, cannot refresh");
-//        result(flutterError)
-
         break;
 
       default:
@@ -212,7 +209,6 @@ public class SwiftFlutterOktaSdkPlugin: NSObject, FlutterPlugin {
     }
   
   func signIn(callback: @escaping ((Error?) -> Void)) {
-//    signInWithBrowser(callback: callback);
     if let oktaOidc = oktaOidc,
          let _ = OktaOidcStateManager.readFromSecureStorage(for: oktaOidc.configuration)?.accessToken {
         self.stateManager = OktaOidcStateManager.readFromSecureStorage(for: oktaOidc.configuration)
@@ -225,7 +221,6 @@ public class SwiftFlutterOktaSdkPlugin: NSObject, FlutterPlugin {
         signInWithBrowser(callback: callback);
       }
       callback(nil);
-
     } else {
       signInWithBrowser(callback: callback);
     }
@@ -364,18 +359,18 @@ public class SwiftFlutterOktaSdkPlugin: NSObject, FlutterPlugin {
   }
   
   func refreshTokens(callback: ((String?, Error?) -> (Void))?) {
-    if let sm = stateManager {
+    if  let oktaOidc = oktaOidc,
+      let sm = OktaOidcStateManager.readFromSecureStorage(for: oktaOidc.configuration) {
         sm.renew { stateManager, error in
         if let error = error {
             callback?(nil, error)
             return
         }
+        stateManager?.writeToSecureStorage()
+        self.stateManager = stateManager
         callback?("Token refreshed!", nil);
       }
     } else {
-      //        let flutterError: FlutterError = FlutterError(code: "RefreshToken_Error", message: "Cannot refresh tokens", details: "User not logged in, cannot refresh");
-      //        result(flutterError)
-
       callback?(nil, FlutterOktaError(message: "User not logged in, cannot refresh"));
     }
   }
