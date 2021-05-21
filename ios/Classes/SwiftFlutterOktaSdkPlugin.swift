@@ -286,7 +286,7 @@ public class SwiftFlutterOktaSdkPlugin: NSObject, FlutterPlugin {
       self.stateManager = OktaOidcStateManager.readFromSecureStorage(for: oktaOidc.configuration)
       callback?(true)
       return
-    }
+    } 
     callback?(false)
   }
   
@@ -350,7 +350,6 @@ public class SwiftFlutterOktaSdkPlugin: NSObject, FlutterPlugin {
       return introspectToken(token: accessToken, callback: callback);
     } else {
       callback?(nil, FlutterOktaError(message: "Access Token is nil"));
-      return;
     }
   }
 
@@ -359,7 +358,6 @@ public class SwiftFlutterOktaSdkPlugin: NSObject, FlutterPlugin {
       return introspectToken(token: idToken, callback: callback);
     } else {
       callback?(nil, FlutterOktaError(message: "ID Token is nil"));
-      return
     }
   }
 
@@ -368,7 +366,6 @@ public class SwiftFlutterOktaSdkPlugin: NSObject, FlutterPlugin {
       return introspectToken(token: refreshToken, callback: callback);
     } else {
       callback?(nil, FlutterOktaError(message: "Refresh Token is nil"));
-      return
     }
   }
 
