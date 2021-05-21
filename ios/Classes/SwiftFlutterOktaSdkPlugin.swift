@@ -185,9 +185,6 @@ public class SwiftFlutterOktaSdkPlugin: NSObject, FlutterPlugin {
             result(message)
           }
         })
-//        let flutterError: FlutterError = FlutterError(code: "RefreshToken_Error", message: "Cant refresh", details: "User not logged in, cannot refresh");
-//        result(flutterError)
-
         break;
 
       default:
@@ -212,7 +209,6 @@ public class SwiftFlutterOktaSdkPlugin: NSObject, FlutterPlugin {
     }
   
   func signIn(callback: @escaping ((Error?) -> Void)) {
-//    signInWithBrowser(callback: callback);
     if let oktaOidc = oktaOidc,
          let _ = OktaOidcStateManager.readFromSecureStorage(for: oktaOidc.configuration)?.accessToken {
         self.stateManager = OktaOidcStateManager.readFromSecureStorage(for: oktaOidc.configuration)
@@ -225,7 +221,6 @@ public class SwiftFlutterOktaSdkPlugin: NSObject, FlutterPlugin {
         signInWithBrowser(callback: callback);
       }
       callback(nil);
-
     } else {
       signInWithBrowser(callback: callback);
     }
@@ -253,7 +248,10 @@ public class SwiftFlutterOktaSdkPlugin: NSObject, FlutterPlugin {
                 (UIApplication.shared.delegate?.window??.rootViewController)!;
 
     guard let oktaOidc = self.oktaOidc,
-          let stateManager = self.stateManager else { return }
+          let stateManager = self.stateManager else { 
+            callback?(FlutterOktaError(message: "Invalid stateManager"))
+            return
+          }
     
     oktaOidc.signOutOfOkta(stateManager, from: viewController, callback: { [weak self] error in
       if let error = error {
@@ -263,7 +261,6 @@ public class SwiftFlutterOktaSdkPlugin: NSObject, FlutterPlugin {
       self?.stateManager?.clear()
       callback?(nil);
     })
-
   }
   
   func getUser(callback: @escaping ((String?, Error?)-> (Void))) {
@@ -289,7 +286,7 @@ public class SwiftFlutterOktaSdkPlugin: NSObject, FlutterPlugin {
       self.stateManager = OktaOidcStateManager.readFromSecureStorage(for: oktaOidc.configuration)
       callback?(true)
       return
-    }
+    } 
     callback?(false)
   }
   
@@ -308,21 +305,31 @@ public class SwiftFlutterOktaSdkPlugin: NSObject, FlutterPlugin {
   }
   
   func revokeAccessToken(callback: ((Bool) ->(Void))?) {
-    guard let accessToken = stateManager?.accessToken else { return }
-    return _revokeToken(token: accessToken, callback: callback);
+    if let accessToken = stateManager?.accessToken {
+      return _revokeToken(token: accessToken, callback: callback);
+    }
+    else { 
+      callback?(true);
+    }
   }
 
   func revokeIdToken(callback: ((Bool) ->(Void))?) {
-    guard let idToken = stateManager?.idToken else { return }
-    return _revokeToken(token: idToken, callback: callback);
+    if let idToken = stateManager?.idToken{
+      return _revokeToken(token: idToken, callback: callback);
+    } else { 
+      callback?(true);
+    }
   }
   
   func revokeRefreshToken(callback: ((Bool) ->(Void))?) {
-    guard let refreshToken = stateManager?.refreshToken else { return }
-    return _revokeToken(token: refreshToken, callback: callback);
+    if let refreshToken = stateManager?.refreshToken{
+      return _revokeToken(token: refreshToken, callback: callback);
+    } else { 
+      callback?(true);
+    }
   }
 
-  
+
   func _revokeToken(token: String?, callback: ((Bool) ->(Void))?) {
     stateManager?.revoke(token, callback: { isRevoked, error in
       guard isRevoked else {
@@ -339,18 +346,27 @@ public class SwiftFlutterOktaSdkPlugin: NSObject, FlutterPlugin {
   }
   
   func introspectAccessToken(callback: ((String?, Error?)->(Void))?) {
-    guard let accessToken = stateManager?.accessToken else { return }
-    return introspectToken(token: accessToken, callback: callback);
+    if let accessToken = stateManager?.accessToken {
+      return introspectToken(token: accessToken, callback: callback);
+    } else {
+      callback?(nil, FlutterOktaError(message: "Access Token is nil"));
+    }
   }
 
   func introspectIdToken(callback: ((String?, Error?)->(Void))?) {
-    guard let idToken = stateManager?.idToken else { return }
-    return introspectToken(token: idToken, callback: callback);
+    if let idToken = stateManager?.idToken {
+      return introspectToken(token: idToken, callback: callback);
+    } else {
+      callback?(nil, FlutterOktaError(message: "ID Token is nil"));
+    }
   }
 
   func introspectRefreshToken(callback: ((String?, Error?)->(Void))?) {
-    guard let refreshToken = stateManager?.refreshToken else { return }
-    return introspectToken(token: refreshToken, callback: callback);
+    if let refreshToken = stateManager?.refreshToken {
+      return introspectToken(token: refreshToken, callback: callback);
+    } else {
+      callback?(nil, FlutterOktaError(message: "Refresh Token is nil"));
+    }
   }
 
   func introspectToken(token: String?, callback: ((String?, Error?)->(Void))?) {
@@ -359,23 +375,23 @@ public class SwiftFlutterOktaSdkPlugin: NSObject, FlutterPlugin {
           callback?(nil, error);
           return
         }
-        callback?("Access token is \(isValid ? "valid" : "invalid")!", nil);
+        callback?("Token is \(isValid ? "valid" : "invalid")!", nil);
       })
   }
   
   func refreshTokens(callback: ((String?, Error?) -> (Void))?) {
-    if let sm = stateManager {
+    if  let oktaOidc = oktaOidc,
+      let sm = OktaOidcStateManager.readFromSecureStorage(for: oktaOidc.configuration) {
         sm.renew { stateManager, error in
         if let error = error {
             callback?(nil, error)
             return
         }
+        stateManager?.writeToSecureStorage()
+        self.stateManager = stateManager
         callback?("Token refreshed!", nil);
       }
     } else {
-      //        let flutterError: FlutterError = FlutterError(code: "RefreshToken_Error", message: "Cannot refresh tokens", details: "User not logged in, cannot refresh");
-      //        result(flutterError)
-
       callback?(nil, FlutterOktaError(message: "User not logged in, cannot refresh"));
     }
   }
