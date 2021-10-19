@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh
+${BUILT_PRODUCTS_DIR}/OktaJWT/OktaJWT.framework
+${BUILT_PRODUCTS_DIR}/OktaOidc/OktaOidc.framework
+${BUILT_PRODUCTS_DIR}/Toast/Toast.framework
+${BUILT_PRODUCTS_DIR}/flutter_okta_sdk/flutter_okta_sdk.framework
+${BUILT_PRODUCTS_DIR}/flutter_secure_storage/flutter_secure_storage.framework
+${BUILT_PRODUCTS_DIR}/fluttertoast/fluttertoast.framework

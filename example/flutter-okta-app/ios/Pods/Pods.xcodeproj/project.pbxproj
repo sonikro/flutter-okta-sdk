@@ -1,0 +1,3160 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 94078A06C17E946ADC1F2C06726219E5 /* Build configuration list for PBXAggregateTarget "Flutter" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = Flutter;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00A04D6B4482EEADCE3D720BE06A591B /* OKTURLSessionProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFF6A386C3BEA2CB422AD4166C14C31 /* OKTURLSessionProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02EE974F2DC8D6E04B2A7ED58D30141F /* Pods-Runner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3C932BD54DBB963102A89E0F9E3948 /* Pods-Runner-dummy.m */; };
+		02F0C605336AA2FBAAF1E868A18377A6 /* FlutterSecureStoragePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = EB54E4349621FBCF939468D6C7A20816 /* FlutterSecureStoragePlugin.m */; };
+		0483F7FBC5C3AFEAF0D8D080780B6D73 /* OKTAuthorizationService+IOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9E2F497F35F46CC35DC09C47997171 /* OKTAuthorizationService+IOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04ECA8958CD9623FAAE4B75532773DF1 /* flutter_secure_storage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFDE2259E9E13BC7476B4E30FFE0B4E6 /* flutter_secure_storage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05D96E8FB507B2AEF40CE2A802D8250C /* OktaOidcBrowserProtocolIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2E838E7374A8C0D386CC5895CFE54D /* OktaOidcBrowserProtocolIOS.swift */; };
+		05E62A2C83E8C420DCB670D52015BA72 /* OktaOidcConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AE0B380200EB6E980CF26E0DEFDE8 /* OktaOidcConfig.swift */; };
+		0722DD2C3258C1880F992D5117D67A00 /* NSData+Base64URLEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A33F12C729224D685155FAC9F98F5E /* NSData+Base64URLEncoding.swift */; };
+		085B2A7D0A90C1AC05B0EF1DFCDE0974 /* OktaOidc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF41CD9852E2E97579EA1D1E55088582 /* OktaOidc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B252934F29046E3B5AB95E711DFBC77 /* OKTExternalUserAgentIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 187F86B4635878DF40DAF21E6C81B79A /* OKTExternalUserAgentIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E0ED5EA8E452417D3BEAA38FD92ACB6 /* UIView+Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = D48B476EF031E29D598A78069289E798 /* UIView+Toast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0ED9EAD955F864DF8DDFFF3D9093FDE9 /* flutter_okta_sdk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB31DA1A4BC15EE4930C0520D1828A0D /* flutter_okta_sdk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FAB9866812EE4C518F7E9CA022EF925 /* OKTURLSessionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A585B83F3E1DD08C547ED1925CCB8 /* OKTURLSessionProvider.m */; };
+		111093B1F4A6D6FDBE2D7D3DF8C1616A /* OKTIDToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 2220FB0B398D63347049AFFC6AD01A05 /* OKTIDToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14045CEE20F065148CFE9DEA14B60E48 /* OKTRegistrationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CEEAEFAE3B2C4FD962505CF3494F85B /* OKTRegistrationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19EFE745ED8B6928973C1214FC612675 /* OKTScopeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C08CCAB2837333D879643B78173B83 /* OKTScopeUtilities.m */; };
+		1A292CB4DB22B463FBDFB69E8C8C179D /* OKTScopes.m in Sources */ = {isa = PBXBuildFile; fileRef = 3060763ECE5BC390E1D65030A1DEAC2A /* OKTScopes.m */; };
+		1B08077C0E7F509509FF0A55874AD2EB /* OKTTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CA0EA0077B5C3F9714C87225D885D /* OKTTokenRequest.m */; };
+		1B28C96864B52F7DF588086710D11295 /* OKTRegistrationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB1B0D34E63D14F9FA890A9174A0F3B /* OKTRegistrationResponse.m */; };
+		1DFCE4637F7261DBB70CB7B896D9A61E /* RSASSA_PKCS1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A60BCC225E9C626D673314E8209A3C /* RSASSA_PKCS1.swift */; };
+		25858FD84460F2E716297DA8C08BF47E /* OKTTokenUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 63D035E0969EF5A78CF31E2BDA98E19D /* OKTTokenUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		263E6285F7438C5688239F069F377667 /* OKTRedirectHTTPHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F803488E46FA5C902A9FA4392153A7E /* OKTRedirectHTTPHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		277BEED65F8A4572A05BFA3207069B06 /* OKTServiceDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = EE308975E5A302402A1ECB3AD316AE3B /* OKTServiceDiscovery.m */; };
+		28216A67B8D1E82CE14737219EDA9796 /* FlutterOktaSdkPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A01B7FCD8740B68AE34D5A3559EA800 /* FlutterOktaSdkPlugin.m */; };
+		2B012AD1E9E99AE3C5CF8CE378E5308D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF758028100147852387F0C38FFA1E22 /* Foundation.framework */; };
+		2E7DA340C0AD21EF4EF5750E893FA541 /* OktaOidc.h in Headers */ = {isa = PBXBuildFile; fileRef = ED19A6656962F2B2B302112164A2690A /* OktaOidc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31937A92B68F68196A77047ACC16A63D /* OKTExternalUserAgentSession.h in Headers */ = {isa = PBXBuildFile; fileRef = C4813839955020986D7A4FD5144E16FD /* OKTExternalUserAgentSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		330B6FA0FC8876E0D89123C510F4A3B2 /* OKTClientMetadataParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 51E5AACE0DC9196BBB3B60430743680A /* OKTClientMetadataParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33F10F7B97AAA08A2352603EA377F3A6 /* ClaimValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C7AA4AB8ED3EAE652C6F1E48AAA875 /* ClaimValidator.swift */; };
+		3880F19B1F84E210F94A6A1E10F65B50 /* OKTAuthState+Mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA53B3D62570A0DFE054BC6A6C417C5 /* OKTAuthState+Mac.m */; };
+		3DAEB724DFCEFA875EF7C3603B4D895C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF758028100147852387F0C38FFA1E22 /* Foundation.framework */; };
+		3E39B12FF1CAA73043B3FF48547DB5E3 /* OktaOidcSignOutHandlerIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17774510F94BB5A6ADB45FF8676636F5 /* OktaOidcSignOutHandlerIOS.swift */; };
+		405A2F69EED734BB1A793730FEF1E110 /* OKTErrorUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F4090FDB6537A6101DFEE5AE869522 /* OKTErrorUtilities.m */; };
+		44DC5D9A8229C703417903895629628E /* fluttertoast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7BF332F490FCE752A6C3763E6F2A04 /* fluttertoast-dummy.m */; };
+		457F2A21D61CEBD423C6A7B3BBFF607A /* OktaOidcTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F11109A1A2D773E7C50637E1D2430 /* OktaOidcTask.swift */; };
+		471C89D0C1F0EFFAED21F5C7C6F5E98E /* OKTRegistrationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F5B5415A6602CEA68BA774677FA6772 /* OKTRegistrationResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49262A9E9BABD507F62771A65815CC4A /* OKTEndSessionResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E1A865DE66508BA1E11B17B91B02302B /* OKTEndSessionResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49D2E7CCD74B9277A293CAC84D00AA43 /* SecKeyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82B8E2CFB30E7A1A89DC89E1071369D /* SecKeyUtils.swift */; };
+		4AA5A5C35614A37A42A89DBBA90ADB14 /* OKTError.h in Headers */ = {isa = PBXBuildFile; fileRef = 6206B72B78F1D7D870EAD8FE03021581 /* OKTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50CC2E0794DC91809736938AEA7F2C64 /* OKTEndSessionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B113E791C8D7B8493F7442850A6E38 /* OKTEndSessionRequest.m */; };
+		51F9BAECA7C3D11C70009DA6AE6A8FC2 /* JSONWebToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F090834F6194EB226C0B215829511D /* JSONWebToken.swift */; };
+		544E666901B335C39F87A200B348C598 /* OKTEndSessionResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AD45C99B85DF75C29791C233A66577CD /* OKTEndSessionResponse.m */; };
+		54C0727907EB17B9CCB0C72D23B22132 /* OKTRedirectHTTPHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D30FC795ABEBCF790A423861B7D0675 /* OKTRedirectHTTPHandler.m */; };
+		5872BB7E8D7EFD5DD6E50A73791C4FB8 /* OKTGrantTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 492854BE41A1D56173E4CA51C83902BE /* OKTGrantTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BE476CD797C15FF4280AB8A90A18594 /* OKTClientMetadataParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = B4ABEF5C71E2D62DA281DF64D6452C40 /* OKTClientMetadataParameters.m */; };
+		5C5430CFBDFDC249DDCF21E9D1E5D8B6 /* OKTAuthorizationService+Mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5EB2C558AFE64743F3CEC5CE6797C /* OKTAuthorizationService+Mac.m */; };
+		5DF6ED650B6AA09E8AA885024DE3ED8C /* OKTExternalUserAgentMac.h in Headers */ = {isa = PBXBuildFile; fileRef = 930581A1134FE480556BE25596912C8C /* OKTExternalUserAgentMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DF925443970782FB85FB38B219AE079 /* OktaOidc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2105E27084C089AF16185D05804A9832 /* OktaOidc-dummy.m */; };
+		63415AFF9E3321A539E0BA37CC96B421 /* OktaOidcBrowserTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073E00545D8379B937B84A9A86EC180C /* OktaOidcBrowserTask.swift */; };
+		63B7F654F4E1B73397FBC5BF85A96843 /* FlutterSecureStoragePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = ECAD64687B53ADB0A15A7CABCA534C12 /* FlutterSecureStoragePlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64CF176F9699671D3D35C175088DA291 /* OktaSignOutOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3532386929438197779A4E23E03C784 /* OktaSignOutOptions.swift */; };
+		6603AC225518AE899D0307FE5A0C0B99 /* OIDAuthorizationService+Okta.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3A760C2645AA8602103243196C62D /* OIDAuthorizationService+Okta.swift */; };
+		6A49C0D08389097421747B78ABF51F44 /* OKTAuthorizationService+IOS.m in Sources */ = {isa = PBXBuildFile; fileRef = B5954DC5A1A93C70CCB00D90CE63FF66 /* OKTAuthorizationService+IOS.m */; };
+		6CCA103BD80140D909FEF9B5409B5F1F /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CE771B91790A4D170AF6C0B6B504E7 /* Keychain.swift */; };
+		6F4AE15D94B6D3C37BA0482710421674 /* OktaOidcRestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161CBCEBD06B35D89E77FEFBCAF11A8A /* OktaOidcRestApi.swift */; };
+		700A3EA7DAEC0F4E9F7EF257CBEBCADA /* OktaOidcUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FDEC94FA9C16A01322BC2C190F2B79 /* OktaOidcUtils.swift */; };
+		7038DB72B5704E98AECB83EBAAC78867 /* FluttertoastPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 69033643F518A605521B76C7766502C0 /* FluttertoastPlugin.m */; };
+		70FDE46B76D4568A7A12317D8B35B38D /* OKTAuthorizationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744406F8BC614A67604BABD097D91F5 /* OKTAuthorizationResponse.m */; };
+		72535DF36A7C7E8012FD91AEC231A83C /* OKTExternalUserAgentNoSsoIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E8C8EEA4E0FF7093BAFE61BD8C1D10D6 /* OKTExternalUserAgentNoSsoIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7885FBD0A37404CAC3E38AF61DBB96CF /* Toast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B5E14015F0DCC920DC673F51184995 /* Toast-dummy.m */; };
+		79B106A4647C10201D8223963F78662F /* OKTAuthState+IOS.h in Headers */ = {isa = PBXBuildFile; fileRef = B24F2BC043AA96574E1C1BBC904D529F /* OKTAuthState+IOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A4069F74410AF19CBD3756502DEAEB0 /* OktaOidcSignOutHandlerMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D41502A54623B80E5F0805EC6965EA5 /* OktaOidcSignOutHandlerMAC.swift */; };
+		7C1892A371F91FB848F864770514B170 /* OktaOidcKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B10DED29B9CB183A5712B61AD004B6 /* OktaOidcKeychain.swift */; };
+		7F733B80B32ADD4E1D3465037664C5EB /* OKTRegistrationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CD049DAB53ADC5BF23B6EEDA3E276CAE /* OKTRegistrationRequest.m */; };
+		812C8407B81047D10166D6BD5A1C4312 /* SignatureAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AEDB93B80027519E5E0E69F7690CCA /* SignatureAlgorithm.swift */; };
+		8137745D46C9E59468C62FDA91B881F8 /* OKTServiceConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A63EB605248A7F9D7AE8BB7F6A064F /* OKTServiceConfiguration.m */; };
+		8170D5930B4A843A6353297783D7146B /* OKTExternalUserAgentNoSsoIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7DBBFB4EEFF899EC32652D28EB0FA /* OKTExternalUserAgentNoSsoIOS.m */; };
+		820A549E7FBC257D48D282BBDDE6A936 /* OktaJWT-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3626774EDBA44EE1D31C5573EF9B268D /* OktaJWT-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83C8AFED50F4577690F43713AE01C498 /* OKTAuthState+IOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 446CB1AD46AEEB268E3C6D0E3EF40A32 /* OKTAuthState+IOS.m */; };
+		8494238D5B6138D1E765E860494D7477 /* APIErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9942B5BE44631138FC65BF4B641E8D8 /* APIErrors.swift */; };
+		86A2D8441CDA731D8E83F001CBD8BCFD /* Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = B2156C1DB018EDC0821608844438A3A9 /* Toast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		881D962546C403E6F0A871754311FC73 /* OktaOidcSignOutHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34861BF18A1D1E8204D09C640BDA72FA /* OktaOidcSignOutHandler.swift */; };
+		88368D5C96D71B13F45585851978CBD5 /* SignatureValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1635396C246A11460D94F91E55D0B5 /* SignatureValidator.swift */; };
+		88AF75A05AFE1C9AE270303F960DEDE9 /* OKTAuthState.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5824D996B0F3EBD2E72C571A8DBE1E /* OKTAuthState.m */; };
+		898D6886B79103DA22803C70CA62D13F /* AppAuthCore.h in Headers */ = {isa = PBXBuildFile; fileRef = E0F4358279DE7F579A8D06CCB784931B /* AppAuthCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A2F46DCB99285D0CF9EF6DCE6067997 /* OKTLoopbackHTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F06F37808D41CA102E566DDD3F20A9A /* OKTLoopbackHTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A652B86CF3842A94C5AF1F3C2442736 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF758028100147852387F0C38FFA1E22 /* Foundation.framework */; };
+		8AA09179605C90DE71349CB1EC5DE132 /* OKTExternalUserAgentMac.m in Sources */ = {isa = PBXBuildFile; fileRef = 8918ACB46E8D456561EA55F6A0F30909 /* OKTExternalUserAgentMac.m */; };
+		8BC512D1140E7DB03F610AF7A549D20B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF758028100147852387F0C38FFA1E22 /* Foundation.framework */; };
+		8C4DCEE28B9F87BDE67E8F6B8C16B9EA /* OKTFieldMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 9726341E24DB2410122278EF8AC25A37 /* OKTFieldMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D053716C31F3BA37DF19FF65DF6DBE0 /* OKTTokenRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 662FB1F5B7730CF00769A5450A04567C /* OKTTokenRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E5B741C3518C29395C48817EFD43275 /* OKTLoopbackHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 20EFD68B746DA36FC0963D9107AD43CA /* OKTLoopbackHTTPServer.m */; };
+		8F61B4A73762AC685AFD2C5555534665 /* OKTResponseTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 909681012A51B3D17726B0631E2C22DD /* OKTResponseTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		919AFDB7598298DDD036E4300F75BB76 /* OIDAuthState+Okta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569487D7D81A2EDEBED4797B26A8EFC7 /* OIDAuthState+Okta.swift */; };
+		931C0621CA496B7913F5E18D52C3DBA5 /* OKTTokenUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE8565637390D714E4E2E609B9DAD /* OKTTokenUtilities.m */; };
+		94A88421215DE6C0E701596C929E07A9 /* OKTIDToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A74735D4FBE506ACA5DB0BD7FB77CB1 /* OKTIDToken.m */; };
+		94FEE45B63B6451D385524803A4BDE47 /* OKTAuthState+Mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 731E26851EE82512752F2EED387A860E /* OKTAuthState+Mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9531477086883104D1572F807173E3A6 /* OktaJWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE078EB9E7B370848F9E9854C67BBD /* OktaJWT.swift */; };
+		96E23CBAA3970D4CDE4D586DB9C9BBBB /* OKTServiceConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 44CFB7019C85EA5DA0217691809C4253 /* OKTServiceConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97EB6387A96943C4A5CFB5A277AC78B5 /* OKTAuthStateErrorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C562EB789D8DCD5938811E9BCCB3C9D /* OKTAuthStateErrorDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A0B09C6F938889FD86FEC7091C09EE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF758028100147852387F0C38FFA1E22 /* Foundation.framework */; };
+		9DA8AAF4A3ECBA0DA518B2738257ED97 /* Toast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EB81E4011C61EF2B30B3986F70A622A /* Toast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EAF3261F687B2C35D4F03AC68806E09 /* JWTVerificationTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E1A70CF6C63C463F0621D6558E7E4 /* JWTVerificationTypes.swift */; };
+		9FE06B5FDDFD252B28387FF5CC572B05 /* OktaRedirectServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF99A749413CBAC66D92A57709EBC0A1 /* OktaRedirectServerConfiguration.swift */; };
+		A0CCAB63D1163116758C333CF0D6CD48 /* TokenSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E4F507EED4EDAADC7F30A6223951 /* TokenSigner.swift */; };
+		A3D8162F1DFA51EC1D25C6688B4F8E70 /* OKTGrantTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B1D656ECE73B0A017C0A1EFA16B33F /* OKTGrantTypes.m */; };
+		A7E92EC95E31A26C130AB5691BBF71F0 /* OktaOidcAuthenticate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC1228B1D76E0C8D7E00EB4812F8868 /* OktaOidcAuthenticate.swift */; };
+		A837C1FF41181E69AFFF0181ECB99730 /* OKTServiceDiscovery.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A2496D08DEC13DAF02B633D2AB02F71 /* OKTServiceDiscovery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9EDACC68BE9EAB12CC8D369075F0BA0 /* OKTAuthStateChangeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 445AEF48497C96E5BBA4F60CD414D9D7 /* OKTAuthStateChangeDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA30C2E43764292AA560E2FEDEC80FEB /* OKTAuthorizationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = EA03D388F32C48A40329C7A0D92AEEC6 /* OKTAuthorizationResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABCEB6066118D44000E9901A302F5696 /* OKTExternalUserAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 658BA0689B765B7169B7741107928534 /* OKTExternalUserAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC924FBC82A03CA07101183410185E6F /* TokenValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07872BE91C4C014B380CE3FBE0D479A3 /* TokenValidator.swift */; };
+		AF5D9754619751E49598C4CE6CAE7F00 /* NSData+HMAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 5518A58FD45120F2B7AD5D45896ECBB2 /* NSData+HMAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1F80AE7EA2561CA9D9E0A1167170CD9 /* OktaJWT-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6321215DFE3F9904FC2175AD51C01F85 /* OktaJWT-dummy.m */; };
+		B32944E48541E452CD8DE178B4C7FD3C /* OKTAuthorizationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DECFE30C86FDD023564C3A2982D495EB /* OKTAuthorizationRequest.m */; };
+		B3E1AD668431782A61A74ABA9BDAEB53 /* OktaOidcEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2138A740ACAEA71993DF52A6F4D37C7 /* OktaOidcEndpoint.swift */; };
+		B52D4512F61CAD2E7534978F32443BE0 /* OKTAuthState.h in Headers */ = {isa = PBXBuildFile; fileRef = 31525665B1DA5F7C85DDD5D4B2F13A0C /* OKTAuthState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7EBE40E48AECF4EB84049C5A6CD4A12 /* OKTExternalUserAgentRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BE24DE2753070B30B1CE486579291B1 /* OKTExternalUserAgentRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8926CA0E815F882C06F28026811F260 /* OKTDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C133E572DE705659BF35A7D6AE07217 /* OKTDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9E7446D1059D27DDCAE5FA7C623AC0F /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8C0A1C17B2FFA447D1EED6B3F339D4 /* HMAC.swift */; };
+		BAAB156A8751F48F095250C37F45CDEA /* OKTTokenResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 47039A9AFC65F06C8F89D09DABF1BC39 /* OKTTokenResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAD0F2AD115251FEA704A05182EC4DB3 /* OKTTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E10E01927D6725D13FC3AB4F6ABAF5DE /* OKTTokenResponse.m */; };
+		BD4A26B09ED19627CB060A77CB0E631B /* OKTScopeUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = AB25391D8509F2F3B4800EA70724618D /* OKTScopeUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD88123B45067A782DDE15A21E9A3EF8 /* Toast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20399B07682A6A768B2DEDE539A7CD2 /* Toast.framework */; };
+		C1EF461CD69258954149DB4D99FE4DE2 /* OKTExternalUserAgentIOSCustomBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 319F35D38EDC455FFDECF8B32444D1BC /* OKTExternalUserAgentIOSCustomBrowser.m */; };
+		C26ACF4F8CC7A8EE9AA00BAC2C93890D /* OktaOidc+BrowserMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986EDB9B33F88542B4CA9FE52306C3C2 /* OktaOidc+BrowserMAC.swift */; };
+		C2F500F778F4B383413D35C63C3DEC64 /* NSData+SHA.h in Headers */ = {isa = PBXBuildFile; fileRef = FBAE08D24ED3CBC47AC40F6165D825B3 /* NSData+SHA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3F90D48E1BCCA0370734ADF8506AFA1 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 9716054879A9FD9F749810C00D85E8E1 /* UIView+Toast.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C55B87AB7560C07B64D7784770887478 /* SwiftFlutterOktaSdkPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF25CBFE99DE414BCC56F1538995FD2 /* SwiftFlutterOktaSdkPlugin.swift */; };
+		C6BC77CBC069B641FC1BE27CAA2BF312 /* OktaOidcBrowserTaskMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6BB9650012CEB52BFA061094E70DC1 /* OktaOidcBrowserTaskMAC.swift */; };
+		C6C6FBD4C0F1687F2D1ED90A5452275E /* fluttertoast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05EDE297E9B7E553FD1ED21D4CEBF069 /* fluttertoast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8215256600E7C934C30B1729842962C /* OKTAuthorizationService+Mac.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F40367A2E4E34FBF98E4CF550AD4A4 /* OKTAuthorizationService+Mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C95E4C78F013DFA3B8C6F7C783094BE0 /* OktaRedirectServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B82C43F46187EAE3911B5651A6D0A5D /* OktaRedirectServer.swift */; };
+		C9B604243CE5BFA0AEB2D69A12BD6085 /* OktaOidcHttpApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0302C9AD277675DEF6BFF8575B2FBB3C /* OktaOidcHttpApiProtocol.swift */; };
+		CA212D766B7A3C734CEB1539C1AFFB3B /* OktaOidcStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF5639A94DE131FEBD0D27152E9BE82 /* OktaOidcStateManager.swift */; };
+		CA7E7A0CA50D940BD3CD780F32A72C49 /* NSData+HMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 25225258943C9DDD0A3F35837F2036CA /* NSData+HMAC.m */; };
+		CBE1BD2ED274219E6E636392C98C152C /* OktaOidcBrowserProtocolMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04DD76953116D7451E689A0A4807F2C /* OktaOidcBrowserProtocolMAC.swift */; };
+		CCC831FFFB414E5D30B029E043A931DD /* OktaOidc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059DF18135342C3BE5347578720EBA46 /* OktaOidc.framework */; };
+		CE35AF7885B760493F2BEF8BC53F14F2 /* OKTExternalUserAgentIOSCustomBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F8E7B274DF4359634C46AF9191CAA2 /* OKTExternalUserAgentIOSCustomBrowser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFAE89BC3DD288D162268B8EFF7A7B6D /* OKTScopes.h in Headers */ = {isa = PBXBuildFile; fileRef = DDA6DC1FA7930A6919E1AD145F64174B /* OKTScopes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D18935EE520828D5BAC3B88A5D4FA31C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF5F15732F2B7208508E353DFA37FB /* Utils.swift */; };
+		D30664015CC1335270A9AB2054434CF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF758028100147852387F0C38FFA1E22 /* Foundation.framework */; };
+		D50B4C2979F3388544F2160AC951777C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF758028100147852387F0C38FFA1E22 /* Foundation.framework */; };
+		D62764B3707CD127333E9ACAA1F057FD /* FluttertoastPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B0B32864E78A2A0AF31688A7E691D43 /* FluttertoastPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB2272B8DB389E982FFAE26EB4517D66 /* OKTAuthorizationService.h in Headers */ = {isa = PBXBuildFile; fileRef = AEE6599009FBBFAC807625041D3B1EFC /* OKTAuthorizationService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDCEE72EC15500BF71A184DA3BB248C6 /* OKTExternalUserAgentIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E214DE8311070BD486CF5645B29CE27 /* OKTExternalUserAgentIOS.m */; };
+		E0458EC712D82273C3FA10B199821245 /* OKTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 07222CFEFE6B8A834FB07AE7DF634113 /* OKTError.m */; };
+		E363CEB435AC0802B4F202B8725FBF7E /* OKTAuthorizationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 81849D30564FC958C18115617B060DEC /* OKTAuthorizationService.m */; };
+		E4BA25303BEA9C84318416847E0561D3 /* OktaJWT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F1CEBBA5C1B1A9A2BAADEE0027D12D /* OktaJWT.framework */; };
+		E6056EDE29A841F2F6185982622DD957 /* Pods-Runner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF45FBE2BC9AD7B2D7E56D01B5EE46 /* Pods-Runner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7E29D347B4F769FF872BADE4E0F61B5 /* OktaOidc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F0BFC9F8EC71390B3E7CFECCFF66AD /* OktaOidc.swift */; };
+		E8FB00552CD266C3299EC4E22504E48C /* OktaOidcBrowserTaskIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5A67B82AF349D5C77985B46CF1493A /* OktaOidcBrowserTaskIOS.swift */; };
+		EA6D2D31C9011FCCAFB4E3EA22DC3659 /* OKTAuthorizationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 866640838EB0D073D015F0DD2F1B574C /* OKTAuthorizationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAC50924FBCDCE2384D29DFBEAD8ED56 /* NSData+SHA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2AAACBB0C39A40DF32BE1118D41EC /* NSData+SHA.m */; };
+		EBCFB5A87873234CB5E196E8A5B88534 /* OktaUserAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 452D6B004B757FE8E6BE806DE8E66157 /* OktaUserAgent.m */; };
+		EE058669A7832E60FE09209DF29B3411 /* OktaOidc+BrowserIOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6557B6DAE94EBF38AEA691690CB836 /* OktaOidc+BrowserIOS.swift */; };
+		EE7FA92CAA093165A5817ADAA0A2672F /* OKTURLQueryComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 746D4286EBD2454354A194C3C68F7630 /* OKTURLQueryComponent.m */; };
+		F226FB960CE2D25C39DF1BB74EB8CEA7 /* JWTVerificationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F12128BBAFBF9B27E3A3848DAE97E9E /* JWTVerificationErrors.swift */; };
+		F2A7AA0A20BF131A27CE254840F35251 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE85F8A1A02B26E419F5DB3149FD4FA1 /* QuartzCore.framework */; };
+		F2A7D2C63EF2BBAA3704AA86007A424C /* flutter_okta_sdk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AB835E54CE3A144E576E73B12D704 /* flutter_okta_sdk-dummy.m */; };
+		F389C392496193C52AD28F61ACA67F6C /* OKTErrorUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 5392A6A71447B504591F8833B1140ABB /* OKTErrorUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F453D0BA377EC65D51EB4999B2A738E1 /* OKTURLQueryComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E271EC8008191A9C011089B8AEF246 /* OKTURLQueryComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5088BD9DAB981B6C8EEBB811704769D /* RequestsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034CE8596F59A454FF4ABA5ADE6C836 /* RequestsAPI.swift */; };
+		F512AA36AAA0555150537D9223002B55 /* OktaUserAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 095E2AA6F9E9A85004DEBF05A5F16566 /* OktaUserAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5BC7A57E307C4F820FFACCD4DA61F12 /* FlutterOktaSdkPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D26FA89966800D2EDC06841E7ECD914 /* FlutterOktaSdkPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5D995F25BF69E966C5A3EB5881E2CD7 /* flutter_secure_storage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C043B49390CDEF9667803531330F4187 /* flutter_secure_storage-dummy.m */; };
+		F954D4463368A5E5D2BFACE4714E46BD /* OKTEndSessionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 734054C6A1FBB32DFFFED45923E495A4 /* OKTEndSessionRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCC4278A781FE9B7A636F17F9D0DA20E /* OktaNetworkRequestCustomizationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D0547364516BEC408F68D09D9184634 /* OktaNetworkRequestCustomizationDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD845B1518C0E3055E8ABCD7E538D22F /* JWTVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4230BDA830FCDE21F2A9251FB632A4B8 /* JWTVerifier.swift */; };
+		FDA0A99C56A25062E881E6FCC265D4D4 /* OKTResponseTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3AA62B526D9042470BC1FC5D17BD9C /* OKTResponseTypes.m */; };
+		FEE741EB80DB529D5189D6DE117EF474 /* OKTFieldMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4BC6F1FA8CCC8D15FB65B5AF72452B /* OKTFieldMapping.m */; };
+		FF3BF96E395617F916B3F60B9C80B71A /* OktaOidcError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1FCE87438DFD0F48C352C3686B506 /* OktaOidcError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38F24C2E6409691A9F1D2CF24E363FC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
+			remoteInfo = Flutter;
+		};
+		3F621B8ACE483F0ED204DFEB32CEDEF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 634625F4D54E06449F688B46730A2258;
+			remoteInfo = flutter_okta_sdk;
+		};
+		4342AEF1C4BDE83EFC3141B71AB2A57B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2D793A73A64DC43AD1DE31AD844D8E0;
+			remoteInfo = OktaOidc;
+		};
+		43432C1897CA5C213F3A22CA86A5E9D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A80A4D6B185BA43BC06122FED0C15F94;
+			remoteInfo = Toast;
+		};
+		4E07492E89BD136EB2D9C650BAED62B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A80A4D6B185BA43BC06122FED0C15F94;
+			remoteInfo = Toast;
+		};
+		64044CCD6D0403B178F36A30A0BA7AD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2D793A73A64DC43AD1DE31AD844D8E0;
+			remoteInfo = OktaOidc;
+		};
+		693F82A594B4EAD43649B2B65219B65D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 057C8E194CBF4D949AAFC27D801A1C96;
+			remoteInfo = OktaJWT;
+		};
+		6CDAE1858323FE88F73EBEA3DF5D8375 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 057C8E194CBF4D949AAFC27D801A1C96;
+			remoteInfo = OktaJWT;
+		};
+		A794D45F591481481338937AD49A025B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
+			remoteInfo = Flutter;
+		};
+		B2A7FDF3126E8097E95F7E03AF459CF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15490FE8E4E35B20C7777FA3316A00AA;
+			remoteInfo = flutter_secure_storage;
+		};
+		D6E036E01C53504E403D1A9114138D18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA3EDC8EBD9CDE19E74123E29F5B7E04;
+			remoteInfo = fluttertoast;
+		};
+		E0B07D3AB05EB34BB7C1CA5323956325 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
+			remoteInfo = Flutter;
+		};
+		E2EDB81FA513F67DDDF0CC40F5F052BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
+			remoteInfo = Flutter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00B7DBBFB4EEFF899EC32652D28EB0FA /* OKTExternalUserAgentNoSsoIOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTExternalUserAgentNoSsoIOS.m; path = Sources/AppAuth/iOS/OKTExternalUserAgentNoSsoIOS.m; sourceTree = "<group>"; };
+		0302C9AD277675DEF6BFF8575B2FBB3C /* OktaOidcHttpApiProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaOidcHttpApiProtocol.swift; path = Sources/OktaOidc/Common/Internal/OktaOidcHttpApiProtocol.swift; sourceTree = "<group>"; };
+		035A57DCE052E9B7CBD2A0CE4205672D /* fluttertoast.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = fluttertoast.podspec; path = "../../../../../../../flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-7.1.1/ios/fluttertoast.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		041CE8565637390D714E4E2E609B9DAD /* OKTTokenUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTTokenUtilities.m; path = Sources/AppAuth/OKTTokenUtilities.m; sourceTree = "<group>"; };
+		059DF18135342C3BE5347578720EBA46 /* OktaOidc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OktaOidc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A63EB605248A7F9D7AE8BB7F6A064F /* OKTServiceConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTServiceConfiguration.m; path = Sources/AppAuth/OKTServiceConfiguration.m; sourceTree = "<group>"; };
+		05EDE297E9B7E553FD1ED21D4CEBF069 /* fluttertoast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fluttertoast-umbrella.h"; sourceTree = "<group>"; };
+		05F8E7B274DF4359634C46AF9191CAA2 /* OKTExternalUserAgentIOSCustomBrowser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTExternalUserAgentIOSCustomBrowser.h; path = Sources/AppAuth/include/OKTExternalUserAgentIOSCustomBrowser.h; sourceTree = "<group>"; };
+		065DAA343FF5089F9D889A16674F0B0F /* Toast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Toast.modulemap; sourceTree = "<group>"; };
+		07222CFEFE6B8A834FB07AE7DF634113 /* OKTError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTError.m; path = Sources/AppAuth/OKTError.m; sourceTree = "<group>"; };
+		073E00545D8379B937B84A9A86EC180C /* OktaOidcBrowserTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaOidcBrowserTask.swift; path = Sources/OktaOidc/Common/Internal/Tasks/OktaOidcBrowserTask.swift; sourceTree = "<group>"; };
+		07872BE91C4C014B380CE3FBE0D479A3 /* TokenValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenValidator.swift; path = Sources/ThirdParty/JSONWebToken/TokenValidator.swift; sourceTree = "<group>"; };
+		08C08CCAB2837333D879643B78173B83 /* OKTScopeUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTScopeUtilities.m; path = Sources/AppAuth/OKTScopeUtilities.m; sourceTree = "<group>"; };
+		094B7BFC2CCBC66651B2231A5BF9727C /* flutter_okta_sdk-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "flutter_okta_sdk-Info.plist"; sourceTree = "<group>"; };
+		095E2AA6F9E9A85004DEBF05A5F16566 /* OktaUserAgent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OktaUserAgent.h; path = Sources/AppAuth/include/OktaUserAgent.h; sourceTree = "<group>"; };
+		0A2496D08DEC13DAF02B633D2AB02F71 /* OKTServiceDiscovery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTServiceDiscovery.h; path = Sources/AppAuth/include/OKTServiceDiscovery.h; sourceTree = "<group>"; };
+		0C562EB789D8DCD5938811E9BCCB3C9D /* OKTAuthStateErrorDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTAuthStateErrorDelegate.h; path = Sources/AppAuth/include/OKTAuthStateErrorDelegate.h; sourceTree = "<group>"; };
+		0F92860C85CB4004844A52D9F7415BA0 /* flutter_secure_storage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "flutter_secure_storage-prefix.pch"; sourceTree = "<group>"; };
+		11B10DED29B9CB183A5712B61AD004B6 /* OktaOidcKeychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaOidcKeychain.swift; path = Sources/OktaOidc/Common/OktaOidcKeychain.swift; sourceTree = "<group>"; };
+		123F3FC7FDF41511BBFCD94C952689D8 /* Toast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Toast.release.xcconfig; sourceTree = "<group>"; };
+		153F11109A1A2D773E7C50637E1D2430 /* OktaOidcTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaOidcTask.swift; path = Sources/OktaOidc/Common/Internal/Tasks/OktaOidcTask.swift; sourceTree = "<group>"; };
+		15B4CF297683957CFCF7D9C63A74A3A1 /* flutter_okta_sdk.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = flutter_okta_sdk.podspec; path = "../../../../../../../flutter/.pub-cache/hosted/pub.dartlang.org/flutter_okta_sdk-1.0.0-dev.7/ios/flutter_okta_sdk.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		161CBCEBD06B35D89E77FEFBCAF11A8A /* OktaOidcRestApi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaOidcRestApi.swift; path = Sources/OktaOidc/Common/Internal/OktaOidcRestApi.swift; sourceTree = "<group>"; };
+		17774510F94BB5A6ADB45FF8676636F5 /* OktaOidcSignOutHandlerIOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaOidcSignOutHandlerIOS.swift; path = Sources/OktaOidc/iOS/Internal/OktaOidcSignOutHandlerIOS.swift; sourceTree = "<group>"; };
+		187F86B4635878DF40DAF21E6C81B79A /* OKTExternalUserAgentIOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTExternalUserAgentIOS.h; path = Sources/AppAuth/include/OKTExternalUserAgentIOS.h; sourceTree = "<group>"; };
+		1B0B32864E78A2A0AF31688A7E691D43 /* FluttertoastPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FluttertoastPlugin.h; path = "../../../../../../../../flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-7.1.1/ios/Classes/FluttertoastPlugin.h"; sourceTree = "<group>"; };
+		1B2CA0EA0077B5C3F9714C87225D885D /* OKTTokenRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTTokenRequest.m; path = Sources/AppAuth/OKTTokenRequest.m; sourceTree = "<group>"; };
+		1B9E2F497F35F46CC35DC09C47997171 /* OKTAuthorizationService+IOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OKTAuthorizationService+IOS.h"; path = "Sources/AppAuth/include/OKTAuthorizationService+IOS.h"; sourceTree = "<group>"; };
+		1C133E572DE705659BF35A7D6AE07217 /* OKTDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTDefines.h; path = Sources/AppAuth/include/OKTDefines.h; sourceTree = "<group>"; };
+		1D0A585B83F3E1DD08C547ED1925CCB8 /* OKTURLSessionProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTURLSessionProvider.m; path = Sources/AppAuth/OKTURLSessionProvider.m; sourceTree = "<group>"; };
+		1EF25CBFE99DE414BCC56F1538995FD2 /* SwiftFlutterOktaSdkPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftFlutterOktaSdkPlugin.swift; path = "../../../../../../../../flutter/.pub-cache/hosted/pub.dartlang.org/flutter_okta_sdk-1.0.0-dev.7/ios/Classes/SwiftFlutterOktaSdkPlugin.swift"; sourceTree = "<group>"; };
+		1F5B5415A6602CEA68BA774677FA6772 /* OKTRegistrationResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTRegistrationResponse.h; path = Sources/AppAuth/include/OKTRegistrationResponse.h; sourceTree = "<group>"; };
+		20A33F12C729224D685155FAC9F98F5E /* NSData+Base64URLEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSData+Base64URLEncoding.swift"; path = "Sources/ThirdParty/JSONWebToken/NSData+Base64URLEncoding.swift"; sourceTree = "<group>"; };
+		20EFD68B746DA36FC0963D9107AD43CA /* OKTLoopbackHTTPServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTLoopbackHTTPServer.m; path = Sources/AppAuth/macOS/LoopbackHTTPServer/OKTLoopbackHTTPServer.m; sourceTree = "<group>"; };
+		2105E27084C089AF16185D05804A9832 /* OktaOidc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OktaOidc-dummy.m"; sourceTree = "<group>"; };
+		2220FB0B398D63347049AFFC6AD01A05 /* OKTIDToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTIDToken.h; path = Sources/AppAuth/include/OKTIDToken.h; sourceTree = "<group>"; };
+		23B5E14015F0DCC920DC673F51184995 /* Toast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-dummy.m"; sourceTree = "<group>"; };
+		25225258943C9DDD0A3F35837F2036CA /* NSData+HMAC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+HMAC.m"; path = "Sources/ThirdParty/JSONWebToken/NSData+HMAC.m"; sourceTree = "<group>"; };
+		2526891C2AF22A566849AC08453AF39A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = "../../../../../../../flutter/.pub-cache/hosted/pub.dartlang.org/flutter_okta_sdk-1.0.0-dev.7/LICENSE"; sourceTree = "<group>"; };
+		2571518A303A0550E5ECBC590A94897C /* OktaJWT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OktaJWT.modulemap; sourceTree = "<group>"; };
+		279A36BE198E7D3CFC1A0CE9BF29B4D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = "../../../../../../../flutter/.pub-cache/hosted/pub.dartlang.org/flutter_secure_storage-3.3.5/LICENSE"; sourceTree = "<group>"; };
+		29E271EC8008191A9C011089B8AEF246 /* OKTURLQueryComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTURLQueryComponent.h; path = Sources/AppAuth/include/OKTURLQueryComponent.h; sourceTree = "<group>"; };
+		2A74735D4FBE506ACA5DB0BD7FB77CB1 /* OKTIDToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTIDToken.m; path = Sources/AppAuth/OKTIDToken.m; sourceTree = "<group>"; };
+		2D26FA89966800D2EDC06841E7ECD914 /* FlutterOktaSdkPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlutterOktaSdkPlugin.h; path = "../../../../../../../../flutter/.pub-cache/hosted/pub.dartlang.org/flutter_okta_sdk-1.0.0-dev.7/ios/Classes/FlutterOktaSdkPlugin.h"; sourceTree = "<group>"; };
+		2EE4E4F507EED4EDAADC7F30A6223951 /* TokenSigner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenSigner.swift; path = Sources/ThirdParty/JSONWebToken/TokenSigner.swift; sourceTree = "<group>"; };
+		3060763ECE5BC390E1D65030A1DEAC2A /* OKTScopes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTScopes.m; path = Sources/AppAuth/OKTScopes.m; sourceTree = "<group>"; };
+		30B1D656ECE73B0A017C0A1EFA16B33F /* OKTGrantTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTGrantTypes.m; path = Sources/AppAuth/OKTGrantTypes.m; sourceTree = "<group>"; };
+		31525665B1DA5F7C85DDD5D4B2F13A0C /* OKTAuthState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTAuthState.h; path = Sources/AppAuth/include/OKTAuthState.h; sourceTree = "<group>"; };
+		317C26B9A7CEDD34ADE8F37FAAB7AC20 /* Pods-Runner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Runner-frameworks.sh"; sourceTree = "<group>"; };
+		319F35D38EDC455FFDECF8B32444D1BC /* OKTExternalUserAgentIOSCustomBrowser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTExternalUserAgentIOSCustomBrowser.m; path = Sources/AppAuth/iOS/OKTExternalUserAgentIOSCustomBrowser.m; sourceTree = "<group>"; };
+		34861BF18A1D1E8204D09C640BDA72FA /* OktaOidcSignOutHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaOidcSignOutHandler.swift; path = Sources/OktaOidc/Common/Internal/OktaOidcSignOutHandler.swift; sourceTree = "<group>"; };
+		35B5EB2C558AFE64743F3CEC5CE6797C /* OKTAuthorizationService+Mac.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OKTAuthorizationService+Mac.m"; path = "Sources/AppAuth/macOS/OKTAuthorizationService+Mac.m"; sourceTree = "<group>"; };
+		3626774EDBA44EE1D31C5573EF9B268D /* OktaJWT-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OktaJWT-umbrella.h"; sourceTree = "<group>"; };
+		38A6837091EFD5F12B7D7DC0F4B6F4B7 /* OktaJWT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OktaJWT.release.xcconfig; sourceTree = "<group>"; };
+		39D0869EEE791ACA94DDCF10F45F4B3B /* OktaJWT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OktaJWT.framework; path = OktaJWT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CEEAEFAE3B2C4FD962505CF3494F85B /* OKTRegistrationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTRegistrationRequest.h; path = Sources/AppAuth/include/OKTRegistrationRequest.h; sourceTree = "<group>"; };
+		3D0547364516BEC408F68D09D9184634 /* OktaNetworkRequestCustomizationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OktaNetworkRequestCustomizationDelegate.h; path = Sources/AppAuth/include/OktaNetworkRequestCustomizationDelegate.h; sourceTree = "<group>"; };
+		3E1635396C246A11460D94F91E55D0B5 /* SignatureValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignatureValidator.swift; path = Sources/ThirdParty/JSONWebToken/SignatureValidator.swift; sourceTree = "<group>"; };
+		3E214DE8311070BD486CF5645B29CE27 /* OKTExternalUserAgentIOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTExternalUserAgentIOS.m; path = Sources/AppAuth/iOS/OKTExternalUserAgentIOS.m; sourceTree = "<group>"; };
+		3EA53B3D62570A0DFE054BC6A6C417C5 /* OKTAuthState+Mac.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OKTAuthState+Mac.m"; path = "Sources/AppAuth/macOS/OKTAuthState+Mac.m"; sourceTree = "<group>"; };
+		3F8C0A1C17B2FFA447D1EED6B3F339D4 /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = Sources/ThirdParty/JSONWebToken/HMAC.swift; sourceTree = "<group>"; };
+		4230BDA830FCDE21F2A9251FB632A4B8 /* JWTVerifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWTVerifier.swift; path = Sources/JWTVerifier.swift; sourceTree = "<group>"; };
+		444E1A70CF6C63C463F0621D6558E7E4 /* JWTVerificationTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWTVerificationTypes.swift; path = Sources/JWTVerificationTypes.swift; sourceTree = "<group>"; };
+		445AEF48497C96E5BBA4F60CD414D9D7 /* OKTAuthStateChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTAuthStateChangeDelegate.h; path = Sources/AppAuth/include/OKTAuthStateChangeDelegate.h; sourceTree = "<group>"; };
+		446CB1AD46AEEB268E3C6D0E3EF40A32 /* OKTAuthState+IOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OKTAuthState+IOS.m"; path = "Sources/AppAuth/iOS/OKTAuthState+IOS.m"; sourceTree = "<group>"; };
+		44CB45F8709F4E5563CF1B1DD7B2BD1B /* flutter_okta_sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = flutter_okta_sdk.release.xcconfig; sourceTree = "<group>"; };
+		44CFB7019C85EA5DA0217691809C4253 /* OKTServiceConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTServiceConfiguration.h; path = Sources/AppAuth/include/OKTServiceConfiguration.h; sourceTree = "<group>"; };
+		452D6B004B757FE8E6BE806DE8E66157 /* OktaUserAgent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OktaUserAgent.m; path = Sources/AppAuth/OktaUserAgent.m; sourceTree = "<group>"; };
+		47039A9AFC65F06C8F89D09DABF1BC39 /* OKTTokenResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTTokenResponse.h; path = Sources/AppAuth/include/OKTTokenResponse.h; sourceTree = "<group>"; };
+		492854BE41A1D56173E4CA51C83902BE /* OKTGrantTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTGrantTypes.h; path = Sources/AppAuth/include/OKTGrantTypes.h; sourceTree = "<group>"; };
+		4A01B7FCD8740B68AE34D5A3559EA800 /* FlutterOktaSdkPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FlutterOktaSdkPlugin.m; path = "../../../../../../../../flutter/.pub-cache/hosted/pub.dartlang.org/flutter_okta_sdk-1.0.0-dev.7/ios/Classes/FlutterOktaSdkPlugin.m"; sourceTree = "<group>"; };
+		4B82C43F46187EAE3911B5651A6D0A5D /* OktaRedirectServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaRedirectServer.swift; path = Sources/OktaOidc/macOS/OktaRedirectServer.swift; sourceTree = "<group>"; };
+		4EB81E4011C61EF2B30B3986F70A622A /* Toast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-umbrella.h"; sourceTree = "<group>"; };
+		4F06F37808D41CA102E566DDD3F20A9A /* OKTLoopbackHTTPServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTLoopbackHTTPServer.h; path = Sources/AppAuth/include/OKTLoopbackHTTPServer.h; sourceTree = "<group>"; };
+		4F803488E46FA5C902A9FA4392153A7E /* OKTRedirectHTTPHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTRedirectHTTPHandler.h; path = Sources/AppAuth/include/OKTRedirectHTTPHandler.h; sourceTree = "<group>"; };
+		4FA2AAACBB0C39A40DF32BE1118D41EC /* NSData+SHA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+SHA.m"; path = "Sources/ThirdParty/JSONWebToken/NSData+SHA.m"; sourceTree = "<group>"; };
+		516ED41515F33FB74CBEED12C68D9B11 /* flutter_secure_storage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = flutter_secure_storage.modulemap; sourceTree = "<group>"; };
+		51825CD8F0558EFA53D9510F0E5BFA16 /* Pods-Runner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Runner-Info.plist"; sourceTree = "<group>"; };
+		51E5AACE0DC9196BBB3B60430743680A /* OKTClientMetadataParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTClientMetadataParameters.h; path = Sources/AppAuth/include/OKTClientMetadataParameters.h; sourceTree = "<group>"; };
+		524111928921F72BDC37BF7AD3120BD7 /* Flutter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.debug.xcconfig; sourceTree = "<group>"; };
+		52A8EE20E4633E6C262BF2CEB574893B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = "../../../../../../../flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-7.1.1/LICENSE"; sourceTree = "<group>"; };
+		5392A6A71447B504591F8833B1140ABB /* OKTErrorUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTErrorUtilities.h; path = Sources/AppAuth/include/OKTErrorUtilities.h; sourceTree = "<group>"; };
+		53FE078EB9E7B370848F9E9854C67BBD /* OktaJWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaJWT.swift; path = Sources/OktaJWT.swift; sourceTree = "<group>"; };
+		5518A58FD45120F2B7AD5D45896ECBB2 /* NSData+HMAC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+HMAC.h"; path = "Sources/ThirdParty/JSONWebToken/NSData+HMAC.h"; sourceTree = "<group>"; };
+		55E0AFD333353D71ACC2207149E879D6 /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast.framework; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		569487D7D81A2EDEBED4797B26A8EFC7 /* OIDAuthState+Okta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OIDAuthState+Okta.swift"; path = "Sources/OktaOidc/Common/Internal/OIDAuthState+Okta.swift"; sourceTree = "<group>"; };
+		5863ADB3D3839D2F9425F0D49B058FCB /* Flutter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Flutter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		58936BA7C3A7268D69C0D13DA4B75F5C /* OktaOidc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OktaOidc.framework; path = OktaOidc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B5A67B82AF349D5C77985B46CF1493A /* OktaOidcBrowserTaskIOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaOidcBrowserTaskIOS.swift; path = Sources/OktaOidc/iOS/Internal/Tasks/OktaOidcBrowserTaskIOS.swift; sourceTree = "<group>"; };
+		5BE24DE2753070B30B1CE486579291B1 /* OKTExternalUserAgentRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTExternalUserAgentRequest.h; path = Sources/AppAuth/include/OKTExternalUserAgentRequest.h; sourceTree = "<group>"; };
+		5C4AB835E54CE3A144E576E73B12D704 /* flutter_okta_sdk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "flutter_okta_sdk-dummy.m"; sourceTree = "<group>"; };
+		5F433D846D081348A285F8985D05D652 /* fluttertoast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fluttertoast.release.xcconfig; sourceTree = "<group>"; };
+		6206B72B78F1D7D870EAD8FE03021581 /* OKTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTError.h; path = Sources/AppAuth/include/OKTError.h; sourceTree = "<group>"; };
+		6321215DFE3F9904FC2175AD51C01F85 /* OktaJWT-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OktaJWT-dummy.m"; sourceTree = "<group>"; };
+		63D035E0969EF5A78CF31E2BDA98E19D /* OKTTokenUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTTokenUtilities.h; path = Sources/AppAuth/include/OKTTokenUtilities.h; sourceTree = "<group>"; };
+		658BA0689B765B7169B7741107928534 /* OKTExternalUserAgent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTExternalUserAgent.h; path = Sources/AppAuth/include/OKTExternalUserAgent.h; sourceTree = "<group>"; };
+		662FB1F5B7730CF00769A5450A04567C /* OKTTokenRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTTokenRequest.h; path = Sources/AppAuth/include/OKTTokenRequest.h; sourceTree = "<group>"; };
+		669E8F25E1897672BDB80B7EB784DA24 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Runner.framework; path = "Pods-Runner.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66A60BCC225E9C626D673314E8209A3C /* RSASSA_PKCS1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSASSA_PKCS1.swift; path = Sources/ThirdParty/JSONWebToken/RSASSA_PKCS1.swift; sourceTree = "<group>"; };
+		6806D222400476A84016E6BAB4BA6CE0 /* Toast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-prefix.pch"; sourceTree = "<group>"; };
+		69033643F518A605521B76C7766502C0 /* FluttertoastPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FluttertoastPlugin.m; path = "../../../../../../../../flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-7.1.1/ios/Classes/FluttertoastPlugin.m"; sourceTree = "<group>"; };
+		6B472ABF5EFCE035984630C36245D116 /* fluttertoast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fluttertoast.debug.xcconfig; sourceTree = "<group>"; };
+		6D41502A54623B80E5F0805EC6965EA5 /* OktaOidcSignOutHandlerMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaOidcSignOutHandlerMAC.swift; path = Sources/OktaOidc/macOS/Internal/OktaOidcSignOutHandlerMAC.swift; sourceTree = "<group>"; };
+		6D4BC6F1FA8CCC8D15FB65B5AF72452B /* OKTFieldMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTFieldMapping.m; path = Sources/AppAuth/OKTFieldMapping.m; sourceTree = "<group>"; };
+		72AF64D4C76C4484EFC657046B0620AF /* flutter_secure_storage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = flutter_secure_storage.debug.xcconfig; sourceTree = "<group>"; };
+		731E26851EE82512752F2EED387A860E /* OKTAuthState+Mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OKTAuthState+Mac.h"; path = "Sources/AppAuth/include/OKTAuthState+Mac.h"; sourceTree = "<group>"; };
+		734054C6A1FBB32DFFFED45923E495A4 /* OKTEndSessionRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTEndSessionRequest.h; path = Sources/AppAuth/include/OKTEndSessionRequest.h; sourceTree = "<group>"; };
+		746D4286EBD2454354A194C3C68F7630 /* OKTURLQueryComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTURLQueryComponent.m; path = Sources/AppAuth/OKTURLQueryComponent.m; sourceTree = "<group>"; };
+		7744406F8BC614A67604BABD097D91F5 /* OKTAuthorizationResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTAuthorizationResponse.m; path = Sources/AppAuth/OKTAuthorizationResponse.m; sourceTree = "<group>"; };
+		7B3C932BD54DBB963102A89E0F9E3948 /* Pods-Runner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Runner-dummy.m"; sourceTree = "<group>"; };
+		7BB2233C71294C13C7DFCC60B04C7B3E /* flutter_secure_storage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "flutter_secure_storage-Info.plist"; sourceTree = "<group>"; };
+		7BDB20A9D855EB5F181FEA97019FE6E2 /* flutter_okta_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = flutter_okta_sdk.framework; path = flutter_okta_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB1B0D34E63D14F9FA890A9174A0F3B /* OKTRegistrationResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTRegistrationResponse.m; path = Sources/AppAuth/OKTRegistrationResponse.m; sourceTree = "<group>"; };
+		7FFF6A386C3BEA2CB422AD4166C14C31 /* OKTURLSessionProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTURLSessionProvider.h; path = Sources/AppAuth/include/OKTURLSessionProvider.h; sourceTree = "<group>"; };
+		81849D30564FC958C18115617B060DEC /* OKTAuthorizationService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTAuthorizationService.m; path = Sources/AppAuth/OKTAuthorizationService.m; sourceTree = "<group>"; };
+		82AEDB93B80027519E5E0E69F7690CCA /* SignatureAlgorithm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignatureAlgorithm.swift; path = Sources/ThirdParty/JSONWebToken/SignatureAlgorithm.swift; sourceTree = "<group>"; };
+		840E7862C2F8AC8FB23ABA05DCCE5590 /* flutter_okta_sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = flutter_okta_sdk.debug.xcconfig; sourceTree = "<group>"; };
+		85C881825204D6C88D2968202B0ED06C /* flutter_okta_sdk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = flutter_okta_sdk.modulemap; sourceTree = "<group>"; };
+		85CE771B91790A4D170AF6C0B6B504E7 /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Sources/Keychain.swift; sourceTree = "<group>"; };
+		866640838EB0D073D015F0DD2F1B574C /* OKTAuthorizationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTAuthorizationRequest.h; path = Sources/AppAuth/include/OKTAuthorizationRequest.h; sourceTree = "<group>"; };
+		86F4090FDB6537A6101DFEE5AE869522 /* OKTErrorUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTErrorUtilities.m; path = Sources/AppAuth/OKTErrorUtilities.m; sourceTree = "<group>"; };
+		8918ACB46E8D456561EA55F6A0F30909 /* OKTExternalUserAgentMac.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTExternalUserAgentMac.m; path = Sources/AppAuth/macOS/OKTExternalUserAgentMac.m; sourceTree = "<group>"; };
+		8B1B93C0C6BDAFEFC5A0FC6E07DF6DB2 /* OktaOidc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OktaOidc.release.xcconfig; sourceTree = "<group>"; };
+		8BD1FCE87438DFD0F48C352C3686B506 /* OktaOidcError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaOidcError.swift; path = Sources/OktaOidc/Common/OktaOidcError.swift; sourceTree = "<group>"; };
+		8C2E838E7374A8C0D386CC5895CFE54D /* OktaOidcBrowserProtocolIOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaOidcBrowserProtocolIOS.swift; path = Sources/OktaOidc/iOS/Internal/OktaOidcBrowserProtocolIOS.swift; sourceTree = "<group>"; };
+		8D30FC795ABEBCF790A423861B7D0675 /* OKTRedirectHTTPHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTRedirectHTTPHandler.m; path = Sources/AppAuth/macOS/OKTRedirectHTTPHandler.m; sourceTree = "<group>"; };
+		8F12128BBAFBF9B27E3A3848DAE97E9E /* JWTVerificationErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWTVerificationErrors.swift; path = Sources/JWTVerificationErrors.swift; sourceTree = "<group>"; };
+		909681012A51B3D17726B0631E2C22DD /* OKTResponseTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTResponseTypes.h; path = Sources/AppAuth/include/OKTResponseTypes.h; sourceTree = "<group>"; };
+		91B113E791C8D7B8493F7442850A6E38 /* OKTEndSessionRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTEndSessionRequest.m; path = Sources/AppAuth/OKTEndSessionRequest.m; sourceTree = "<group>"; };
+		930581A1134FE480556BE25596912C8C /* OKTExternalUserAgentMac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTExternalUserAgentMac.h; path = Sources/AppAuth/include/OKTExternalUserAgentMac.h; sourceTree = "<group>"; };
+		96BF45FBE2BC9AD7B2D7E56D01B5EE46 /* Pods-Runner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Runner-umbrella.h"; sourceTree = "<group>"; };
+		9716054879A9FD9F749810C00D85E8E1 /* UIView+Toast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Toast.m"; path = "Toast/UIView+Toast.m"; sourceTree = "<group>"; };
+		9726341E24DB2410122278EF8AC25A37 /* OKTFieldMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTFieldMapping.h; path = Sources/AppAuth/include/OKTFieldMapping.h; sourceTree = "<group>"; };
+		986EDB9B33F88542B4CA9FE52306C3C2 /* OktaOidc+BrowserMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OktaOidc+BrowserMAC.swift"; path = "Sources/OktaOidc/macOS/OktaOidc+BrowserMAC.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F79F8269DC34AC56BB3D1D9652C0D86 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
+		A0C3A760C2645AA8602103243196C62D /* OIDAuthorizationService+Okta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OIDAuthorizationService+Okta.swift"; path = "Sources/OktaOidc/Common/Internal/OIDAuthorizationService+Okta.swift"; sourceTree = "<group>"; };
+		A20399B07682A6A768B2DEDE539A7CD2 /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3532386929438197779A4E23E03C784 /* OktaSignOutOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaSignOutOptions.swift; path = Sources/OktaOidc/Common/OktaSignOutOptions.swift; sourceTree = "<group>"; };
+		AA7BF332F490FCE752A6C3763E6F2A04 /* fluttertoast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "fluttertoast-dummy.m"; sourceTree = "<group>"; };
+		AB25391D8509F2F3B4800EA70724618D /* OKTScopeUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTScopeUtilities.h; path = Sources/AppAuth/include/OKTScopeUtilities.h; sourceTree = "<group>"; };
+		AD45C99B85DF75C29791C233A66577CD /* OKTEndSessionResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTEndSessionResponse.m; path = Sources/AppAuth/OKTEndSessionResponse.m; sourceTree = "<group>"; };
+		ADFD8FFFDAD6AF3C1D450E9F57C56316 /* OktaJWT-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OktaJWT-prefix.pch"; sourceTree = "<group>"; };
+		AEE6599009FBBFAC807625041D3B1EFC /* OKTAuthorizationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTAuthorizationService.h; path = Sources/AppAuth/include/OKTAuthorizationService.h; sourceTree = "<group>"; };
+		AF41CD9852E2E97579EA1D1E55088582 /* OktaOidc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OktaOidc-umbrella.h"; sourceTree = "<group>"; };
+		AF99A749413CBAC66D92A57709EBC0A1 /* OktaRedirectServerConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaRedirectServerConfiguration.swift; path = Sources/OktaOidc/macOS/OktaRedirectServerConfiguration.swift; sourceTree = "<group>"; };
+		AFDE2259E9E13BC7476B4E30FFE0B4E6 /* flutter_secure_storage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "flutter_secure_storage-umbrella.h"; sourceTree = "<group>"; };
+		B17BA6E2BA469C1EAF843CB3C7D88AC9 /* OktaOidc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OktaOidc-prefix.pch"; sourceTree = "<group>"; };
+		B2156C1DB018EDC0821608844438A3A9 /* Toast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Toast.h; path = "Toast-Framework/Toast.h"; sourceTree = "<group>"; };
+		B24F2BC043AA96574E1C1BBC904D529F /* OKTAuthState+IOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OKTAuthState+IOS.h"; path = "Sources/AppAuth/include/OKTAuthState+IOS.h"; sourceTree = "<group>"; };
+		B488126EC3E69F1AD3FBFA54379F6346 /* Toast-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Toast-Info.plist"; sourceTree = "<group>"; };
+		B4ABEF5C71E2D62DA281DF64D6452C40 /* OKTClientMetadataParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTClientMetadataParameters.m; path = Sources/AppAuth/OKTClientMetadataParameters.m; sourceTree = "<group>"; };
+		B5954DC5A1A93C70CCB00D90CE63FF66 /* OKTAuthorizationService+IOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OKTAuthorizationService+IOS.m"; path = "Sources/AppAuth/iOS/OKTAuthorizationService+IOS.m"; sourceTree = "<group>"; };
+		B66B23FA6482C3FFF3BC472CE9F9D275 /* OktaOidc-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OktaOidc-Info.plist"; sourceTree = "<group>"; };
+		B8F0BFC9F8EC71390B3E7CFECCFF66AD /* OktaOidc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaOidc.swift; path = Sources/OktaOidc/Common/OktaOidc.swift; sourceTree = "<group>"; };
+		BBC1228B1D76E0C8D7E00EB4812F8868 /* OktaOidcAuthenticate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaOidcAuthenticate.swift; path = Sources/OktaOidc/Common/Internal/Tasks/OktaOidcAuthenticate.swift; sourceTree = "<group>"; };
+		BD8B0CED1923E30E46E6FC6C7285532D /* flutter_secure_storage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = flutter_secure_storage.release.xcconfig; sourceTree = "<group>"; };
+		BE85F8A1A02B26E419F5DB3149FD4FA1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		BF3AA62B526D9042470BC1FC5D17BD9C /* OKTResponseTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTResponseTypes.m; path = Sources/AppAuth/OKTResponseTypes.m; sourceTree = "<group>"; };
+		BF4F92B9EC644A884F18D895DFCF6EE7 /* OktaOidc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OktaOidc.debug.xcconfig; sourceTree = "<group>"; };
+		C043B49390CDEF9667803531330F4187 /* flutter_secure_storage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "flutter_secure_storage-dummy.m"; sourceTree = "<group>"; };
+		C1C1AD8C20613ACC67F00155D7BB54AA /* flutter_secure_storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = flutter_secure_storage.framework; path = flutter_secure_storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1F40367A2E4E34FBF98E4CF550AD4A4 /* OKTAuthorizationService+Mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OKTAuthorizationService+Mac.h"; path = "Sources/AppAuth/include/OKTAuthorizationService+Mac.h"; sourceTree = "<group>"; };
+		C4813839955020986D7A4FD5144E16FD /* OKTExternalUserAgentSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTExternalUserAgentSession.h; path = Sources/AppAuth/include/OKTExternalUserAgentSession.h; sourceTree = "<group>"; };
+		C5DB5EFA75349BD51390E12F68E3AC89 /* fluttertoast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = fluttertoast.modulemap; sourceTree = "<group>"; };
+		C6EA98402A94995D022D330B64B5203D /* Pods-Runner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Runner-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C749E080A0A672FC90A932A739F52931 /* Toast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Toast.debug.xcconfig; sourceTree = "<group>"; };
+		C9942B5BE44631138FC65BF4B641E8D8 /* APIErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIErrors.swift; path = Sources/APIErrors.swift; sourceTree = "<group>"; };
+		CB6BB9650012CEB52BFA061094E70DC1 /* OktaOidcBrowserTaskMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaOidcBrowserTaskMAC.swift; path = Sources/OktaOidc/macOS/Internal/Tasks/OktaOidcBrowserTaskMAC.swift; sourceTree = "<group>"; };
+		CC2AE0B380200EB6E980CF26E0DEFDE8 /* OktaOidcConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaOidcConfig.swift; path = Sources/OktaOidc/Common/OktaOidcConfig.swift; sourceTree = "<group>"; };
+		CD049DAB53ADC5BF23B6EEDA3E276CAE /* OKTRegistrationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTRegistrationRequest.m; path = Sources/AppAuth/OKTRegistrationRequest.m; sourceTree = "<group>"; };
+		CDAECCF4B5E08124ED410F09FD5A5DF9 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
+		D034CE8596F59A454FF4ABA5ADE6C836 /* RequestsAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestsAPI.swift; path = Sources/RequestsAPI.swift; sourceTree = "<group>"; };
+		D0C5A85ABEF5ED03A54A449B87B69225 /* fluttertoast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = fluttertoast.framework; path = fluttertoast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2FA70CA298C392CB8332ADEEDD1CE85 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
+		D373C321DCAC7332649D3C92CEE1FBB5 /* fluttertoast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fluttertoast-prefix.pch"; sourceTree = "<group>"; };
+		D48B476EF031E29D598A78069289E798 /* UIView+Toast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Toast.h"; path = "Toast/UIView+Toast.h"; sourceTree = "<group>"; };
+		D647351157643D557282B4C0F9606573 /* fluttertoast-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "fluttertoast-Info.plist"; sourceTree = "<group>"; };
+		D682963DEDF4C7CD7883095864DB83A9 /* OktaJWT-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OktaJWT-Info.plist"; sourceTree = "<group>"; };
+		D9F2B4CB813B4BDC4D164C6E0868930A /* Pods-Runner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Runner-acknowledgements.plist"; sourceTree = "<group>"; };
+		DDA6DC1FA7930A6919E1AD145F64174B /* OKTScopes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTScopes.h; path = Sources/AppAuth/include/OKTScopes.h; sourceTree = "<group>"; };
+		DECFE30C86FDD023564C3A2982D495EB /* OKTAuthorizationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTAuthorizationRequest.m; path = Sources/AppAuth/OKTAuthorizationRequest.m; sourceTree = "<group>"; };
+		DFF5639A94DE131FEBD0D27152E9BE82 /* OktaOidcStateManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaOidcStateManager.swift; path = Sources/OktaOidc/Common/OktaOidcStateManager.swift; sourceTree = "<group>"; };
+		E04DD76953116D7451E689A0A4807F2C /* OktaOidcBrowserProtocolMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaOidcBrowserProtocolMAC.swift; path = Sources/OktaOidc/macOS/Internal/OktaOidcBrowserProtocolMAC.swift; sourceTree = "<group>"; };
+		E0F4358279DE7F579A8D06CCB784931B /* AppAuthCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppAuthCore.h; path = Sources/AppAuth/include/AppAuthCore.h; sourceTree = "<group>"; };
+		E10E01927D6725D13FC3AB4F6ABAF5DE /* OKTTokenResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTTokenResponse.m; path = Sources/AppAuth/OKTTokenResponse.m; sourceTree = "<group>"; };
+		E1A865DE66508BA1E11B17B91B02302B /* OKTEndSessionResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTEndSessionResponse.h; path = Sources/AppAuth/include/OKTEndSessionResponse.h; sourceTree = "<group>"; };
+		E1FDEC94FA9C16A01322BC2C190F2B79 /* OktaOidcUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaOidcUtils.swift; path = Sources/OktaOidc/Common/OktaOidcUtils.swift; sourceTree = "<group>"; };
+		E2138A740ACAEA71993DF52A6F4D37C7 /* OktaOidcEndpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OktaOidcEndpoint.swift; path = Sources/OktaOidc/Common/Internal/OktaOidcEndpoint.swift; sourceTree = "<group>"; };
+		E2F129A5946631ACF37E139A281A36A6 /* Flutter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.release.xcconfig; sourceTree = "<group>"; };
+		E3C7AA4AB8ED3EAE652C6F1E48AAA875 /* ClaimValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClaimValidator.swift; path = Sources/ThirdParty/JSONWebToken/ClaimValidator.swift; sourceTree = "<group>"; };
+		E82B8E2CFB30E7A1A89DC89E1071369D /* SecKeyUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecKeyUtils.swift; path = Sources/ThirdParty/JSONWebToken/SecKeyUtils.swift; sourceTree = "<group>"; };
+		E864B1184561FE57E7889F69BC962A61 /* flutter_okta_sdk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "flutter_okta_sdk-prefix.pch"; sourceTree = "<group>"; };
+		E8BF5F15732F2B7208508E353DFA37FB /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/Utils.swift; sourceTree = "<group>"; };
+		E8C8EEA4E0FF7093BAFE61BD8C1D10D6 /* OKTExternalUserAgentNoSsoIOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTExternalUserAgentNoSsoIOS.h; path = Sources/AppAuth/include/OKTExternalUserAgentNoSsoIOS.h; sourceTree = "<group>"; };
+		E9CDD46A9CFCDDEF88B36F180749DFD0 /* OktaOidc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OktaOidc.modulemap; sourceTree = "<group>"; };
+		EA03D388F32C48A40329C7A0D92AEEC6 /* OKTAuthorizationResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OKTAuthorizationResponse.h; path = Sources/AppAuth/include/OKTAuthorizationResponse.h; sourceTree = "<group>"; };
+		EB31DA1A4BC15EE4930C0520D1828A0D /* flutter_okta_sdk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "flutter_okta_sdk-umbrella.h"; sourceTree = "<group>"; };
+		EB54E4349621FBCF939468D6C7A20816 /* FlutterSecureStoragePlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FlutterSecureStoragePlugin.m; path = "../../../../../../../../flutter/.pub-cache/hosted/pub.dartlang.org/flutter_secure_storage-3.3.5/ios/Classes/FlutterSecureStoragePlugin.m"; sourceTree = "<group>"; };
+		ECAD64687B53ADB0A15A7CABCA534C12 /* FlutterSecureStoragePlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlutterSecureStoragePlugin.h; path = "../../../../../../../../flutter/.pub-cache/hosted/pub.dartlang.org/flutter_secure_storage-3.3.5/ios/Classes/FlutterSecureStoragePlugin.h"; sourceTree = "<group>"; };
+		ED19A6656962F2B2B302112164A2690A /* OktaOidc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OktaOidc.h; path = Sources/OktaOidc/Common/OktaOidc.h; sourceTree = "<group>"; };
+		EE308975E5A302402A1ECB3AD316AE3B /* OKTServiceDiscovery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTServiceDiscovery.m; path = Sources/AppAuth/OKTServiceDiscovery.m; sourceTree = "<group>"; };
+		EF0F69ADB04BD46467C2CBBC316CE8A6 /* OktaJWT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OktaJWT.debug.xcconfig; sourceTree = "<group>"; };
+		EF758028100147852387F0C38FFA1E22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F49C32B3B8CF59AB437BFD7314674868 /* Pods-Runner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Runner.modulemap"; sourceTree = "<group>"; };
+		F5A721531CAE80EF5C2F80B73CD1A33B /* flutter_secure_storage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = flutter_secure_storage.podspec; path = "../../../../../../../flutter/.pub-cache/hosted/pub.dartlang.org/flutter_secure_storage-3.3.5/ios/flutter_secure_storage.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F6F090834F6194EB226C0B215829511D /* JSONWebToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONWebToken.swift; path = Sources/ThirdParty/JSONWebToken/JSONWebToken.swift; sourceTree = "<group>"; };
+		F6F1CEBBA5C1B1A9A2BAADEE0027D12D /* OktaJWT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OktaJWT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5824D996B0F3EBD2E72C571A8DBE1E /* OKTAuthState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OKTAuthState.m; path = Sources/AppAuth/OKTAuthState.m; sourceTree = "<group>"; };
+		FBAE08D24ED3CBC47AC40F6165D825B3 /* NSData+SHA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+SHA.h"; path = "Sources/ThirdParty/JSONWebToken/NSData+SHA.h"; sourceTree = "<group>"; };
+		FD6557B6DAE94EBF38AEA691690CB836 /* OktaOidc+BrowserIOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OktaOidc+BrowserIOS.swift"; path = "Sources/OktaOidc/iOS/OktaOidc+BrowserIOS.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FDF5D38780D2362AFE846E7791F056C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50B4C2979F3388544F2160AC951777C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CDADD5150F7F14794AE589773F52CB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30664015CC1335270A9AB2054434CF2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6940FF222AA7BB4F754DBB6EFBC9A2F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A0B09C6F938889FD86FEC7091C09EE7 /* Foundation.framework in Frameworks */,
+				E4BA25303BEA9C84318416847E0561D3 /* OktaJWT.framework in Frameworks */,
+				CCC831FFFB414E5D30B029E043A931DD /* OktaOidc.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8064C451137ED50CDEE48F3ABD339992 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A652B86CF3842A94C5AF1F3C2442736 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3FFD29E4E49A495C4DAE07C023CF327 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B012AD1E9E99AE3C5CF8CE378E5308D /* Foundation.framework in Frameworks */,
+				F2A7AA0A20BF131A27CE254840F35251 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E94EF6460483E2F9862C36B245D24974 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC512D1140E7DB03F610AF7A549D20B /* Foundation.framework in Frameworks */,
+				BD88123B45067A782DDE15A21E9A3EF8 /* Toast.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5305AC53567390E35BEDCC07C0DC37E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DAEB724DFCEFA875EF7C3603B4D895C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		038D10074198B6A4EE59D757CE5BC222 /* flutter-projects */ = {
+			isa = PBXGroup;
+			children = (
+				B02F12CA79DB77AC1BDCA5355F25ECDE /* flutter-okta-app */,
+			);
+			name = "flutter-projects";
+			path = "flutter-projects";
+			sourceTree = "<group>";
+		};
+		05F80FAA6F8ABD444F3B5D01709410C4 /* AppAuth */ = {
+			isa = PBXGroup;
+			children = (
+				E0F4358279DE7F579A8D06CCB784931B /* AppAuthCore.h */,
+				3D0547364516BEC408F68D09D9184634 /* OktaNetworkRequestCustomizationDelegate.h */,
+				095E2AA6F9E9A85004DEBF05A5F16566 /* OktaUserAgent.h */,
+				452D6B004B757FE8E6BE806DE8E66157 /* OktaUserAgent.m */,
+				866640838EB0D073D015F0DD2F1B574C /* OKTAuthorizationRequest.h */,
+				DECFE30C86FDD023564C3A2982D495EB /* OKTAuthorizationRequest.m */,
+				EA03D388F32C48A40329C7A0D92AEEC6 /* OKTAuthorizationResponse.h */,
+				7744406F8BC614A67604BABD097D91F5 /* OKTAuthorizationResponse.m */,
+				AEE6599009FBBFAC807625041D3B1EFC /* OKTAuthorizationService.h */,
+				81849D30564FC958C18115617B060DEC /* OKTAuthorizationService.m */,
+				1B9E2F497F35F46CC35DC09C47997171 /* OKTAuthorizationService+IOS.h */,
+				B5954DC5A1A93C70CCB00D90CE63FF66 /* OKTAuthorizationService+IOS.m */,
+				C1F40367A2E4E34FBF98E4CF550AD4A4 /* OKTAuthorizationService+Mac.h */,
+				35B5EB2C558AFE64743F3CEC5CE6797C /* OKTAuthorizationService+Mac.m */,
+				31525665B1DA5F7C85DDD5D4B2F13A0C /* OKTAuthState.h */,
+				FA5824D996B0F3EBD2E72C571A8DBE1E /* OKTAuthState.m */,
+				B24F2BC043AA96574E1C1BBC904D529F /* OKTAuthState+IOS.h */,
+				446CB1AD46AEEB268E3C6D0E3EF40A32 /* OKTAuthState+IOS.m */,
+				731E26851EE82512752F2EED387A860E /* OKTAuthState+Mac.h */,
+				3EA53B3D62570A0DFE054BC6A6C417C5 /* OKTAuthState+Mac.m */,
+				445AEF48497C96E5BBA4F60CD414D9D7 /* OKTAuthStateChangeDelegate.h */,
+				0C562EB789D8DCD5938811E9BCCB3C9D /* OKTAuthStateErrorDelegate.h */,
+				51E5AACE0DC9196BBB3B60430743680A /* OKTClientMetadataParameters.h */,
+				B4ABEF5C71E2D62DA281DF64D6452C40 /* OKTClientMetadataParameters.m */,
+				1C133E572DE705659BF35A7D6AE07217 /* OKTDefines.h */,
+				734054C6A1FBB32DFFFED45923E495A4 /* OKTEndSessionRequest.h */,
+				91B113E791C8D7B8493F7442850A6E38 /* OKTEndSessionRequest.m */,
+				E1A865DE66508BA1E11B17B91B02302B /* OKTEndSessionResponse.h */,
+				AD45C99B85DF75C29791C233A66577CD /* OKTEndSessionResponse.m */,
+				6206B72B78F1D7D870EAD8FE03021581 /* OKTError.h */,
+				07222CFEFE6B8A834FB07AE7DF634113 /* OKTError.m */,
+				5392A6A71447B504591F8833B1140ABB /* OKTErrorUtilities.h */,
+				86F4090FDB6537A6101DFEE5AE869522 /* OKTErrorUtilities.m */,
+				658BA0689B765B7169B7741107928534 /* OKTExternalUserAgent.h */,
+				187F86B4635878DF40DAF21E6C81B79A /* OKTExternalUserAgentIOS.h */,
+				3E214DE8311070BD486CF5645B29CE27 /* OKTExternalUserAgentIOS.m */,
+				05F8E7B274DF4359634C46AF9191CAA2 /* OKTExternalUserAgentIOSCustomBrowser.h */,
+				319F35D38EDC455FFDECF8B32444D1BC /* OKTExternalUserAgentIOSCustomBrowser.m */,
+				930581A1134FE480556BE25596912C8C /* OKTExternalUserAgentMac.h */,
+				8918ACB46E8D456561EA55F6A0F30909 /* OKTExternalUserAgentMac.m */,
+				E8C8EEA4E0FF7093BAFE61BD8C1D10D6 /* OKTExternalUserAgentNoSsoIOS.h */,
+				00B7DBBFB4EEFF899EC32652D28EB0FA /* OKTExternalUserAgentNoSsoIOS.m */,
+				5BE24DE2753070B30B1CE486579291B1 /* OKTExternalUserAgentRequest.h */,
+				C4813839955020986D7A4FD5144E16FD /* OKTExternalUserAgentSession.h */,
+				9726341E24DB2410122278EF8AC25A37 /* OKTFieldMapping.h */,
+				6D4BC6F1FA8CCC8D15FB65B5AF72452B /* OKTFieldMapping.m */,
+				492854BE41A1D56173E4CA51C83902BE /* OKTGrantTypes.h */,
+				30B1D656ECE73B0A017C0A1EFA16B33F /* OKTGrantTypes.m */,
+				2220FB0B398D63347049AFFC6AD01A05 /* OKTIDToken.h */,
+				2A74735D4FBE506ACA5DB0BD7FB77CB1 /* OKTIDToken.m */,
+				4F06F37808D41CA102E566DDD3F20A9A /* OKTLoopbackHTTPServer.h */,
+				20EFD68B746DA36FC0963D9107AD43CA /* OKTLoopbackHTTPServer.m */,
+				4F803488E46FA5C902A9FA4392153A7E /* OKTRedirectHTTPHandler.h */,
+				8D30FC795ABEBCF790A423861B7D0675 /* OKTRedirectHTTPHandler.m */,
+				3CEEAEFAE3B2C4FD962505CF3494F85B /* OKTRegistrationRequest.h */,
+				CD049DAB53ADC5BF23B6EEDA3E276CAE /* OKTRegistrationRequest.m */,
+				1F5B5415A6602CEA68BA774677FA6772 /* OKTRegistrationResponse.h */,
+				7EB1B0D34E63D14F9FA890A9174A0F3B /* OKTRegistrationResponse.m */,
+				909681012A51B3D17726B0631E2C22DD /* OKTResponseTypes.h */,
+				BF3AA62B526D9042470BC1FC5D17BD9C /* OKTResponseTypes.m */,
+				DDA6DC1FA7930A6919E1AD145F64174B /* OKTScopes.h */,
+				3060763ECE5BC390E1D65030A1DEAC2A /* OKTScopes.m */,
+				AB25391D8509F2F3B4800EA70724618D /* OKTScopeUtilities.h */,
+				08C08CCAB2837333D879643B78173B83 /* OKTScopeUtilities.m */,
+				44CFB7019C85EA5DA0217691809C4253 /* OKTServiceConfiguration.h */,
+				05A63EB605248A7F9D7AE8BB7F6A064F /* OKTServiceConfiguration.m */,
+				0A2496D08DEC13DAF02B633D2AB02F71 /* OKTServiceDiscovery.h */,
+				EE308975E5A302402A1ECB3AD316AE3B /* OKTServiceDiscovery.m */,
+				662FB1F5B7730CF00769A5450A04567C /* OKTTokenRequest.h */,
+				1B2CA0EA0077B5C3F9714C87225D885D /* OKTTokenRequest.m */,
+				47039A9AFC65F06C8F89D09DABF1BC39 /* OKTTokenResponse.h */,
+				E10E01927D6725D13FC3AB4F6ABAF5DE /* OKTTokenResponse.m */,
+				63D035E0969EF5A78CF31E2BDA98E19D /* OKTTokenUtilities.h */,
+				041CE8565637390D714E4E2E609B9DAD /* OKTTokenUtilities.m */,
+				29E271EC8008191A9C011089B8AEF246 /* OKTURLQueryComponent.h */,
+				746D4286EBD2454354A194C3C68F7630 /* OKTURLQueryComponent.m */,
+				7FFF6A386C3BEA2CB422AD4166C14C31 /* OKTURLSessionProvider.h */,
+				1D0A585B83F3E1DD08C547ED1925CCB8 /* OKTURLSessionProvider.m */,
+			);
+			name = AppAuth;
+			sourceTree = "<group>";
+		};
+		0DC37DA6EA14871BF987177E43A34B25 /* flutter_okta_sdk */ = {
+			isa = PBXGroup;
+			children = (
+				E237C0557569E88B1BFD58042C0CF647 /* .. */,
+				1480EF9A09AA7B887A5C877CCED020FF /* Pod */,
+				5DD9FBE8BC88F0FCB0B86B01C3BC6AD6 /* Support Files */,
+			);
+			name = flutter_okta_sdk;
+			path = ../.symlinks/plugins/flutter_okta_sdk/ios;
+			sourceTree = "<group>";
+		};
+		142E1EE2A5C9DB378996292E640A9D9B /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				C9514CC35A8E9A9F36332E9CF05F07A9 /* Pod */,
+				E5057238AFD128E2D792ECBE6D77EA9A /* Support Files */,
+			);
+			name = Flutter;
+			path = ../Flutter;
+			sourceTree = "<group>";
+		};
+		1480EF9A09AA7B887A5C877CCED020FF /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				15B4CF297683957CFCF7D9C63A74A3A1 /* flutter_okta_sdk.podspec */,
+				2526891C2AF22A566849AC08453AF39A /* LICENSE */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		1526AF5D8FE43EFE95D30E61C8DB5DFA /* flutter_secure_storage */ = {
+			isa = PBXGroup;
+			children = (
+				E6350D3FA413B332E00C84A8B31D4437 /* .. */,
+				F5F7A13FCE4BC82619B92C7E049B32E1 /* Pod */,
+				59639B16D9D22459AB2BCD24A02D5194 /* Support Files */,
+			);
+			name = flutter_secure_storage;
+			path = ../.symlinks/plugins/flutter_secure_storage/ios;
+			sourceTree = "<group>";
+		};
+		15C68FB3951C0A6D13FFF911FD8283DD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1B0B32864E78A2A0AF31688A7E691D43 /* FluttertoastPlugin.h */,
+				69033643F518A605521B76C7766502C0 /* FluttertoastPlugin.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1832031650D1605DFCCAF6760EA5ABF2 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				6715E9FC60EC23EC815E4EA5FE5B6D97 /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		18DD602D3A8794F4A518C8A4800C7B94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BDB20A9D855EB5F181FEA97019FE6E2 /* flutter_okta_sdk.framework */,
+				C1C1AD8C20613ACC67F00155D7BB54AA /* flutter_secure_storage.framework */,
+				D0C5A85ABEF5ED03A54A449B87B69225 /* fluttertoast.framework */,
+				39D0869EEE791ACA94DDCF10F45F4B3B /* OktaJWT.framework */,
+				58936BA7C3A7268D69C0D13DA4B75F5C /* OktaOidc.framework */,
+				669E8F25E1897672BDB80B7EB784DA24 /* Pods_Runner.framework */,
+				55E0AFD333353D71ACC2207149E879D6 /* Toast.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B684BD28F24AF0166374875911D7BC7 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				72F07DF9BDC454DA3A5F6FCE728BD1B3 /* .symlinks */,
+			);
+			name = ios;
+			path = ios;
+			sourceTree = "<group>";
+		};
+		21CF36247B35F45FE2C8C2A3584A175E /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				D91374970F0182BA42FE167D30AF3AE6 /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		233C11A47D1658C65F2D4803808C59CE /* flutter-okta-app */ = {
+			isa = PBXGroup;
+			children = (
+				F5C6C409259357980F632B6597F3F1B2 /* ios */,
+			);
+			name = "flutter-okta-app";
+			path = "flutter-okta-app";
+			sourceTree = "<group>";
+		};
+		2627352B6BADAA320EA9A0011BB79165 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				1832031650D1605DFCCAF6760EA5ABF2 /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		2EF72ACC224B768C0D3E4EE2B6815AAF /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				2627352B6BADAA320EA9A0011BB79165 /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		314F8881B6EC02E31E16F10AEB5382CA /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				CFE9D65C907FFA168B00F514A333F662 /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		3620657BE3C72F39F84D4B92CF1F2DBA /* flutter-okta-app */ = {
+			isa = PBXGroup;
+			children = (
+				1B684BD28F24AF0166374875911D7BC7 /* ios */,
+			);
+			name = "flutter-okta-app";
+			path = "flutter-okta-app";
+			sourceTree = "<group>";
+		};
+		3728BC8EB1970C8A0CEA5FA08B619871 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				A88DF3EEF47F6C14FF0DD23302CD5302 /* flutter-projects */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		3C9C39B75BF68FD1A3B48E64BDD00223 /* .symlinks */ = {
+			isa = PBXGroup;
+			children = (
+				C08270A74188848A371CE25FBDC9B313 /* plugins */,
+			);
+			name = .symlinks;
+			path = .symlinks;
+			sourceTree = "<group>";
+		};
+		4181EE2DC06F869F32C3753193BF5811 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				3728BC8EB1970C8A0CEA5FA08B619871 /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		427758A4F468B3E0949A77FED6C17B0D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2D26FA89966800D2EDC06841E7ECD914 /* FlutterOktaSdkPlugin.h */,
+				4A01B7FCD8740B68AE34D5A3559EA800 /* FlutterOktaSdkPlugin.m */,
+				1EF25CBFE99DE414BCC56F1538995FD2 /* SwiftFlutterOktaSdkPlugin.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		429B1DB5B8F21E234623B1970C11C98D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2571518A303A0550E5ECBC590A94897C /* OktaJWT.modulemap */,
+				6321215DFE3F9904FC2175AD51C01F85 /* OktaJWT-dummy.m */,
+				D682963DEDF4C7CD7883095864DB83A9 /* OktaJWT-Info.plist */,
+				ADFD8FFFDAD6AF3C1D450E9F57C56316 /* OktaJWT-prefix.pch */,
+				3626774EDBA44EE1D31C5573EF9B268D /* OktaJWT-umbrella.h */,
+				EF0F69ADB04BD46467C2CBBC316CE8A6 /* OktaJWT.debug.xcconfig */,
+				38A6837091EFD5F12B7D7DC0F4B6F4B7 /* OktaJWT.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OktaJWT";
+			sourceTree = "<group>";
+		};
+		43496EF8127826795EDDCA56BB1CB861 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				A2F78671F2C917BCA98904E051BCE0B2 /* Classes */,
+			);
+			name = ios;
+			path = ios;
+			sourceTree = "<group>";
+		};
+		468033505E2CAFFB4214CB308CC2C895 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				B2156C1DB018EDC0821608844438A3A9 /* Toast.h */,
+				D48B476EF031E29D598A78069289E798 /* UIView+Toast.h */,
+				9716054879A9FD9F749810C00D85E8E1 /* UIView+Toast.m */,
+				CCEE0950C6B3FC5F02B74CC37DA2F908 /* Support Files */,
+			);
+			name = Toast;
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		49908EF979FF00AFB51D91C17A4961D6 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				4181EE2DC06F869F32C3753193BF5811 /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		4D7A3E2FCAEDB435FA9824C30F49100C /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				56F1303F4FBEF72B534C5E2BA4E67FB7 /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		56F1303F4FBEF72B534C5E2BA4E67FB7 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				49908EF979FF00AFB51D91C17A4961D6 /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		59639B16D9D22459AB2BCD24A02D5194 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				516ED41515F33FB74CBEED12C68D9B11 /* flutter_secure_storage.modulemap */,
+				C043B49390CDEF9667803531330F4187 /* flutter_secure_storage-dummy.m */,
+				7BB2233C71294C13C7DFCC60B04C7B3E /* flutter_secure_storage-Info.plist */,
+				0F92860C85CB4004844A52D9F7415BA0 /* flutter_secure_storage-prefix.pch */,
+				AFDE2259E9E13BC7476B4E30FFE0B4E6 /* flutter_secure_storage-umbrella.h */,
+				72AF64D4C76C4484EFC657046B0620AF /* flutter_secure_storage.debug.xcconfig */,
+				BD8B0CED1923E30E46E6FC6C7285532D /* flutter_secure_storage.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../../../Pods/Target Support Files/flutter_secure_storage";
+			sourceTree = "<group>";
+		};
+		5CCA61EBC8EF637C6A6088E501635F35 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				4D7A3E2FCAEDB435FA9824C30F49100C /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		5DD9FBE8BC88F0FCB0B86B01C3BC6AD6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				85C881825204D6C88D2968202B0ED06C /* flutter_okta_sdk.modulemap */,
+				5C4AB835E54CE3A144E576E73B12D704 /* flutter_okta_sdk-dummy.m */,
+				094B7BFC2CCBC66651B2231A5BF9727C /* flutter_okta_sdk-Info.plist */,
+				E864B1184561FE57E7889F69BC962A61 /* flutter_okta_sdk-prefix.pch */,
+				EB31DA1A4BC15EE4930C0520D1828A0D /* flutter_okta_sdk-umbrella.h */,
+				840E7862C2F8AC8FB23ABA05DCCE5590 /* flutter_okta_sdk.debug.xcconfig */,
+				44CB45F8709F4E5563CF1B1DD7B2BD1B /* flutter_okta_sdk.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../../../Pods/Target Support Files/flutter_okta_sdk";
+			sourceTree = "<group>";
+		};
+		6083E394AF77CD8CC778D598927A39CB /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				038D10074198B6A4EE59D757CE5BC222 /* flutter-projects */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		63DD92FE7F736653314B5B3142E510F0 /* flutter-projects */ = {
+			isa = PBXGroup;
+			children = (
+				3620657BE3C72F39F84D4B92CF1F2DBA /* flutter-okta-app */,
+			);
+			name = "flutter-projects";
+			path = "flutter-projects";
+			sourceTree = "<group>";
+		};
+		6715E9FC60EC23EC815E4EA5FE5B6D97 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				FF28EB98CB3AB78E2187B4FD8CF9E8DA /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		6FE8184E235DC964B0D93E93770ADEDD /* fluttertoast */ = {
+			isa = PBXGroup;
+			children = (
+				8966A00DBB2DDA4B23EC73BB02647313 /* .. */,
+				B9A4F274490D9FC8F07EEE7184211644 /* Pod */,
+				FB7186FC59DD8A41143E3D5439309B28 /* Support Files */,
+			);
+			name = fluttertoast;
+			path = ../.symlinks/plugins/fluttertoast/ios;
+			sourceTree = "<group>";
+		};
+		72F07DF9BDC454DA3A5F6FCE728BD1B3 /* .symlinks */ = {
+			isa = PBXGroup;
+			children = (
+				B6EB278A397C79E7AEB827964008C2DF /* plugins */,
+			);
+			name = .symlinks;
+			path = .symlinks;
+			sourceTree = "<group>";
+		};
+		791C6E4B424AF06279F8918FA67B8ED6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B0D67477903E1EB8D6A9F9AF51BC5CC /* Pods-Runner */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7B0D67477903E1EB8D6A9F9AF51BC5CC /* Pods-Runner */ = {
+			isa = PBXGroup;
+			children = (
+				F49C32B3B8CF59AB437BFD7314674868 /* Pods-Runner.modulemap */,
+				C6EA98402A94995D022D330B64B5203D /* Pods-Runner-acknowledgements.markdown */,
+				D9F2B4CB813B4BDC4D164C6E0868930A /* Pods-Runner-acknowledgements.plist */,
+				7B3C932BD54DBB963102A89E0F9E3948 /* Pods-Runner-dummy.m */,
+				317C26B9A7CEDD34ADE8F37FAAB7AC20 /* Pods-Runner-frameworks.sh */,
+				51825CD8F0558EFA53D9510F0E5BFA16 /* Pods-Runner-Info.plist */,
+				96BF45FBE2BC9AD7B2D7E56D01B5EE46 /* Pods-Runner-umbrella.h */,
+				CDAECCF4B5E08124ED410F09FD5A5DF9 /* Pods-Runner.debug.xcconfig */,
+				9F79F8269DC34AC56BB3D1D9652C0D86 /* Pods-Runner.profile.xcconfig */,
+				D2FA70CA298C392CB8332ADEEDD1CE85 /* Pods-Runner.release.xcconfig */,
+			);
+			name = "Pods-Runner";
+			path = "Target Support Files/Pods-Runner";
+			sourceTree = "<group>";
+		};
+		8966A00DBB2DDA4B23EC73BB02647313 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				AE61B42F9F33F694BFB1E36A87D5ECAD /* .. */,
+			);
+			name = ..;
+			path = "../../../../../../../flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-7.1.1/ios";
+			sourceTree = "<group>";
+		};
+		9022C5878841340831BCDFB90D550DAB /* fluttertoast */ = {
+			isa = PBXGroup;
+			children = (
+				9FCD7611FA29FDE19F610999B5998C94 /* ios */,
+			);
+			name = fluttertoast;
+			path = fluttertoast;
+			sourceTree = "<group>";
+		};
+		974E6D3AAD3C3581B7B8982525A303BB /* flutter_secure_storage */ = {
+			isa = PBXGroup;
+			children = (
+				43496EF8127826795EDDCA56BB1CB861 /* ios */,
+			);
+			name = flutter_secure_storage;
+			path = flutter_secure_storage;
+			sourceTree = "<group>";
+		};
+		9A66745A7D8870DDEB947B86D190CC6F /* Okta */ = {
+			isa = PBXGroup;
+			children = (
+				A0C3A760C2645AA8602103243196C62D /* OIDAuthorizationService+Okta.swift */,
+				569487D7D81A2EDEBED4797B26A8EFC7 /* OIDAuthState+Okta.swift */,
+				ED19A6656962F2B2B302112164A2690A /* OktaOidc.h */,
+				B8F0BFC9F8EC71390B3E7CFECCFF66AD /* OktaOidc.swift */,
+				FD6557B6DAE94EBF38AEA691690CB836 /* OktaOidc+BrowserIOS.swift */,
+				986EDB9B33F88542B4CA9FE52306C3C2 /* OktaOidc+BrowserMAC.swift */,
+				BBC1228B1D76E0C8D7E00EB4812F8868 /* OktaOidcAuthenticate.swift */,
+				8C2E838E7374A8C0D386CC5895CFE54D /* OktaOidcBrowserProtocolIOS.swift */,
+				E04DD76953116D7451E689A0A4807F2C /* OktaOidcBrowserProtocolMAC.swift */,
+				073E00545D8379B937B84A9A86EC180C /* OktaOidcBrowserTask.swift */,
+				5B5A67B82AF349D5C77985B46CF1493A /* OktaOidcBrowserTaskIOS.swift */,
+				CB6BB9650012CEB52BFA061094E70DC1 /* OktaOidcBrowserTaskMAC.swift */,
+				CC2AE0B380200EB6E980CF26E0DEFDE8 /* OktaOidcConfig.swift */,
+				E2138A740ACAEA71993DF52A6F4D37C7 /* OktaOidcEndpoint.swift */,
+				8BD1FCE87438DFD0F48C352C3686B506 /* OktaOidcError.swift */,
+				0302C9AD277675DEF6BFF8575B2FBB3C /* OktaOidcHttpApiProtocol.swift */,
+				11B10DED29B9CB183A5712B61AD004B6 /* OktaOidcKeychain.swift */,
+				161CBCEBD06B35D89E77FEFBCAF11A8A /* OktaOidcRestApi.swift */,
+				34861BF18A1D1E8204D09C640BDA72FA /* OktaOidcSignOutHandler.swift */,
+				17774510F94BB5A6ADB45FF8676636F5 /* OktaOidcSignOutHandlerIOS.swift */,
+				6D41502A54623B80E5F0805EC6965EA5 /* OktaOidcSignOutHandlerMAC.swift */,
+				DFF5639A94DE131FEBD0D27152E9BE82 /* OktaOidcStateManager.swift */,
+				153F11109A1A2D773E7C50637E1D2430 /* OktaOidcTask.swift */,
+				E1FDEC94FA9C16A01322BC2C190F2B79 /* OktaOidcUtils.swift */,
+				4B82C43F46187EAE3911B5651A6D0A5D /* OktaRedirectServer.swift */,
+				AF99A749413CBAC66D92A57709EBC0A1 /* OktaRedirectServerConfiguration.swift */,
+				A3532386929438197779A4E23E03C784 /* OktaSignOutOptions.swift */,
+			);
+			name = Okta;
+			sourceTree = "<group>";
+		};
+		9FBAFED73A3B9D1F4836E68F672DF664 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				142E1EE2A5C9DB378996292E640A9D9B /* Flutter */,
+				0DC37DA6EA14871BF987177E43A34B25 /* flutter_okta_sdk */,
+				1526AF5D8FE43EFE95D30E61C8DB5DFA /* flutter_secure_storage */,
+				6FE8184E235DC964B0D93E93770ADEDD /* fluttertoast */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9FCD7611FA29FDE19F610999B5998C94 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				15C68FB3951C0A6D13FFF911FD8283DD /* Classes */,
+			);
+			name = ios;
+			path = ios;
+			sourceTree = "<group>";
+		};
+		A2F78671F2C917BCA98904E051BCE0B2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ECAD64687B53ADB0A15A7CABCA534C12 /* FlutterSecureStoragePlugin.h */,
+				EB54E4349621FBCF939468D6C7A20816 /* FlutterSecureStoragePlugin.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A64A1B7E9D92DABC52E5FD4FD857BF73 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				63DD92FE7F736653314B5B3142E510F0 /* flutter-projects */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A88DF3EEF47F6C14FF0DD23302CD5302 /* flutter-projects */ = {
+			isa = PBXGroup;
+			children = (
+				233C11A47D1658C65F2D4803808C59CE /* flutter-okta-app */,
+			);
+			name = "flutter-projects";
+			path = "flutter-projects";
+			sourceTree = "<group>";
+		};
+		AE61B42F9F33F694BFB1E36A87D5ECAD /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				21CF36247B35F45FE2C8C2A3584A175E /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B02F12CA79DB77AC1BDCA5355F25ECDE /* flutter-okta-app */ = {
+			isa = PBXGroup;
+			children = (
+				BF2674B6BA04447CE35218BCC3EC05E3 /* ios */,
+			);
+			name = "flutter-okta-app";
+			path = "flutter-okta-app";
+			sourceTree = "<group>";
+		};
+		B6EB278A397C79E7AEB827964008C2DF /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				E3F7B81C6531D85D8555E4E4ED4AC509 /* flutter_okta_sdk */,
+			);
+			name = plugins;
+			path = plugins;
+			sourceTree = "<group>";
+		};
+		B9A4F274490D9FC8F07EEE7184211644 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				035A57DCE052E9B7CBD2A0CE4205672D /* fluttertoast.podspec */,
+				52A8EE20E4633E6C262BF2CEB574893B /* LICENSE */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		BF2674B6BA04447CE35218BCC3EC05E3 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				E3602FBB2B32A2C22DD1405189385B8B /* .symlinks */,
+			);
+			name = ios;
+			path = ios;
+			sourceTree = "<group>";
+		};
+		C08270A74188848A371CE25FBDC9B313 /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				974E6D3AAD3C3581B7B8982525A303BB /* flutter_secure_storage */,
+			);
+			name = plugins;
+			path = plugins;
+			sourceTree = "<group>";
+		};
+		C9514CC35A8E9A9F36332E9CF05F07A9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				5863ADB3D3839D2F9425F0D49B058FCB /* Flutter.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CCEE0950C6B3FC5F02B74CC37DA2F908 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				065DAA343FF5089F9D889A16674F0B0F /* Toast.modulemap */,
+				23B5E14015F0DCC920DC673F51184995 /* Toast-dummy.m */,
+				B488126EC3E69F1AD3FBFA54379F6346 /* Toast-Info.plist */,
+				6806D222400476A84016E6BAB4BA6CE0 /* Toast-prefix.pch */,
+				4EB81E4011C61EF2B30B3986F70A622A /* Toast-umbrella.h */,
+				C749E080A0A672FC90A932A739F52931 /* Toast.debug.xcconfig */,
+				123F3FC7FDF41511BBFCD94C952689D8 /* Toast.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Toast";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				9FBAFED73A3B9D1F4836E68F672DF664 /* Development Pods */,
+				EA4122A840F24CD800BC28D9639726A6 /* Frameworks */,
+				EF347DFFD36DA58ED32D5A10D746FC08 /* Pods */,
+				18DD602D3A8794F4A518C8A4800C7B94 /* Products */,
+				791C6E4B424AF06279F8918FA67B8ED6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CFE9D65C907FFA168B00F514A333F662 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				6083E394AF77CD8CC778D598927A39CB /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D26578EA7B772F14AD4A3CCB6AE2E355 /* OktaJWT */ = {
+			isa = PBXGroup;
+			children = (
+				C9942B5BE44631138FC65BF4B641E8D8 /* APIErrors.swift */,
+				E3C7AA4AB8ED3EAE652C6F1E48AAA875 /* ClaimValidator.swift */,
+				3F8C0A1C17B2FFA447D1EED6B3F339D4 /* HMAC.swift */,
+				F6F090834F6194EB226C0B215829511D /* JSONWebToken.swift */,
+				8F12128BBAFBF9B27E3A3848DAE97E9E /* JWTVerificationErrors.swift */,
+				444E1A70CF6C63C463F0621D6558E7E4 /* JWTVerificationTypes.swift */,
+				4230BDA830FCDE21F2A9251FB632A4B8 /* JWTVerifier.swift */,
+				85CE771B91790A4D170AF6C0B6B504E7 /* Keychain.swift */,
+				20A33F12C729224D685155FAC9F98F5E /* NSData+Base64URLEncoding.swift */,
+				5518A58FD45120F2B7AD5D45896ECBB2 /* NSData+HMAC.h */,
+				25225258943C9DDD0A3F35837F2036CA /* NSData+HMAC.m */,
+				FBAE08D24ED3CBC47AC40F6165D825B3 /* NSData+SHA.h */,
+				4FA2AAACBB0C39A40DF32BE1118D41EC /* NSData+SHA.m */,
+				53FE078EB9E7B370848F9E9854C67BBD /* OktaJWT.swift */,
+				D034CE8596F59A454FF4ABA5ADE6C836 /* RequestsAPI.swift */,
+				66A60BCC225E9C626D673314E8209A3C /* RSASSA_PKCS1.swift */,
+				E82B8E2CFB30E7A1A89DC89E1071369D /* SecKeyUtils.swift */,
+				82AEDB93B80027519E5E0E69F7690CCA /* SignatureAlgorithm.swift */,
+				3E1635396C246A11460D94F91E55D0B5 /* SignatureValidator.swift */,
+				2EE4E4F507EED4EDAADC7F30A6223951 /* TokenSigner.swift */,
+				07872BE91C4C014B380CE3FBE0D479A3 /* TokenValidator.swift */,
+				E8BF5F15732F2B7208508E353DFA37FB /* Utils.swift */,
+				429B1DB5B8F21E234623B1970C11C98D /* Support Files */,
+			);
+			name = OktaJWT;
+			path = OktaJWT;
+			sourceTree = "<group>";
+		};
+		D72DCC1B8924D3E50A50DC344898706B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EF758028100147852387F0C38FFA1E22 /* Foundation.framework */,
+				BE85F8A1A02B26E419F5DB3149FD4FA1 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D91374970F0182BA42FE167D30AF3AE6 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				314F8881B6EC02E31E16F10AEB5382CA /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E06C723C7072519E391AA3596D385B7B /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				427758A4F468B3E0949A77FED6C17B0D /* Classes */,
+			);
+			name = ios;
+			path = ios;
+			sourceTree = "<group>";
+		};
+		E237C0557569E88B1BFD58042C0CF647 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				2EF72ACC224B768C0D3E4EE2B6815AAF /* .. */,
+			);
+			name = ..;
+			path = "../../../../../../../flutter/.pub-cache/hosted/pub.dartlang.org/flutter_okta_sdk-1.0.0-dev.7/ios";
+			sourceTree = "<group>";
+		};
+		E32CC681ADD2100A52677C84A1FD2865 /* OktaOidc */ = {
+			isa = PBXGroup;
+			children = (
+				05F80FAA6F8ABD444F3B5D01709410C4 /* AppAuth */,
+				9A66745A7D8870DDEB947B86D190CC6F /* Okta */,
+				EFACACE78CF765CE1B5578F39D85AB97 /* Support Files */,
+			);
+			name = OktaOidc;
+			path = OktaOidc;
+			sourceTree = "<group>";
+		};
+		E3602FBB2B32A2C22DD1405189385B8B /* .symlinks */ = {
+			isa = PBXGroup;
+			children = (
+				F92B118A92A5C8FA5932AE61D645A19D /* plugins */,
+			);
+			name = .symlinks;
+			path = .symlinks;
+			sourceTree = "<group>";
+		};
+		E3F7B81C6531D85D8555E4E4ED4AC509 /* flutter_okta_sdk */ = {
+			isa = PBXGroup;
+			children = (
+				E06C723C7072519E391AA3596D385B7B /* ios */,
+			);
+			name = flutter_okta_sdk;
+			path = flutter_okta_sdk;
+			sourceTree = "<group>";
+		};
+		E5057238AFD128E2D792ECBE6D77EA9A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				524111928921F72BDC37BF7AD3120BD7 /* Flutter.debug.xcconfig */,
+				E2F129A5946631ACF37E139A281A36A6 /* Flutter.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Pods/Target Support Files/Flutter";
+			sourceTree = "<group>";
+		};
+		E6350D3FA413B332E00C84A8B31D4437 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				5CCA61EBC8EF637C6A6088E501635F35 /* .. */,
+			);
+			name = ..;
+			path = "../../../../../../../flutter/.pub-cache/hosted/pub.dartlang.org/flutter_secure_storage-3.3.5/ios";
+			sourceTree = "<group>";
+		};
+		EA4122A840F24CD800BC28D9639726A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6F1CEBBA5C1B1A9A2BAADEE0027D12D /* OktaJWT.framework */,
+				059DF18135342C3BE5347578720EBA46 /* OktaOidc.framework */,
+				A20399B07682A6A768B2DEDE539A7CD2 /* Toast.framework */,
+				D72DCC1B8924D3E50A50DC344898706B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF347DFFD36DA58ED32D5A10D746FC08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D26578EA7B772F14AD4A3CCB6AE2E355 /* OktaJWT */,
+				E32CC681ADD2100A52677C84A1FD2865 /* OktaOidc */,
+				468033505E2CAFFB4214CB308CC2C895 /* Toast */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EFACACE78CF765CE1B5578F39D85AB97 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9CDD46A9CFCDDEF88B36F180749DFD0 /* OktaOidc.modulemap */,
+				2105E27084C089AF16185D05804A9832 /* OktaOidc-dummy.m */,
+				B66B23FA6482C3FFF3BC472CE9F9D275 /* OktaOidc-Info.plist */,
+				B17BA6E2BA469C1EAF843CB3C7D88AC9 /* OktaOidc-prefix.pch */,
+				AF41CD9852E2E97579EA1D1E55088582 /* OktaOidc-umbrella.h */,
+				BF4F92B9EC644A884F18D895DFCF6EE7 /* OktaOidc.debug.xcconfig */,
+				8B1B93C0C6BDAFEFC5A0FC6E07DF6DB2 /* OktaOidc.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OktaOidc";
+			sourceTree = "<group>";
+		};
+		F5C6C409259357980F632B6597F3F1B2 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				3C9C39B75BF68FD1A3B48E64BDD00223 /* .symlinks */,
+			);
+			name = ios;
+			path = ios;
+			sourceTree = "<group>";
+		};
+		F5F7A13FCE4BC82619B92C7E049B32E1 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F5A721531CAE80EF5C2F80B73CD1A33B /* flutter_secure_storage.podspec */,
+				279A36BE198E7D3CFC1A0CE9BF29B4D5 /* LICENSE */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		F92B118A92A5C8FA5932AE61D645A19D /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				9022C5878841340831BCDFB90D550DAB /* fluttertoast */,
+			);
+			name = plugins;
+			path = plugins;
+			sourceTree = "<group>";
+		};
+		FB7186FC59DD8A41143E3D5439309B28 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5DB5EFA75349BD51390E12F68E3AC89 /* fluttertoast.modulemap */,
+				AA7BF332F490FCE752A6C3763E6F2A04 /* fluttertoast-dummy.m */,
+				D647351157643D557282B4C0F9606573 /* fluttertoast-Info.plist */,
+				D373C321DCAC7332649D3C92CEE1FBB5 /* fluttertoast-prefix.pch */,
+				05EDE297E9B7E553FD1ED21D4CEBF069 /* fluttertoast-umbrella.h */,
+				6B472ABF5EFCE035984630C36245D116 /* fluttertoast.debug.xcconfig */,
+				5F433D846D081348A285F8985D05D652 /* fluttertoast.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../../../Pods/Target Support Files/fluttertoast";
+			sourceTree = "<group>";
+		};
+		FF28EB98CB3AB78E2187B4FD8CF9E8DA /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				A64A1B7E9D92DABC52E5FD4FD857BF73 /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0F5628C12386B3D0D7716C91346B782B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6C6FBD4C0F1687F2D1ED90A5452275E /* fluttertoast-umbrella.h in Headers */,
+				D62764B3707CD127333E9ACAA1F057FD /* FluttertoastPlugin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42DE283D46D7E2D1F5D515BB7EC5CBDA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04ECA8958CD9623FAAE4B75532773DF1 /* flutter_secure_storage-umbrella.h in Headers */,
+				63B7F654F4E1B73397FBC5BF85A96843 /* FlutterSecureStoragePlugin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77B004474F78D7A7A18CBAE9CC1FD36A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED9EAD955F864DF8DDFFF3D9093FDE9 /* flutter_okta_sdk-umbrella.h in Headers */,
+				F5BC7A57E307C4F820FFACCD4DA61F12 /* FlutterOktaSdkPlugin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDC771969043907EAC5BE86C328C17B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6056EDE29A841F2F6185982622DD957 /* Pods-Runner-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C65D34163CB09A84024E9E5B71487754 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				898D6886B79103DA22803C70CA62D13F /* AppAuthCore.h in Headers */,
+				FCC4278A781FE9B7A636F17F9D0DA20E /* OktaNetworkRequestCustomizationDelegate.h in Headers */,
+				085B2A7D0A90C1AC05B0EF1DFCDE0974 /* OktaOidc-umbrella.h in Headers */,
+				2E7DA340C0AD21EF4EF5750E893FA541 /* OktaOidc.h in Headers */,
+				F512AA36AAA0555150537D9223002B55 /* OktaUserAgent.h in Headers */,
+				EA6D2D31C9011FCCAFB4E3EA22DC3659 /* OKTAuthorizationRequest.h in Headers */,
+				AA30C2E43764292AA560E2FEDEC80FEB /* OKTAuthorizationResponse.h in Headers */,
+				0483F7FBC5C3AFEAF0D8D080780B6D73 /* OKTAuthorizationService+IOS.h in Headers */,
+				C8215256600E7C934C30B1729842962C /* OKTAuthorizationService+Mac.h in Headers */,
+				DB2272B8DB389E982FFAE26EB4517D66 /* OKTAuthorizationService.h in Headers */,
+				79B106A4647C10201D8223963F78662F /* OKTAuthState+IOS.h in Headers */,
+				94FEE45B63B6451D385524803A4BDE47 /* OKTAuthState+Mac.h in Headers */,
+				B52D4512F61CAD2E7534978F32443BE0 /* OKTAuthState.h in Headers */,
+				A9EDACC68BE9EAB12CC8D369075F0BA0 /* OKTAuthStateChangeDelegate.h in Headers */,
+				97EB6387A96943C4A5CFB5A277AC78B5 /* OKTAuthStateErrorDelegate.h in Headers */,
+				330B6FA0FC8876E0D89123C510F4A3B2 /* OKTClientMetadataParameters.h in Headers */,
+				B8926CA0E815F882C06F28026811F260 /* OKTDefines.h in Headers */,
+				F954D4463368A5E5D2BFACE4714E46BD /* OKTEndSessionRequest.h in Headers */,
+				49262A9E9BABD507F62771A65815CC4A /* OKTEndSessionResponse.h in Headers */,
+				4AA5A5C35614A37A42A89DBBA90ADB14 /* OKTError.h in Headers */,
+				F389C392496193C52AD28F61ACA67F6C /* OKTErrorUtilities.h in Headers */,
+				ABCEB6066118D44000E9901A302F5696 /* OKTExternalUserAgent.h in Headers */,
+				0B252934F29046E3B5AB95E711DFBC77 /* OKTExternalUserAgentIOS.h in Headers */,
+				CE35AF7885B760493F2BEF8BC53F14F2 /* OKTExternalUserAgentIOSCustomBrowser.h in Headers */,
+				5DF6ED650B6AA09E8AA885024DE3ED8C /* OKTExternalUserAgentMac.h in Headers */,
+				72535DF36A7C7E8012FD91AEC231A83C /* OKTExternalUserAgentNoSsoIOS.h in Headers */,
+				B7EBE40E48AECF4EB84049C5A6CD4A12 /* OKTExternalUserAgentRequest.h in Headers */,
+				31937A92B68F68196A77047ACC16A63D /* OKTExternalUserAgentSession.h in Headers */,
+				8C4DCEE28B9F87BDE67E8F6B8C16B9EA /* OKTFieldMapping.h in Headers */,
+				5872BB7E8D7EFD5DD6E50A73791C4FB8 /* OKTGrantTypes.h in Headers */,
+				111093B1F4A6D6FDBE2D7D3DF8C1616A /* OKTIDToken.h in Headers */,
+				8A2F46DCB99285D0CF9EF6DCE6067997 /* OKTLoopbackHTTPServer.h in Headers */,
+				263E6285F7438C5688239F069F377667 /* OKTRedirectHTTPHandler.h in Headers */,
+				14045CEE20F065148CFE9DEA14B60E48 /* OKTRegistrationRequest.h in Headers */,
+				471C89D0C1F0EFFAED21F5C7C6F5E98E /* OKTRegistrationResponse.h in Headers */,
+				8F61B4A73762AC685AFD2C5555534665 /* OKTResponseTypes.h in Headers */,
+				CFAE89BC3DD288D162268B8EFF7A7B6D /* OKTScopes.h in Headers */,
+				BD4A26B09ED19627CB060A77CB0E631B /* OKTScopeUtilities.h in Headers */,
+				96E23CBAA3970D4CDE4D586DB9C9BBBB /* OKTServiceConfiguration.h in Headers */,
+				A837C1FF41181E69AFFF0181ECB99730 /* OKTServiceDiscovery.h in Headers */,
+				8D053716C31F3BA37DF19FF65DF6DBE0 /* OKTTokenRequest.h in Headers */,
+				BAAB156A8751F48F095250C37F45CDEA /* OKTTokenResponse.h in Headers */,
+				25858FD84460F2E716297DA8C08BF47E /* OKTTokenUtilities.h in Headers */,
+				F453D0BA377EC65D51EB4999B2A738E1 /* OKTURLQueryComponent.h in Headers */,
+				00A04D6B4482EEADCE3D720BE06A591B /* OKTURLSessionProvider.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8A994902CE1D7648014D711FF6C1524 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA8AAF4A3ECBA0DA518B2738257ED97 /* Toast-umbrella.h in Headers */,
+				86A2D8441CDA731D8E83F001CBD8BCFD /* Toast.h in Headers */,
+				0E0ED5EA8E452417D3BEAA38FD92ACB6 /* UIView+Toast.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB61DDA69A9854FB7A3C7E1F420C61CE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5D9754619751E49598C4CE6CAE7F00 /* NSData+HMAC.h in Headers */,
+				C2F500F778F4B383413D35C63C3DEC64 /* NSData+SHA.h in Headers */,
+				820A549E7FBC257D48D282BBDDE6A936 /* OktaJWT-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		057C8E194CBF4D949AAFC27D801A1C96 /* OktaJWT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5AB3A952F85B333C68327977522A1D5 /* Build configuration list for PBXNativeTarget "OktaJWT" */;
+			buildPhases = (
+				EB61DDA69A9854FB7A3C7E1F420C61CE /* Headers */,
+				4DB16475ACB36D3F7FD51E01ED875C00 /* Sources */,
+				1FDF5D38780D2362AFE846E7791F056C /* Frameworks */,
+				67DB18CC9E9DF4511F1AD82CCD94C502 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OktaJWT;
+			productName = OktaJWT;
+			productReference = 39D0869EEE791ACA94DDCF10F45F4B3B /* OktaJWT.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		15490FE8E4E35B20C7777FA3316A00AA /* flutter_secure_storage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F53668F0ACA11E4CCA832034F2D48AEF /* Build configuration list for PBXNativeTarget "flutter_secure_storage" */;
+			buildPhases = (
+				42DE283D46D7E2D1F5D515BB7EC5CBDA /* Headers */,
+				1FE59B2C342566B5E7FE2A4971C31B11 /* Sources */,
+				F5305AC53567390E35BEDCC07C0DC37E /* Frameworks */,
+				13FAC93B90793DDE0B63323EECF2987F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD9534C99F4DC2899160127F860D3ED5 /* PBXTargetDependency */,
+			);
+			name = flutter_secure_storage;
+			productName = flutter_secure_storage;
+			productReference = C1C1AD8C20613ACC67F00155D7BB54AA /* flutter_secure_storage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		634625F4D54E06449F688B46730A2258 /* flutter_okta_sdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B3BF8C97B77ED8D4185AFD2EDFD7868 /* Build configuration list for PBXNativeTarget "flutter_okta_sdk" */;
+			buildPhases = (
+				77B004474F78D7A7A18CBAE9CC1FD36A /* Headers */,
+				4C2576A183C3F57656B6330415C907A2 /* Sources */,
+				6940FF222AA7BB4F754DBB6EFBC9A2F8 /* Frameworks */,
+				966E9B002DC9C9BCE8AD2F1813B5DA42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D02764201244154C6E412D0E8ECACC7D /* PBXTargetDependency */,
+				75FEBDBEF0A37B42A5316E7987844BE1 /* PBXTargetDependency */,
+				49CD43B1E3EB63C9BB9048EF395CE790 /* PBXTargetDependency */,
+			);
+			name = flutter_okta_sdk;
+			productName = flutter_okta_sdk;
+			productReference = 7BDB20A9D855EB5F181FEA97019FE6E2 /* flutter_okta_sdk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8B74B458B450D74B75744B87BD747314 /* Pods-Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0082792E4ABDEAA3576FB1192ABC4B3D /* Build configuration list for PBXNativeTarget "Pods-Runner" */;
+			buildPhases = (
+				AFDC771969043907EAC5BE86C328C17B /* Headers */,
+				9104B9D6569E3245832F84B484AA4C9C /* Sources */,
+				3CDADD5150F7F14794AE589773F52CB2 /* Frameworks */,
+				498A5365E04903A24D5A1689D57FB31A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4434B9166C70FE594A95DE9B6545D87 /* PBXTargetDependency */,
+				8802E64C956541BEA0A35BFB660AC440 /* PBXTargetDependency */,
+				95A183A6EA467D15882CD44D90A4ED67 /* PBXTargetDependency */,
+				6812A0D025E30A9352FE1F7AD4322239 /* PBXTargetDependency */,
+				959D9C02678A23568F80FC0973399894 /* PBXTargetDependency */,
+				2DFE2E1713A888B5AB53847664D756D4 /* PBXTargetDependency */,
+				573353121FBDDFCF907255E2751A5F45 /* PBXTargetDependency */,
+			);
+			name = "Pods-Runner";
+			productName = "Pods-Runner";
+			productReference = 669E8F25E1897672BDB80B7EB784DA24 /* Pods_Runner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A80A4D6B185BA43BC06122FED0C15F94 /* Toast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 787FAE95A5B905DD89822DEFCF58CD29 /* Build configuration list for PBXNativeTarget "Toast" */;
+			buildPhases = (
+				C8A994902CE1D7648014D711FF6C1524 /* Headers */,
+				5B99FCDED61359B01ADFAAAE7C74A148 /* Sources */,
+				E3FFD29E4E49A495C4DAE07C023CF327 /* Frameworks */,
+				243A09BB621EF88205A8798711F5D5AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Toast;
+			productName = Toast;
+			productReference = 55E0AFD333353D71ACC2207149E879D6 /* Toast.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C2D793A73A64DC43AD1DE31AD844D8E0 /* OktaOidc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1C468490E11A45DE6209E45BE721250 /* Build configuration list for PBXNativeTarget "OktaOidc" */;
+			buildPhases = (
+				C65D34163CB09A84024E9E5B71487754 /* Headers */,
+				ECDE74D621746DB5341D6A8BF0B17BAF /* Sources */,
+				8064C451137ED50CDEE48F3ABD339992 /* Frameworks */,
+				533A1A7354112F9E9F7C038A1742CA2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OktaOidc;
+			productName = OktaOidc;
+			productReference = 58936BA7C3A7268D69C0D13DA4B75F5C /* OktaOidc.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA3EDC8EBD9CDE19E74123E29F5B7E04 /* fluttertoast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 237716A0C156C94D2CD65A32C60D82CE /* Build configuration list for PBXNativeTarget "fluttertoast" */;
+			buildPhases = (
+				0F5628C12386B3D0D7716C91346B782B /* Headers */,
+				C63280ADC60FD9051B6F4760F71FCAF7 /* Sources */,
+				E94EF6460483E2F9862C36B245D24974 /* Frameworks */,
+				F66836C8FD44A1A8306CA08364A20E31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				447394FCCD1F0313945E313545F79680 /* PBXTargetDependency */,
+				DC314AE911B17EA5CE66DD780734BD5F /* PBXTargetDependency */,
+			);
+			name = fluttertoast;
+			productName = fluttertoast;
+			productReference = D0C5A85ABEF5ED03A54A449B87B69225 /* fluttertoast.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 18DD602D3A8794F4A518C8A4800C7B94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */,
+				634625F4D54E06449F688B46730A2258 /* flutter_okta_sdk */,
+				15490FE8E4E35B20C7777FA3316A00AA /* flutter_secure_storage */,
+				FA3EDC8EBD9CDE19E74123E29F5B7E04 /* fluttertoast */,
+				057C8E194CBF4D949AAFC27D801A1C96 /* OktaJWT */,
+				C2D793A73A64DC43AD1DE31AD844D8E0 /* OktaOidc */,
+				8B74B458B450D74B75744B87BD747314 /* Pods-Runner */,
+				A80A4D6B185BA43BC06122FED0C15F94 /* Toast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13FAC93B90793DDE0B63323EECF2987F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		243A09BB621EF88205A8798711F5D5AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498A5365E04903A24D5A1689D57FB31A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		533A1A7354112F9E9F7C038A1742CA2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67DB18CC9E9DF4511F1AD82CCD94C502 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		966E9B002DC9C9BCE8AD2F1813B5DA42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66836C8FD44A1A8306CA08364A20E31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FE59B2C342566B5E7FE2A4971C31B11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D995F25BF69E966C5A3EB5881E2CD7 /* flutter_secure_storage-dummy.m in Sources */,
+				02F0C605336AA2FBAAF1E868A18377A6 /* FlutterSecureStoragePlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C2576A183C3F57656B6330415C907A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A7D2C63EF2BBAA3704AA86007A424C /* flutter_okta_sdk-dummy.m in Sources */,
+				28216A67B8D1E82CE14737219EDA9796 /* FlutterOktaSdkPlugin.m in Sources */,
+				C55B87AB7560C07B64D7784770887478 /* SwiftFlutterOktaSdkPlugin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DB16475ACB36D3F7FD51E01ED875C00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8494238D5B6138D1E765E860494D7477 /* APIErrors.swift in Sources */,
+				33F10F7B97AAA08A2352603EA377F3A6 /* ClaimValidator.swift in Sources */,
+				B9E7446D1059D27DDCAE5FA7C623AC0F /* HMAC.swift in Sources */,
+				51F9BAECA7C3D11C70009DA6AE6A8FC2 /* JSONWebToken.swift in Sources */,
+				F226FB960CE2D25C39DF1BB74EB8CEA7 /* JWTVerificationErrors.swift in Sources */,
+				9EAF3261F687B2C35D4F03AC68806E09 /* JWTVerificationTypes.swift in Sources */,
+				FD845B1518C0E3055E8ABCD7E538D22F /* JWTVerifier.swift in Sources */,
+				6CCA103BD80140D909FEF9B5409B5F1F /* Keychain.swift in Sources */,
+				0722DD2C3258C1880F992D5117D67A00 /* NSData+Base64URLEncoding.swift in Sources */,
+				CA7E7A0CA50D940BD3CD780F32A72C49 /* NSData+HMAC.m in Sources */,
+				EAC50924FBCDCE2384D29DFBEAD8ED56 /* NSData+SHA.m in Sources */,
+				B1F80AE7EA2561CA9D9E0A1167170CD9 /* OktaJWT-dummy.m in Sources */,
+				9531477086883104D1572F807173E3A6 /* OktaJWT.swift in Sources */,
+				F5088BD9DAB981B6C8EEBB811704769D /* RequestsAPI.swift in Sources */,
+				1DFCE4637F7261DBB70CB7B896D9A61E /* RSASSA_PKCS1.swift in Sources */,
+				49D2E7CCD74B9277A293CAC84D00AA43 /* SecKeyUtils.swift in Sources */,
+				812C8407B81047D10166D6BD5A1C4312 /* SignatureAlgorithm.swift in Sources */,
+				88368D5C96D71B13F45585851978CBD5 /* SignatureValidator.swift in Sources */,
+				A0CCAB63D1163116758C333CF0D6CD48 /* TokenSigner.swift in Sources */,
+				AC924FBC82A03CA07101183410185E6F /* TokenValidator.swift in Sources */,
+				D18935EE520828D5BAC3B88A5D4FA31C /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B99FCDED61359B01ADFAAAE7C74A148 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7885FBD0A37404CAC3E38AF61DBB96CF /* Toast-dummy.m in Sources */,
+				C3F90D48E1BCCA0370734ADF8506AFA1 /* UIView+Toast.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9104B9D6569E3245832F84B484AA4C9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02EE974F2DC8D6E04B2A7ED58D30141F /* Pods-Runner-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C63280ADC60FD9051B6F4760F71FCAF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44DC5D9A8229C703417903895629628E /* fluttertoast-dummy.m in Sources */,
+				7038DB72B5704E98AECB83EBAAC78867 /* FluttertoastPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDE74D621746DB5341D6A8BF0B17BAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6603AC225518AE899D0307FE5A0C0B99 /* OIDAuthorizationService+Okta.swift in Sources */,
+				919AFDB7598298DDD036E4300F75BB76 /* OIDAuthState+Okta.swift in Sources */,
+				EE058669A7832E60FE09209DF29B3411 /* OktaOidc+BrowserIOS.swift in Sources */,
+				C26ACF4F8CC7A8EE9AA00BAC2C93890D /* OktaOidc+BrowserMAC.swift in Sources */,
+				5DF925443970782FB85FB38B219AE079 /* OktaOidc-dummy.m in Sources */,
+				E7E29D347B4F769FF872BADE4E0F61B5 /* OktaOidc.swift in Sources */,
+				A7E92EC95E31A26C130AB5691BBF71F0 /* OktaOidcAuthenticate.swift in Sources */,
+				05D96E8FB507B2AEF40CE2A802D8250C /* OktaOidcBrowserProtocolIOS.swift in Sources */,
+				CBE1BD2ED274219E6E636392C98C152C /* OktaOidcBrowserProtocolMAC.swift in Sources */,
+				63415AFF9E3321A539E0BA37CC96B421 /* OktaOidcBrowserTask.swift in Sources */,
+				E8FB00552CD266C3299EC4E22504E48C /* OktaOidcBrowserTaskIOS.swift in Sources */,
+				C6BC77CBC069B641FC1BE27CAA2BF312 /* OktaOidcBrowserTaskMAC.swift in Sources */,
+				05E62A2C83E8C420DCB670D52015BA72 /* OktaOidcConfig.swift in Sources */,
+				B3E1AD668431782A61A74ABA9BDAEB53 /* OktaOidcEndpoint.swift in Sources */,
+				FF3BF96E395617F916B3F60B9C80B71A /* OktaOidcError.swift in Sources */,
+				C9B604243CE5BFA0AEB2D69A12BD6085 /* OktaOidcHttpApiProtocol.swift in Sources */,
+				7C1892A371F91FB848F864770514B170 /* OktaOidcKeychain.swift in Sources */,
+				6F4AE15D94B6D3C37BA0482710421674 /* OktaOidcRestApi.swift in Sources */,
+				881D962546C403E6F0A871754311FC73 /* OktaOidcSignOutHandler.swift in Sources */,
+				3E39B12FF1CAA73043B3FF48547DB5E3 /* OktaOidcSignOutHandlerIOS.swift in Sources */,
+				7A4069F74410AF19CBD3756502DEAEB0 /* OktaOidcSignOutHandlerMAC.swift in Sources */,
+				CA212D766B7A3C734CEB1539C1AFFB3B /* OktaOidcStateManager.swift in Sources */,
+				457F2A21D61CEBD423C6A7B3BBFF607A /* OktaOidcTask.swift in Sources */,
+				700A3EA7DAEC0F4E9F7EF257CBEBCADA /* OktaOidcUtils.swift in Sources */,
+				C95E4C78F013DFA3B8C6F7C783094BE0 /* OktaRedirectServer.swift in Sources */,
+				9FE06B5FDDFD252B28387FF5CC572B05 /* OktaRedirectServerConfiguration.swift in Sources */,
+				64CF176F9699671D3D35C175088DA291 /* OktaSignOutOptions.swift in Sources */,
+				EBCFB5A87873234CB5E196E8A5B88534 /* OktaUserAgent.m in Sources */,
+				B32944E48541E452CD8DE178B4C7FD3C /* OKTAuthorizationRequest.m in Sources */,
+				70FDE46B76D4568A7A12317D8B35B38D /* OKTAuthorizationResponse.m in Sources */,
+				6A49C0D08389097421747B78ABF51F44 /* OKTAuthorizationService+IOS.m in Sources */,
+				5C5430CFBDFDC249DDCF21E9D1E5D8B6 /* OKTAuthorizationService+Mac.m in Sources */,
+				E363CEB435AC0802B4F202B8725FBF7E /* OKTAuthorizationService.m in Sources */,
+				83C8AFED50F4577690F43713AE01C498 /* OKTAuthState+IOS.m in Sources */,
+				3880F19B1F84E210F94A6A1E10F65B50 /* OKTAuthState+Mac.m in Sources */,
+				88AF75A05AFE1C9AE270303F960DEDE9 /* OKTAuthState.m in Sources */,
+				5BE476CD797C15FF4280AB8A90A18594 /* OKTClientMetadataParameters.m in Sources */,
+				50CC2E0794DC91809736938AEA7F2C64 /* OKTEndSessionRequest.m in Sources */,
+				544E666901B335C39F87A200B348C598 /* OKTEndSessionResponse.m in Sources */,
+				E0458EC712D82273C3FA10B199821245 /* OKTError.m in Sources */,
+				405A2F69EED734BB1A793730FEF1E110 /* OKTErrorUtilities.m in Sources */,
+				DDCEE72EC15500BF71A184DA3BB248C6 /* OKTExternalUserAgentIOS.m in Sources */,
+				C1EF461CD69258954149DB4D99FE4DE2 /* OKTExternalUserAgentIOSCustomBrowser.m in Sources */,
+				8AA09179605C90DE71349CB1EC5DE132 /* OKTExternalUserAgentMac.m in Sources */,
+				8170D5930B4A843A6353297783D7146B /* OKTExternalUserAgentNoSsoIOS.m in Sources */,
+				FEE741EB80DB529D5189D6DE117EF474 /* OKTFieldMapping.m in Sources */,
+				A3D8162F1DFA51EC1D25C6688B4F8E70 /* OKTGrantTypes.m in Sources */,
+				94A88421215DE6C0E701596C929E07A9 /* OKTIDToken.m in Sources */,
+				8E5B741C3518C29395C48817EFD43275 /* OKTLoopbackHTTPServer.m in Sources */,
+				54C0727907EB17B9CCB0C72D23B22132 /* OKTRedirectHTTPHandler.m in Sources */,
+				7F733B80B32ADD4E1D3465037664C5EB /* OKTRegistrationRequest.m in Sources */,
+				1B28C96864B52F7DF588086710D11295 /* OKTRegistrationResponse.m in Sources */,
+				FDA0A99C56A25062E881E6FCC265D4D4 /* OKTResponseTypes.m in Sources */,
+				1A292CB4DB22B463FBDFB69E8C8C179D /* OKTScopes.m in Sources */,
+				19EFE745ED8B6928973C1214FC612675 /* OKTScopeUtilities.m in Sources */,
+				8137745D46C9E59468C62FDA91B881F8 /* OKTServiceConfiguration.m in Sources */,
+				277BEED65F8A4572A05BFA3207069B06 /* OKTServiceDiscovery.m in Sources */,
+				1B08077C0E7F509509FF0A55874AD2EB /* OKTTokenRequest.m in Sources */,
+				BAD0F2AD115251FEA704A05182EC4DB3 /* OKTTokenResponse.m in Sources */,
+				931C0621CA496B7913F5E18D52C3DBA5 /* OKTTokenUtilities.m in Sources */,
+				EE7FA92CAA093165A5817ADAA0A2672F /* OKTURLQueryComponent.m in Sources */,
+				0FAB9866812EE4C518F7E9CA022EF925 /* OKTURLSessionProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DFE2E1713A888B5AB53847664D756D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = flutter_secure_storage;
+			target = 15490FE8E4E35B20C7777FA3316A00AA /* flutter_secure_storage */;
+			targetProxy = B2A7FDF3126E8097E95F7E03AF459CF6 /* PBXContainerItemProxy */;
+		};
+		447394FCCD1F0313945E313545F79680 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Flutter;
+			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
+			targetProxy = E2EDB81FA513F67DDDF0CC40F5F052BF /* PBXContainerItemProxy */;
+		};
+		49CD43B1E3EB63C9BB9048EF395CE790 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OktaOidc;
+			target = C2D793A73A64DC43AD1DE31AD844D8E0 /* OktaOidc */;
+			targetProxy = 4342AEF1C4BDE83EFC3141B71AB2A57B /* PBXContainerItemProxy */;
+		};
+		573353121FBDDFCF907255E2751A5F45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fluttertoast;
+			target = FA3EDC8EBD9CDE19E74123E29F5B7E04 /* fluttertoast */;
+			targetProxy = D6E036E01C53504E403D1A9114138D18 /* PBXContainerItemProxy */;
+		};
+		6812A0D025E30A9352FE1F7AD4322239 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Toast;
+			target = A80A4D6B185BA43BC06122FED0C15F94 /* Toast */;
+			targetProxy = 43432C1897CA5C213F3A22CA86A5E9D4 /* PBXContainerItemProxy */;
+		};
+		75FEBDBEF0A37B42A5316E7987844BE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OktaJWT;
+			target = 057C8E194CBF4D949AAFC27D801A1C96 /* OktaJWT */;
+			targetProxy = 693F82A594B4EAD43649B2B65219B65D /* PBXContainerItemProxy */;
+		};
+		8802E64C956541BEA0A35BFB660AC440 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OktaJWT;
+			target = 057C8E194CBF4D949AAFC27D801A1C96 /* OktaJWT */;
+			targetProxy = 6CDAE1858323FE88F73EBEA3DF5D8375 /* PBXContainerItemProxy */;
+		};
+		959D9C02678A23568F80FC0973399894 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = flutter_okta_sdk;
+			target = 634625F4D54E06449F688B46730A2258 /* flutter_okta_sdk */;
+			targetProxy = 3F621B8ACE483F0ED204DFEB32CEDEF3 /* PBXContainerItemProxy */;
+		};
+		95A183A6EA467D15882CD44D90A4ED67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OktaOidc;
+			target = C2D793A73A64DC43AD1DE31AD844D8E0 /* OktaOidc */;
+			targetProxy = 64044CCD6D0403B178F36A30A0BA7AD0 /* PBXContainerItemProxy */;
+		};
+		D02764201244154C6E412D0E8ECACC7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Flutter;
+			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
+			targetProxy = E0B07D3AB05EB34BB7C1CA5323956325 /* PBXContainerItemProxy */;
+		};
+		D4434B9166C70FE594A95DE9B6545D87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Flutter;
+			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
+			targetProxy = A794D45F591481481338937AD49A025B /* PBXContainerItemProxy */;
+		};
+		DC314AE911B17EA5CE66DD780734BD5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Toast;
+			target = A80A4D6B185BA43BC06122FED0C15F94 /* Toast */;
+			targetProxy = 4E07492E89BD136EB2D9C650BAED62B6 /* PBXContainerItemProxy */;
+		};
+		FD9534C99F4DC2899160127F860D3ED5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Flutter;
+			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
+			targetProxy = 38F24C2E6409691A9F1D2CF24E363FC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0FD5B7EF57450F24BC20E8976FA26772 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD8B0CED1923E30E46E6FC6C7285532D /* flutter_secure_storage.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-armv7_arm64\"",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-x86_64-simulator\"",
+					"$(inherited)",
+				);
+				GCC_PREFIX_HEADER = "Target Support Files/flutter_secure_storage/flutter_secure_storage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/flutter_secure_storage/flutter_secure_storage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/flutter_secure_storage/flutter_secure_storage.modulemap";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Flutter,
+				);
+				PRODUCT_MODULE_NAME = flutter_secure_storage;
+				PRODUCT_NAME = flutter_secure_storage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		17918D5BBD46B5225635101AA76AD7FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44CB45F8709F4E5563CF1B1DD7B2BD1B /* flutter_okta_sdk.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-armv7_arm64\"",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-x86_64-simulator\"",
+					"$(inherited)",
+				);
+				GCC_PREFIX_HEADER = "Target Support Files/flutter_okta_sdk/flutter_okta_sdk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/flutter_okta_sdk/flutter_okta_sdk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/flutter_okta_sdk/flutter_okta_sdk.modulemap";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Flutter,
+				);
+				PRODUCT_MODULE_NAME = flutter_okta_sdk;
+				PRODUCT_NAME = flutter_okta_sdk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		29C1DE77F68F7206F99087CDAB9DEC66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 524111928921F72BDC37BF7AD3120BD7 /* Flutter.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		303BD566A5EB1C27555D7BC805CED448 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38A6837091EFD5F12B7D7DC0F4B6F4B7 /* OktaJWT.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OktaJWT/OktaJWT-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OktaJWT/OktaJWT-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OktaJWT/OktaJWT.modulemap";
+				PRODUCT_MODULE_NAME = OktaJWT;
+				PRODUCT_NAME = OktaJWT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Profile;
+		};
+		45620F0BA5780A14C1F62817EDA02508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF0F69ADB04BD46467C2CBBC316CE8A6 /* OktaJWT.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OktaJWT/OktaJWT-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OktaJWT/OktaJWT-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OktaJWT/OktaJWT.modulemap";
+				PRODUCT_MODULE_NAME = OktaJWT;
+				PRODUCT_NAME = OktaJWT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5035053F16C70C11A7C73FB88743DF6A /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2F129A5946631ACF37E139A281A36A6 /* Flutter.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Profile;
+		};
+		52974ADAE25743E22992D31EDF7311C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C749E080A0A672FC90A932A739F52931 /* Toast.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Toast/Toast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toast/Toast-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Toast/Toast.modulemap";
+				PRODUCT_MODULE_NAME = Toast;
+				PRODUCT_NAME = Toast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A08E4BAE60B7F979BA02F08C3235F5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2FA70CA298C392CB8332ADEEDD1CE85 /* Pods-Runner.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-armv7_arm64\"",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-x86_64-simulator\"",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Target Support Files/Pods-Runner/Pods-Runner-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Runner/Pods-Runner.modulemap";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Flutter,
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6CDB2BCB557F1539CF4D1CFF754FA05A /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B1B93C0C6BDAFEFC5A0FC6E07DF6DB2 /* OktaOidc.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OktaOidc/OktaOidc-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OktaOidc/OktaOidc-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OktaOidc/OktaOidc.modulemap";
+				PRODUCT_MODULE_NAME = OktaOidc;
+				PRODUCT_NAME = OktaOidc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Profile;
+		};
+		71102ECD72645BE98E87B225FDE911C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B472ABF5EFCE035984630C36245D116 /* fluttertoast.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-armv7_arm64\"",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-x86_64-simulator\"",
+					"$(inherited)",
+				);
+				GCC_PREFIX_HEADER = "Target Support Files/fluttertoast/fluttertoast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/fluttertoast/fluttertoast-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/fluttertoast/fluttertoast.modulemap";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Flutter,
+				);
+				PRODUCT_MODULE_NAME = fluttertoast;
+				PRODUCT_NAME = fluttertoast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		77521A3816AAFC646BB909229EDE283B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 123F3FC7FDF41511BBFCD94C952689D8 /* Toast.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Toast/Toast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toast/Toast-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Toast/Toast.modulemap";
+				PRODUCT_MODULE_NAME = Toast;
+				PRODUCT_NAME = Toast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8E6293142049429CAD33352411AA4813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDAECCF4B5E08124ED410F09FD5A5DF9 /* Pods-Runner.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-armv7_arm64\"",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-x86_64-simulator\"",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Target Support Files/Pods-Runner/Pods-Runner-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Runner/Pods-Runner.modulemap";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Flutter,
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		93E09B0CBC0B1FF2A627F9466C4BAB1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B1B93C0C6BDAFEFC5A0FC6E07DF6DB2 /* OktaOidc.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OktaOidc/OktaOidc-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OktaOidc/OktaOidc-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OktaOidc/OktaOidc.modulemap";
+				PRODUCT_MODULE_NAME = OktaOidc;
+				PRODUCT_NAME = OktaOidc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9669B495156A7CF8EDCC7B76D20C7AE0 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F79F8269DC34AC56BB3D1D9652C0D86 /* Pods-Runner.profile.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-armv7_arm64\"",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-x86_64-simulator\"",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Target Support Files/Pods-Runner/Pods-Runner-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Runner/Pods-Runner.modulemap";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Flutter,
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Profile;
+		};
+		A1C246CDA87B325AC646EE038EE26DD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38A6837091EFD5F12B7D7DC0F4B6F4B7 /* OktaJWT.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OktaJWT/OktaJWT-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OktaJWT/OktaJWT-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OktaJWT/OktaJWT.modulemap";
+				PRODUCT_MODULE_NAME = OktaJWT;
+				PRODUCT_NAME = OktaJWT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A85E9711F23E064FB8273FBA807DD5C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 840E7862C2F8AC8FB23ABA05DCCE5590 /* flutter_okta_sdk.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-armv7_arm64\"",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-x86_64-simulator\"",
+					"$(inherited)",
+				);
+				GCC_PREFIX_HEADER = "Target Support Files/flutter_okta_sdk/flutter_okta_sdk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/flutter_okta_sdk/flutter_okta_sdk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/flutter_okta_sdk/flutter_okta_sdk.modulemap";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Flutter,
+				);
+				PRODUCT_MODULE_NAME = flutter_okta_sdk;
+				PRODUCT_NAME = flutter_okta_sdk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B101943F0CB9E815A608C8F07400681F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF4F92B9EC644A884F18D895DFCF6EE7 /* OktaOidc.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OktaOidc/OktaOidc-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OktaOidc/OktaOidc-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OktaOidc/OktaOidc.modulemap";
+				PRODUCT_MODULE_NAME = OktaOidc;
+				PRODUCT_NAME = OktaOidc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C14AF8ADC786FA8C5E98AF1E9D325A9B /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD8B0CED1923E30E46E6FC6C7285532D /* flutter_secure_storage.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-armv7_arm64\"",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-x86_64-simulator\"",
+					"$(inherited)",
+				);
+				GCC_PREFIX_HEADER = "Target Support Files/flutter_secure_storage/flutter_secure_storage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/flutter_secure_storage/flutter_secure_storage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/flutter_secure_storage/flutter_secure_storage.modulemap";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Flutter,
+				);
+				PRODUCT_MODULE_NAME = flutter_secure_storage;
+				PRODUCT_NAME = flutter_secure_storage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Profile;
+		};
+		CB8BAAE9F4B5751F0754B270563EB83F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72AF64D4C76C4484EFC657046B0620AF /* flutter_secure_storage.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-armv7_arm64\"",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-x86_64-simulator\"",
+					"$(inherited)",
+				);
+				GCC_PREFIX_HEADER = "Target Support Files/flutter_secure_storage/flutter_secure_storage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/flutter_secure_storage/flutter_secure_storage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/flutter_secure_storage/flutter_secure_storage.modulemap";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Flutter,
+				);
+				PRODUCT_MODULE_NAME = flutter_secure_storage;
+				PRODUCT_NAME = flutter_secure_storage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DAAAFC3B245C87F337124FFC677C1A8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F433D846D081348A285F8985D05D652 /* fluttertoast.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-armv7_arm64\"",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-x86_64-simulator\"",
+					"$(inherited)",
+				);
+				GCC_PREFIX_HEADER = "Target Support Files/fluttertoast/fluttertoast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/fluttertoast/fluttertoast-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/fluttertoast/fluttertoast.modulemap";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Flutter,
+				);
+				PRODUCT_MODULE_NAME = fluttertoast;
+				PRODUCT_NAME = fluttertoast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DCF364D2CA5F270CAD355FD2FAFE3B13 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_PROFILE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Profile;
+		};
+		DCFA05882788335A083583C81E0D7081 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 123F3FC7FDF41511BBFCD94C952689D8 /* Toast.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Toast/Toast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toast/Toast-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Toast/Toast.modulemap";
+				PRODUCT_MODULE_NAME = Toast;
+				PRODUCT_NAME = Toast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Profile;
+		};
+		E25FF583F7E40BB07FBC9568693B56BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2F129A5946631ACF37E139A281A36A6 /* Flutter.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E37F1EEDDDF320295434A6ACBD6DF0CE /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F433D846D081348A285F8985D05D652 /* fluttertoast.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-armv7_arm64\"",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-x86_64-simulator\"",
+					"$(inherited)",
+				);
+				GCC_PREFIX_HEADER = "Target Support Files/fluttertoast/fluttertoast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/fluttertoast/fluttertoast-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/fluttertoast/fluttertoast.modulemap";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Flutter,
+				);
+				PRODUCT_MODULE_NAME = fluttertoast;
+				PRODUCT_NAME = fluttertoast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Profile;
+		};
+		ECC1BCB9E4BB5DCEFC8DAF86BA081ABB /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44CB45F8709F4E5563CF1B1DD7B2BD1B /* flutter_okta_sdk.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-armv7_arm64\"",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"\"/Users/mteffeteller/dev/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-x86_64-simulator\"",
+					"$(inherited)",
+				);
+				GCC_PREFIX_HEADER = "Target Support Files/flutter_okta_sdk/flutter_okta_sdk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/flutter_okta_sdk/flutter_okta_sdk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/flutter_okta_sdk/flutter_okta_sdk.modulemap";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					Flutter,
+				);
+				PRODUCT_MODULE_NAME = flutter_okta_sdk;
+				PRODUCT_NAME = flutter_okta_sdk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Profile;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0082792E4ABDEAA3576FB1192ABC4B3D /* Build configuration list for PBXNativeTarget "Pods-Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E6293142049429CAD33352411AA4813 /* Debug */,
+				9669B495156A7CF8EDCC7B76D20C7AE0 /* Profile */,
+				6A08E4BAE60B7F979BA02F08C3235F5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		237716A0C156C94D2CD65A32C60D82CE /* Build configuration list for PBXNativeTarget "fluttertoast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71102ECD72645BE98E87B225FDE911C5 /* Debug */,
+				E37F1EEDDDF320295434A6ACBD6DF0CE /* Profile */,
+				DAAAFC3B245C87F337124FFC677C1A8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B3BF8C97B77ED8D4185AFD2EDFD7868 /* Build configuration list for PBXNativeTarget "flutter_okta_sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A85E9711F23E064FB8273FBA807DD5C1 /* Debug */,
+				ECC1BCB9E4BB5DCEFC8DAF86BA081ABB /* Profile */,
+				17918D5BBD46B5225635101AA76AD7FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				DCF364D2CA5F270CAD355FD2FAFE3B13 /* Profile */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		787FAE95A5B905DD89822DEFCF58CD29 /* Build configuration list for PBXNativeTarget "Toast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52974ADAE25743E22992D31EDF7311C3 /* Debug */,
+				DCFA05882788335A083583C81E0D7081 /* Profile */,
+				77521A3816AAFC646BB909229EDE283B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94078A06C17E946ADC1F2C06726219E5 /* Build configuration list for PBXAggregateTarget "Flutter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29C1DE77F68F7206F99087CDAB9DEC66 /* Debug */,
+				5035053F16C70C11A7C73FB88743DF6A /* Profile */,
+				E25FF583F7E40BB07FBC9568693B56BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5AB3A952F85B333C68327977522A1D5 /* Build configuration list for PBXNativeTarget "OktaJWT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45620F0BA5780A14C1F62817EDA02508 /* Debug */,
+				303BD566A5EB1C27555D7BC805CED448 /* Profile */,
+				A1C246CDA87B325AC646EE038EE26DD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1C468490E11A45DE6209E45BE721250 /* Build configuration list for PBXNativeTarget "OktaOidc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B101943F0CB9E815A608C8F07400681F /* Debug */,
+				6CDB2BCB557F1539CF4D1CFF754FA05A /* Profile */,
+				93E09B0CBC0B1FF2A627F9466C4BAB1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F53668F0ACA11E4CCA832034F2D48AEF /* Build configuration list for PBXNativeTarget "flutter_secure_storage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB8BAAE9F4B5751F0754B270563EB83F /* Debug */,
+				C14AF8ADC786FA8C5E98AF1E9D325A9B /* Profile */,
+				0FD5B7EF57450F24BC20E8976FA26772 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

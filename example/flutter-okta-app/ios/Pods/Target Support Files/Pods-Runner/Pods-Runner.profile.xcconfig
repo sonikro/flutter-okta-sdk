@@ -1,0 +1,15 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/OktaJWT" "${PODS_CONFIGURATION_BUILD_DIR}/OktaOidc" "${PODS_CONFIGURATION_BUILD_DIR}/Toast" "${PODS_CONFIGURATION_BUILD_DIR}/flutter_okta_sdk" "${PODS_CONFIGURATION_BUILD_DIR}/flutter_secure_storage" "${PODS_CONFIGURATION_BUILD_DIR}/fluttertoast"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/OktaJWT/OktaJWT.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/OktaOidc/OktaOidc.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Toast/Toast.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/flutter_okta_sdk/flutter_okta_sdk.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/flutter_secure_storage/flutter_secure_storage.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/fluttertoast/fluttertoast.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_LDFLAGS = $(inherited) -framework "OktaJWT" -framework "OktaOidc" -framework "QuartzCore" -framework "Toast" -framework "flutter_okta_sdk" -framework "flutter_secure_storage" -framework "fluttertoast"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+USER_HEADER_SEARCH_PATHS = ${SRCROOT}/Sources/**
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

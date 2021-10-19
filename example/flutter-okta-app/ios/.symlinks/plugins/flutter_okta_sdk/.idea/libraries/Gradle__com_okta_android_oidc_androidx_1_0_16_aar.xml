@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: com.okta.android:oidc-androidx:1.0.16@aar" type="AndroidModuleLibraryType">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/552128b45863d3670ec798acdaa1f813/oidc-androidx-1.0.16/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

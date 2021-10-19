@@ -1,0 +1,54 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_okta_sdk (0.0.1):
+    - Flutter
+    - OktaJWT
+    - OktaOidc
+  - flutter_secure_storage (3.3.1):
+    - Flutter
+  - fluttertoast (0.0.2):
+    - Flutter
+    - Toast
+  - OktaJWT (2.0.1)
+  - OktaOidc (3.10.6):
+    - OktaOidc/AppAuth (= 3.10.6)
+    - OktaOidc/Okta (= 3.10.6)
+  - OktaOidc/AppAuth (3.10.6)
+  - OktaOidc/Okta (3.10.6):
+    - OktaOidc/AppAuth
+  - Toast (4.0.0)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_okta_sdk (from `.symlinks/plugins/flutter_okta_sdk/ios`)
+  - flutter_secure_storage (from `.symlinks/plugins/flutter_secure_storage/ios`)
+  - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
+
+SPEC REPOS:
+  trunk:
+    - OktaJWT
+    - OktaOidc
+    - Toast
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_okta_sdk:
+    :path: ".symlinks/plugins/flutter_okta_sdk/ios"
+  flutter_secure_storage:
+    :path: ".symlinks/plugins/flutter_secure_storage/ios"
+  fluttertoast:
+    :path: ".symlinks/plugins/fluttertoast/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
+  flutter_okta_sdk: 616c5c1df7002054796aca4a3f5feff21b7ad7ae
+  flutter_secure_storage: 7953c38a04c3fdbb00571bcd87d8e3b5ceb9daec
+  fluttertoast: 6122fa75143e992b1d3470f61000f591a798cc58
+  OktaJWT: 81e532a244e5cf3d83693bd3760b1f2f6c1c82fd
+  OktaOidc: d6c5ce0be950f76360c15f67cf39973f4738abbf
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+
+PODFILE CHECKSUM: 6e32fe8a55015e8e5b8f3bc6a06be84cacbb16b2
+
+COCOAPODS: 1.10.1

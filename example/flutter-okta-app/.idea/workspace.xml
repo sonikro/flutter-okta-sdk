@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e2892524-4a45-4f9c-ba03-d7f9bebf171d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/lib/screens/MainScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/MainScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/SplashScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/SplashScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/services/AuthService.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/AuthService.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1v5M1XZ1cPgZN7zClmgxRT6fHK7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="ToolWindowEvent Log.ShowToolbar" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e2892524-4a45-4f9c-ba03-d7f9bebf171d" name="Default Changelist" comment="" />
+      <created>1625847281661</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625847281661</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="306" y="268" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1626111137258">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="306" y="268" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.875@0.25.1440.875" timestamp="1626111137258" />
+    <state x="326" y="261" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1634663662334">
+      <screen x="0" y="25" width="2560" height="977" />
+    </state>
+    <state x="326" y="261" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.2560.977@0.25.2560.977" timestamp="1634663662334" />
+    <state x="446" y="213" key="AndroidProcessChooserDialog" timestamp="1626115076198">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="446" y="213" key="AndroidProcessChooserDialog/0.25.1440.875@0.25.1440.875" timestamp="1626115076198" />
+    <state width="1398" height="147" key="GridCell.Tab.0.bottom" timestamp="1631041649398">
+      <screen x="0" y="25" width="1440" height="797" />
+    </state>
+    <state width="1398" height="148" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1631027508444" />
+    <state width="1629" height="475" key="GridCell.Tab.0.bottom/0.0.2560.1080@0.0.2560.1080" timestamp="1626467036701" />
+    <state width="1398" height="147" key="GridCell.Tab.0.bottom/0.25.1440.797@0.25.1440.797" timestamp="1631041649398" />
+    <state width="1259" height="309" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1626120896138" />
+    <state width="1303" height="450" key="GridCell.Tab.0.bottom/0.25.2560.977@0.25.2560.977" timestamp="1629923262067" />
+    <state width="1398" height="147" key="GridCell.Tab.0.center" timestamp="1631041649397">
+      <screen x="0" y="25" width="1440" height="797" />
+    </state>
+    <state width="1398" height="148" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1631027508443" />
+    <state width="1629" height="475" key="GridCell.Tab.0.center/0.0.2560.1080@0.0.2560.1080" timestamp="1626467036699" />
+    <state width="1398" height="147" key="GridCell.Tab.0.center/0.25.1440.797@0.25.1440.797" timestamp="1631041649397" />
+    <state width="1259" height="309" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1626120896138" />
+    <state width="1303" height="450" key="GridCell.Tab.0.center/0.25.2560.977@0.25.2560.977" timestamp="1629923262066" />
+    <state width="1398" height="147" key="GridCell.Tab.0.left" timestamp="1631041649396">
+      <screen x="0" y="25" width="1440" height="797" />
+    </state>
+    <state width="1398" height="148" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1631027508442" />
+    <state width="1629" height="475" key="GridCell.Tab.0.left/0.0.2560.1080@0.0.2560.1080" timestamp="1626467036698" />
+    <state width="1398" height="147" key="GridCell.Tab.0.left/0.25.1440.797@0.25.1440.797" timestamp="1631041649396" />
+    <state width="1259" height="309" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1626120896138" />
+    <state width="1303" height="450" key="GridCell.Tab.0.left/0.25.2560.977@0.25.2560.977" timestamp="1629923262066" />
+    <state width="1398" height="147" key="GridCell.Tab.0.right" timestamp="1631041649398">
+      <screen x="0" y="25" width="1440" height="797" />
+    </state>
+    <state width="1398" height="148" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1631027508444" />
+    <state width="1629" height="475" key="GridCell.Tab.0.right/0.0.2560.1080@0.0.2560.1080" timestamp="1626467036700" />
+    <state width="1398" height="147" key="GridCell.Tab.0.right/0.25.1440.797@0.25.1440.797" timestamp="1631041649398" />
+    <state width="1259" height="309" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1626120896138" />
+    <state width="1303" height="450" key="GridCell.Tab.0.right/0.25.2560.977@0.25.2560.977" timestamp="1629923262066" />
+    <state x="185" y="106" key="SettingsEditor" timestamp="1634591925811">
+      <screen x="0" y="25" width="2560" height="977" />
+    </state>
+    <state x="104" y="91" key="SettingsEditor/0.25.1440.797@0.25.1440.797" timestamp="1631026075926" />
+    <state x="104" y="98" key="SettingsEditor/0.25.1440.875@0.25.1440.875" timestamp="1626102705618" />
+    <state x="185" y="106" key="SettingsEditor/0.25.2560.977@0.25.2560.977" timestamp="1634591925811" />
+    <state width="650" height="437" key="XDebugger.FullValuePopup" timestamp="1626120298657">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state width="650" height="437" key="XDebugger.FullValuePopup/0.25.1440.875@0.25.1440.875" timestamp="1626120298657" />
+    <state x="223" y="120" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1631026341073">
+      <screen x="0" y="25" width="1440" height="797" />
+    </state>
+    <state x="223" y="120" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.25.1440.797@0.25.1440.797" timestamp="1631026341073" />
+    <state x="223" y="129" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.25.1440.875@0.25.1440.875" timestamp="1626118405899" />
+    <state x="1083" y="458" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1634658575272">
+      <screen x="0" y="25" width="2560" height="977" />
+    </state>
+    <state x="1083" y="458" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.2560.977@0.25.2560.977" timestamp="1634658575272" />
+    <state x="293" y="286" width="1435" height="650" key="find.popup" timestamp="1634664470701">
+      <screen x="0" y="25" width="2560" height="977" />
+    </state>
+    <state x="165" y="241" width="814" height="600" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1631027643872" />
+    <state x="293" y="289" width="1435" height="719" key="find.popup/0.0.2560.1080@0.0.2560.1080" timestamp="1628612213886" />
+    <state x="1733" y="-194" width="1435" height="702" key="find.popup/0.25.1440.797/1440.-476.2560.1055@1440.-476.2560.1055" timestamp="1626198051376" />
+    <state x="165" y="238" width="808" height="531" key="find.popup/0.25.1440.797@0.25.1440.797" timestamp="1629731987433" />
+    <state x="165" y="259" width="807" height="582" key="find.popup/0.25.1440.875@0.25.1440.875" timestamp="1626116119947" />
+    <state x="293" y="286" width="1435" height="650" key="find.popup/0.25.2560.977@0.25.2560.977" timestamp="1634664470701" />
+    <state x="587" y="241" width="670" height="748" key="search.everywhere.popup" timestamp="1628612232342">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state x="587" y="241" width="670" height="748" key="search.everywhere.popup/0.0.2560.1080@0.0.2560.1080" timestamp="1628612232342" />
+    <state x="587" y="243" width="670" height="676" key="search.everywhere.popup/0.25.2560.977@0.25.2560.977" timestamp="1626197275956" />
+  </component>
+</project>
