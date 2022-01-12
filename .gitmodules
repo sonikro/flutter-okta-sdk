@@ -1,0 +1,4 @@
+[submodule "example/flutter_okta_sample"]
+	path = example/flutter_okta_sample
+	url = https://github.com/marktefftech/flutter_okta_sample.git
+	branch = master
