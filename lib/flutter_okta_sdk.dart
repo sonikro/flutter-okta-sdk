@@ -1,3 +1,7 @@
+import 'dart:convert';
+import 'dart:io';
+
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'BaseRequest.dart';
@@ -15,7 +19,7 @@ class OktaSDK {
     this.isInitialized = true;
   }
 
-  Future<void> signIn() async {
+  Future<bool> signIn() async {
     if (this.isInitialized == false) {
       throw Exception("Cannot sign in before initializing Okta SDK");
     }
