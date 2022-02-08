@@ -31,32 +31,35 @@ fun registerCallback(activity: Activity) {
                     result[Constants.RESOLVE_TYPE_KEY] = Constants.AUTHORIZED
                     result[Constants.ACCESS_TOKEN_KEY] = tokens.accessToken
 
-                    PendingOperation.success(result)
-                } catch (e: AuthorizationException) {
-                    result[Constants.ERROR_CODE_KEY] = Errors.SIGN_IN_FAILED.errorCode
-                    result[Constants.ERROR_MSG_KEY] = Errors.SIGN_IN_FAILED.errorMessage
+                    PendingOperation.success(true)
 
-                    PendingOperation.success(result)
+                } catch (e: AuthorizationException) {
+                    //result[Constants.ERROR_CODE_KEY] = Errors.SIGN_IN_FAILED.errorCode
+                    //result[Constants.ERROR_MSG_KEY] = Errors.SIGN_IN_FAILED.errorMessage
+
+                    PendingOperation.error(Errors.SIGN_IN_FAILED,Errors.SIGN_IN_FAILED.errorMessage )
                 }
             } else if (status == AuthorizationStatus.SIGNED_OUT) {
                 sessionClient.clear()
-                result[Constants.RESOLVE_TYPE_KEY] = Constants.SIGNED_OUT
-                PendingOperation.success(result)
+                //result[Constants.RESOLVE_TYPE_KEY] = Constants.SIGNED_OUT
+                PendingOperation.success(true)
+            } else {
+                PendingOperation.error(Errors.SIGN_IN_FAILED, Errors.SIGN_IN_FAILED.errorMessage)
             }
         }
 
         override fun onError(msg: String?, exception: AuthorizationException?) {
             val result = mutableMapOf<Any, Any?>()
-            result[Constants.ERROR_CODE_KEY] = Errors.OKTA_OIDC_ERROR.errorMessage
-            result[Constants.ERROR_MSG_KEY] = msg
+            //result[Constants.ERROR_CODE_KEY] = Errors.OKTA_OIDC_ERROR.errorMessage
+            //result[Constants.ERROR_MSG_KEY] = msg
 
-            PendingOperation.success(result)
+            PendingOperation.error(Errors.OKTA_OIDC_ERROR, Errors.OKTA_OIDC_ERROR.errorMessage,msg)
         }
 
         override fun onCancel() {
-            val result = mutableMapOf<Any, Any?>()
-            result[Constants.RESOLVE_TYPE_KEY] = Constants.CANCELLED
-            PendingOperation.success(result)
+          //  val result = mutableMapOf<Any, Any?>()
+           // result[Constants.RESOLVE_TYPE_KEY] = Constants.CANCELLED
+            PendingOperation.error(Errors.CANCELLED_ERROR, Errors.CANCELLED_ERROR.errorMessage)
         }
     }, activity)
 }

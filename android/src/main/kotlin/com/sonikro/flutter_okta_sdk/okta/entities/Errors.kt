@@ -13,4 +13,5 @@ enum class Errors(val errorCode: String, val errorMessage: String) {
     GENERIC_ERROR("-1100", "Generic Error"),
     METHOD_NOT_IMPLEMENTED("-1200", "This method is not implemented"),
     NO_CONTEXT("-1300", "No current context exists"),
+    CANCELLED_ERROR("-1400", "Operation cancelled"),
 }
