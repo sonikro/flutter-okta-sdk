@@ -38,8 +38,8 @@ private fun revokeToken(tokenName: String) {
                     PendingOperation.success(result)
                 }
 
-                override fun onError(msg: String, error: AuthorizationException) {
-                    PendingOperation.error(Errors.OKTA_OIDC_ERROR, error.errorDescription)
+                override fun onError(error: String?, exception: AuthorizationException?) {
+                    PendingOperation.error(Errors.OKTA_OIDC_ERROR, exception?.errorDescription)
                 }
             })
 }
