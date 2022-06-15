@@ -6,7 +6,7 @@ This library is a wrapper around [Okta OIDC Android](https://github.com/okta/okt
 This library follows the current best practice for native apps using:
 
 * [OAuth 2.0 Authorization Code Flow](https://tools.ietf.org/html/rfc6749#section-1.3.1)
-* [Proof Key for Code Exchange (PKCE)](https://tools.ietf.org/html/rfc763
+* [Proof Key for Code Exchange (PKCE)](https://tools.ietf.org/html/rfc763)
 
 This library also exposes APIs to interact with [Authentication API](https://developer.okta.com/docs/api/resources/authn) directly to implement native UI for authentication.
 
