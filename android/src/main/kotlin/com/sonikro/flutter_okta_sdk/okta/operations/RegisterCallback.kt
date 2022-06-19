@@ -48,12 +48,12 @@ fun registerCallback(activity: Activity) {
             }
         }
 
-        override fun onError(msg: String?, exception: AuthorizationException?) {
+        override fun onError(error: String?, exception: AuthorizationException?) {
             val result = mutableMapOf<Any, Any?>()
             //result[Constants.ERROR_CODE_KEY] = Errors.OKTA_OIDC_ERROR.errorMessage
-            //result[Constants.ERROR_MSG_KEY] = msg
+            //result[Constants.ERROR_MSG_KEY] = error
 
-            PendingOperation.error(Errors.OKTA_OIDC_ERROR, Errors.OKTA_OIDC_ERROR.errorMessage,msg)
+            PendingOperation.error(Errors.OKTA_OIDC_ERROR, Errors.OKTA_OIDC_ERROR.errorMessage,error)
         }
 
         override fun onCancel() {
