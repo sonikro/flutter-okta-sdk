@@ -22,3 +22,7 @@ Fix: error: compiling for iOS 11.0, but module 'OktaJWT' has a minimum deploymen
 ## 1.0.0-dev.7
 
 Fixed iOS createConfig to read from secure storage if the refresh token has not expired rather than the access token
+
+## 1.0.0-dev.8
+
+Updated iOS bridge to get app working on iOS. Also updated multiple smaller issues raised. 
